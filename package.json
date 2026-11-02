@@ -1,0 +1,20 @@
+{
+  "name": "intelligent-delivery-optimizer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered delivery route optimization and algorithm comparison on New Delhi road network",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.4.4",
+    "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@10.5.2"
+}
+

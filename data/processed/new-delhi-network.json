@@ -1,0 +1,3785 @@
+{
+  "metadata": {
+    "name": "New Delhi Drivable Road Network",
+    "city": "New Delhi, India",
+    "nodeCount": 60,
+    "edgeCount": 162,
+    "bbox": [
+      77.1892,
+      28.588,
+      77.245,
+      28.6517
+    ],
+    "center": [
+      77.2167,
+      28.6328
+    ],
+    "maxSpeedKmh": 60
+  },
+  "nodes": [
+    {
+      "id": "delhi_cp_center",
+      "lat": 28.6328,
+      "lon": 77.2197,
+      "name": "Central Park, Connaught Place"
+    },
+    {
+      "id": "cp_inner_rad1",
+      "lat": 28.6338,
+      "lon": 77.2197,
+      "name": "Inner Circle - Radial 1 (Chelmsford Rd)"
+    },
+    {
+      "id": "cp_inner_rad2",
+      "lat": 28.6335,
+      "lon": 77.2212,
+      "name": "Inner Circle - Radial 2 (Minto Rd)"
+    },
+    {
+      "id": "cp_inner_rad3",
+      "lat": 28.6323,
+      "lon": 77.2218,
+      "name": "Inner Circle - Radial 3 (Barakhamba Rd)"
+    },
+    {
+      "id": "cp_inner_rad4",
+      "lat": 28.6312,
+      "lon": 77.2208,
+      "name": "Inner Circle - Radial 4 (Kasturba Gandhi Marg)"
+    },
+    {
+      "id": "cp_inner_rad5",
+      "lat": 28.631,
+      "lon": 77.2192,
+      "name": "Inner Circle - Radial 5 (Janpath)"
+    },
+    {
+      "id": "cp_inner_rad6",
+      "lat": 28.6318,
+      "lon": 77.2178,
+      "name": "Inner Circle - Radial 6 (Sansad Marg / Parliament St)"
+    },
+    {
+      "id": "cp_inner_rad7",
+      "lat": 28.633,
+      "lon": 77.2176,
+      "name": "Inner Circle - Radial 7 (Baba Kharak Singh Marg)"
+    },
+    {
+      "id": "cp_inner_rad8",
+      "lat": 28.6341,
+      "lon": 77.2185,
+      "name": "Inner Circle - Radial 8 (Panchkuian Marg)"
+    },
+    {
+      "id": "cp_outer_rad1",
+      "lat": 28.6358,
+      "lon": 77.2197,
+      "name": "Connaught Circus - Chelmsford Crossing"
+    },
+    {
+      "id": "cp_outer_rad2",
+      "lat": 28.635,
+      "lon": 77.2232,
+      "name": "Connaught Circus - Minto Rd Crossing"
+    },
+    {
+      "id": "cp_outer_rad3",
+      "lat": 28.6322,
+      "lon": 77.2245,
+      "name": "Connaught Circus - Barakhamba Crossing"
+    },
+    {
+      "id": "cp_outer_rad4",
+      "lat": 28.6295,
+      "lon": 77.2222,
+      "name": "Connaught Circus - KG Marg Crossing"
+    },
+    {
+      "id": "cp_outer_rad5",
+      "lat": 28.629,
+      "lon": 77.2192,
+      "name": "Connaught Circus - Janpath Crossing"
+    },
+    {
+      "id": "cp_outer_rad6",
+      "lat": 28.6305,
+      "lon": 77.216,
+      "name": "Connaught Circus - Sansad Marg Crossing"
+    },
+    {
+      "id": "cp_outer_rad7",
+      "lat": 28.6328,
+      "lon": 77.2152,
+      "name": "Connaught Circus - BKS Marg Crossing"
+    },
+    {
+      "id": "cp_outer_rad8",
+      "lat": 28.6355,
+      "lon": 77.217,
+      "name": "Connaught Circus - Panchkuian Crossing"
+    },
+    {
+      "id": "ndls_paharganj",
+      "lat": 28.6428,
+      "lon": 77.2165,
+      "name": "NDLS Station - Paharganj Entrance"
+    },
+    {
+      "id": "ndls_ajmeri_gate",
+      "lat": 28.6415,
+      "lon": 77.2225,
+      "name": "NDLS Station - Ajmeri Gate Logistics"
+    },
+    {
+      "id": "bhavbhuti_marg",
+      "lat": 28.6385,
+      "lon": 77.222,
+      "name": "Bhavbhuti Marg Intersection"
+    },
+    {
+      "id": "minto_bridge",
+      "lat": 28.6375,
+      "lon": 77.225,
+      "name": "Minto Bridge Underpass"
+    },
+    {
+      "id": "ddu_marg",
+      "lat": 28.6345,
+      "lon": 77.2285,
+      "name": "Deen Dayal Upadhyaya Marg Crossing"
+    },
+    {
+      "id": "barakhamba_mid",
+      "lat": 28.6285,
+      "lon": 77.228,
+      "name": "Barakhamba Road Commercial Hub"
+    },
+    {
+      "id": "mandi_house_circle",
+      "lat": 28.6255,
+      "lon": 77.234,
+      "name": "Mandi House Roundabout"
+    },
+    {
+      "id": "sikandra_rd",
+      "lat": 28.624,
+      "lon": 77.2375,
+      "name": "Sikandra Road Crossing"
+    },
+    {
+      "id": "tilak_marg_mandi",
+      "lat": 28.6225,
+      "lon": 77.2355,
+      "name": "Tilak Marg - Mandi House Junction"
+    },
+    {
+      "id": "janpath_tolstoy",
+      "lat": 28.625,
+      "lon": 77.2192,
+      "name": "Janpath - Tolstoy Marg Crossing"
+    },
+    {
+      "id": "kg_tolstoy",
+      "lat": 28.6252,
+      "lon": 77.223,
+      "name": "Kasturba Gandhi Marg - Tolstoy Crossing"
+    },
+    {
+      "id": "barakhamba_tolstoy",
+      "lat": 28.626,
+      "lon": 77.227,
+      "name": "Tolstoy Marg - Barakhamba Junction"
+    },
+    {
+      "id": "windsor_place",
+      "lat": 28.62,
+      "lon": 77.217,
+      "name": "Windsor Place Roundabout"
+    },
+    {
+      "id": "ashoka_rd_windsor",
+      "lat": 28.6205,
+      "lon": 77.2135,
+      "name": "Ashoka Road - Patel Chowk"
+    },
+    {
+      "id": "patel_chowk",
+      "lat": 28.6228,
+      "lon": 77.212,
+      "name": "Patel Chowk Metro Station"
+    },
+    {
+      "id": "sansad_bhavan",
+      "lat": 28.6172,
+      "lon": 77.2082,
+      "name": "Parliament House (Sansad Bhavan)"
+    },
+    {
+      "id": "vijay_chowk",
+      "lat": 28.6145,
+      "lon": 77.206,
+      "name": "Vijay Chowk / Rashtrapati Bhavan West"
+    },
+    {
+      "id": "kartavya_rafi",
+      "lat": 28.6142,
+      "lon": 77.2125,
+      "name": "Kartavya Path - Rafi Marg Crossing"
+    },
+    {
+      "id": "kartavya_janpath",
+      "lat": 28.6138,
+      "lon": 77.219,
+      "name": "Kartavya Path - Janpath Crossing"
+    },
+    {
+      "id": "kartavya_mansingh",
+      "lat": 28.6134,
+      "lon": 77.2245,
+      "name": "Kartavya Path - Man Singh Rd Crossing"
+    },
+    {
+      "id": "india_gate_north",
+      "lat": 28.6155,
+      "lon": 77.2295,
+      "name": "C-Hexagon - Tilak Marg / Kasturba Gandhi Exit"
+    },
+    {
+      "id": "india_gate_east",
+      "lat": 28.613,
+      "lon": 77.2325,
+      "name": "C-Hexagon - Purana Qila Road Entry"
+    },
+    {
+      "id": "india_gate_center",
+      "lat": 28.6129,
+      "lon": 77.2295,
+      "name": "India Gate War Memorial"
+    },
+    {
+      "id": "india_gate_south",
+      "lat": 28.6095,
+      "lon": 77.2295,
+      "name": "C-Hexagon - Shahjahan Rd / Pandara Rd Exit"
+    },
+    {
+      "id": "india_gate_west",
+      "lat": 28.6128,
+      "lon": 77.2265,
+      "name": "C-Hexagon - Kartavya Path West Gate"
+    },
+    {
+      "id": "pragati_maidan_gate",
+      "lat": 28.6186,
+      "lon": 77.2415,
+      "name": "Bharat Mandapam / Pragati Maidan Gate"
+    },
+    {
+      "id": "bhairon_marg",
+      "lat": 28.6105,
+      "lon": 77.245,
+      "name": "Bhairon Marg - Ring Road Connection"
+    },
+    {
+      "id": "purana_qila",
+      "lat": 28.6095,
+      "lon": 77.241,
+      "name": "Mathura Road - Purana Qila Crossing"
+    },
+    {
+      "id": "subramaniam_bharti",
+      "lat": 28.604,
+      "lon": 77.232,
+      "name": "Subramaniam Bharti Marg Junction"
+    },
+    {
+      "id": "khan_market_hub",
+      "lat": 28.6003,
+      "lon": 77.227,
+      "name": "Khan Market Commercial Hub"
+    },
+    {
+      "id": "shahjahan_crossing",
+      "lat": 28.6035,
+      "lon": 77.225,
+      "name": "Shahjahan Road - Humayun Rd Crossing"
+    },
+    {
+      "id": "prithviraj_circle",
+      "lat": 28.6,
+      "lon": 77.218,
+      "name": "Prithviraj Road - Aurangzeb Rd Roundabout"
+    },
+    {
+      "id": "lodhi_garden",
+      "lat": 28.593,
+      "lon": 77.2195,
+      "name": "Lodhi Garden North Gate"
+    },
+    {
+      "id": "lodhi_colony_hub",
+      "lat": 28.5888,
+      "lon": 77.2217,
+      "name": "Lodhi Art District Fulfillment Hub"
+    },
+    {
+      "id": "jor_bagh",
+      "lat": 28.588,
+      "lon": 77.214,
+      "name": "Jor Bagh Metro Logistics"
+    },
+    {
+      "id": "karol_bagh_hub",
+      "lat": 28.6517,
+      "lon": 77.1906,
+      "name": "Karol Bagh Commercial Zone"
+    },
+    {
+      "id": "db_gupta_rd",
+      "lat": 28.647,
+      "lon": 77.198,
+      "name": "DB Gupta Road - Rani Jhansi Junction"
+    },
+    {
+      "id": "jhandewalan",
+      "lat": 28.644,
+      "lon": 77.2025,
+      "name": "Jhandewalan Metro Intersection"
+    },
+    {
+      "id": "panchkuian_mid",
+      "lat": 28.6395,
+      "lon": 77.209,
+      "name": "Panchkuian Road Commercial Center"
+    },
+    {
+      "id": "chanakyapuri_hub",
+      "lat": 28.5983,
+      "lon": 77.1892,
+      "name": "Chanakyapuri Diplomatic Enclave"
+    },
+    {
+      "id": "shanti_path",
+      "lat": 28.592,
+      "lon": 77.193,
+      "name": "Shanti Path Avenue"
+    },
+    {
+      "id": "teen_murti",
+      "lat": 28.603,
+      "lon": 77.201,
+      "name": "Teen Murti Marg Roundabout"
+    },
+    {
+      "id": "race_course",
+      "lat": 28.6,
+      "lon": 77.209,
+      "name": "Lok Kalyan Marg / Race Course"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_1_cp_inner_rad1_cp_inner_rad2",
+      "source": "cp_inner_rad1",
+      "target": "cp_inner_rad2",
+      "distance": 150.1,
+      "roadType": "secondary",
+      "roadName": "Inner Circle",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2197,
+          28.6338
+        ],
+        [
+          77.2212,
+          28.6335
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_2_cp_inner_rad2_cp_inner_rad3",
+      "source": "cp_inner_rad2",
+      "target": "cp_inner_rad3",
+      "distance": 145.7,
+      "roadType": "secondary",
+      "roadName": "Inner Circle",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2212,
+          28.6335
+        ],
+        [
+          77.2218,
+          28.6323
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_3_cp_inner_rad3_cp_inner_rad4",
+      "source": "cp_inner_rad3",
+      "target": "cp_inner_rad4",
+      "distance": 156.5,
+      "roadType": "secondary",
+      "roadName": "Inner Circle",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2218,
+          28.6323
+        ],
+        [
+          77.2208,
+          28.6312
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_4_cp_inner_rad4_cp_inner_rad5",
+      "source": "cp_inner_rad4",
+      "target": "cp_inner_rad5",
+      "distance": 157.7,
+      "roadType": "secondary",
+      "roadName": "Inner Circle",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2208,
+          28.6312
+        ],
+        [
+          77.2192,
+          28.631
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_5_cp_inner_rad5_cp_inner_rad6",
+      "source": "cp_inner_rad5",
+      "target": "cp_inner_rad6",
+      "distance": 163.0,
+      "roadType": "secondary",
+      "roadName": "Inner Circle",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2192,
+          28.631
+        ],
+        [
+          77.2178,
+          28.6318
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_6_cp_inner_rad6_cp_inner_rad7",
+      "source": "cp_inner_rad6",
+      "target": "cp_inner_rad7",
+      "distance": 134.9,
+      "roadType": "secondary",
+      "roadName": "Inner Circle",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2178,
+          28.6318
+        ],
+        [
+          77.2176,
+          28.633
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_7_cp_inner_rad7_cp_inner_rad8",
+      "source": "cp_inner_rad7",
+      "target": "cp_inner_rad8",
+      "distance": 150.6,
+      "roadType": "secondary",
+      "roadName": "Inner Circle",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2176,
+          28.633
+        ],
+        [
+          77.2185,
+          28.6341
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_8_cp_inner_rad8_cp_inner_rad1",
+      "source": "cp_inner_rad8",
+      "target": "cp_inner_rad1",
+      "distance": 121.8,
+      "roadType": "secondary",
+      "roadName": "Inner Circle",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2185,
+          28.6341
+        ],
+        [
+          77.2197,
+          28.6338
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_9_cp_outer_rad1_cp_outer_rad8",
+      "source": "cp_outer_rad1",
+      "target": "cp_outer_rad8",
+      "distance": 265.6,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2197,
+          28.6358
+        ],
+        [
+          77.217,
+          28.6355
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_10_cp_outer_rad8_cp_outer_rad1",
+      "source": "cp_outer_rad8",
+      "target": "cp_outer_rad1",
+      "distance": 265.6,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.217,
+          28.6355
+        ],
+        [
+          77.2197,
+          28.6358
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_11_cp_outer_rad8_cp_outer_rad7",
+      "source": "cp_outer_rad8",
+      "target": "cp_outer_rad7",
+      "distance": 347.8,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.217,
+          28.6355
+        ],
+        [
+          77.2152,
+          28.6328
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_12_cp_outer_rad7_cp_outer_rad8",
+      "source": "cp_outer_rad7",
+      "target": "cp_outer_rad8",
+      "distance": 347.8,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2152,
+          28.6328
+        ],
+        [
+          77.217,
+          28.6355
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_13_cp_outer_rad7_cp_outer_rad6",
+      "source": "cp_outer_rad7",
+      "target": "cp_outer_rad6",
+      "distance": 267.4,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2152,
+          28.6328
+        ],
+        [
+          77.216,
+          28.6305
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_14_cp_outer_rad6_cp_outer_rad7",
+      "source": "cp_outer_rad6",
+      "target": "cp_outer_rad7",
+      "distance": 267.4,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.216,
+          28.6305
+        ],
+        [
+          77.2152,
+          28.6328
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_15_cp_outer_rad6_cp_outer_rad5",
+      "source": "cp_outer_rad6",
+      "target": "cp_outer_rad5",
+      "distance": 354.1,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.216,
+          28.6305
+        ],
+        [
+          77.2192,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_16_cp_outer_rad5_cp_outer_rad6",
+      "source": "cp_outer_rad5",
+      "target": "cp_outer_rad6",
+      "distance": 354.1,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2192,
+          28.629
+        ],
+        [
+          77.216,
+          28.6305
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_17_cp_outer_rad5_cp_outer_rad4",
+      "source": "cp_outer_rad5",
+      "target": "cp_outer_rad4",
+      "distance": 298.0,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2192,
+          28.629
+        ],
+        [
+          77.2222,
+          28.6295
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_18_cp_outer_rad4_cp_outer_rad5",
+      "source": "cp_outer_rad4",
+      "target": "cp_outer_rad5",
+      "distance": 298.0,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2222,
+          28.6295
+        ],
+        [
+          77.2192,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_19_cp_outer_rad4_cp_outer_rad3",
+      "source": "cp_outer_rad4",
+      "target": "cp_outer_rad3",
+      "distance": 374.9,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2222,
+          28.6295
+        ],
+        [
+          77.2245,
+          28.6322
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_20_cp_outer_rad3_cp_outer_rad4",
+      "source": "cp_outer_rad3",
+      "target": "cp_outer_rad4",
+      "distance": 374.9,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2245,
+          28.6322
+        ],
+        [
+          77.2222,
+          28.6295
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_21_cp_outer_rad3_cp_outer_rad2",
+      "source": "cp_outer_rad3",
+      "target": "cp_outer_rad2",
+      "distance": 336.2,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2245,
+          28.6322
+        ],
+        [
+          77.2232,
+          28.635
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_22_cp_outer_rad2_cp_outer_rad3",
+      "source": "cp_outer_rad2",
+      "target": "cp_outer_rad3",
+      "distance": 336.2,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2232,
+          28.635
+        ],
+        [
+          77.2245,
+          28.6322
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_23_cp_outer_rad2_cp_outer_rad1",
+      "source": "cp_outer_rad2",
+      "target": "cp_outer_rad1",
+      "distance": 353.0,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2232,
+          28.635
+        ],
+        [
+          77.2197,
+          28.6358
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_24_cp_outer_rad1_cp_outer_rad2",
+      "source": "cp_outer_rad1",
+      "target": "cp_outer_rad2",
+      "distance": 353.0,
+      "roadType": "primary",
+      "roadName": "Connaught Circus",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2197,
+          28.6358
+        ],
+        [
+          77.2232,
+          28.635
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_25_cp_inner_rad1_cp_outer_rad1",
+      "source": "cp_inner_rad1",
+      "target": "cp_outer_rad1",
+      "distance": 222.4,
+      "roadType": "secondary",
+      "roadName": "Chelmsford Road Radial",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2197,
+          28.6338
+        ],
+        [
+          77.2197,
+          28.6358
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_26_cp_outer_rad1_cp_inner_rad1",
+      "source": "cp_outer_rad1",
+      "target": "cp_inner_rad1",
+      "distance": 222.4,
+      "roadType": "secondary",
+      "roadName": "Chelmsford Road Radial",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2197,
+          28.6358
+        ],
+        [
+          77.2197,
+          28.6338
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_27_cp_inner_rad2_cp_outer_rad2",
+      "source": "cp_inner_rad2",
+      "target": "cp_outer_rad2",
+      "distance": 256.7,
+      "roadType": "secondary",
+      "roadName": "Minto Road Radial",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2212,
+          28.6335
+        ],
+        [
+          77.2232,
+          28.635
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_28_cp_outer_rad2_cp_inner_rad2",
+      "source": "cp_outer_rad2",
+      "target": "cp_inner_rad2",
+      "distance": 256.7,
+      "roadType": "secondary",
+      "roadName": "Minto Road Radial",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2232,
+          28.635
+        ],
+        [
+          77.2212,
+          28.6335
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_29_cp_inner_rad3_cp_outer_rad3",
+      "source": "cp_inner_rad3",
+      "target": "cp_outer_rad3",
+      "distance": 263.7,
+      "roadType": "primary",
+      "roadName": "Barakhamba Road Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2218,
+          28.6323
+        ],
+        [
+          77.2245,
+          28.6322
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_30_cp_outer_rad3_cp_inner_rad3",
+      "source": "cp_outer_rad3",
+      "target": "cp_inner_rad3",
+      "distance": 263.7,
+      "roadType": "primary",
+      "roadName": "Barakhamba Road Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2245,
+          28.6322
+        ],
+        [
+          77.2218,
+          28.6323
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_31_cp_inner_rad4_cp_outer_rad4",
+      "source": "cp_inner_rad4",
+      "target": "cp_outer_rad4",
+      "distance": 233.2,
+      "roadType": "primary",
+      "roadName": "Kasturba Gandhi Marg Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2208,
+          28.6312
+        ],
+        [
+          77.2222,
+          28.6295
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_32_cp_outer_rad4_cp_inner_rad4",
+      "source": "cp_outer_rad4",
+      "target": "cp_inner_rad4",
+      "distance": 233.2,
+      "roadType": "primary",
+      "roadName": "Kasturba Gandhi Marg Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2222,
+          28.6295
+        ],
+        [
+          77.2208,
+          28.6312
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_33_cp_inner_rad5_cp_outer_rad5",
+      "source": "cp_inner_rad5",
+      "target": "cp_outer_rad5",
+      "distance": 222.4,
+      "roadType": "primary",
+      "roadName": "Janpath Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2192,
+          28.631
+        ],
+        [
+          77.2192,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_34_cp_outer_rad5_cp_inner_rad5",
+      "source": "cp_outer_rad5",
+      "target": "cp_inner_rad5",
+      "distance": 222.4,
+      "roadType": "primary",
+      "roadName": "Janpath Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2192,
+          28.629
+        ],
+        [
+          77.2192,
+          28.631
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_35_cp_inner_rad6_cp_outer_rad6",
+      "source": "cp_inner_rad6",
+      "target": "cp_outer_rad6",
+      "distance": 227.5,
+      "roadType": "primary",
+      "roadName": "Sansad Marg Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2178,
+          28.6318
+        ],
+        [
+          77.216,
+          28.6305
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_36_cp_outer_rad6_cp_inner_rad6",
+      "source": "cp_outer_rad6",
+      "target": "cp_inner_rad6",
+      "distance": 227.5,
+      "roadType": "primary",
+      "roadName": "Sansad Marg Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.216,
+          28.6305
+        ],
+        [
+          77.2178,
+          28.6318
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_37_cp_inner_rad7_cp_outer_rad7",
+      "source": "cp_inner_rad7",
+      "target": "cp_outer_rad7",
+      "distance": 235.3,
+      "roadType": "primary",
+      "roadName": "Baba Kharak Singh Marg Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2176,
+          28.633
+        ],
+        [
+          77.2152,
+          28.6328
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_38_cp_outer_rad7_cp_inner_rad7",
+      "source": "cp_outer_rad7",
+      "target": "cp_inner_rad7",
+      "distance": 235.3,
+      "roadType": "primary",
+      "roadName": "Baba Kharak Singh Marg Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2152,
+          28.6328
+        ],
+        [
+          77.2176,
+          28.633
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_39_cp_inner_rad8_cp_outer_rad8",
+      "source": "cp_inner_rad8",
+      "target": "cp_outer_rad8",
+      "distance": 213.7,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2185,
+          28.6341
+        ],
+        [
+          77.217,
+          28.6355
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_40_cp_outer_rad8_cp_inner_rad8",
+      "source": "cp_outer_rad8",
+      "target": "cp_inner_rad8",
+      "distance": 213.7,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road Radial",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.217,
+          28.6355
+        ],
+        [
+          77.2185,
+          28.6341
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_41_cp_inner_rad1_delhi_cp_center",
+      "source": "cp_inner_rad1",
+      "target": "delhi_cp_center",
+      "distance": 111.2,
+      "roadType": "service",
+      "roadName": "Central Park Access",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2197,
+          28.6338
+        ],
+        [
+          77.2197,
+          28.6328
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_42_delhi_cp_center_cp_inner_rad1",
+      "source": "delhi_cp_center",
+      "target": "cp_inner_rad1",
+      "distance": 111.2,
+      "roadType": "service",
+      "roadName": "Central Park Access",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2197,
+          28.6328
+        ],
+        [
+          77.2197,
+          28.6338
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_43_cp_inner_rad5_delhi_cp_center",
+      "source": "cp_inner_rad5",
+      "target": "delhi_cp_center",
+      "distance": 206.0,
+      "roadType": "service",
+      "roadName": "Central Park South Walk",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2192,
+          28.631
+        ],
+        [
+          77.2197,
+          28.6328
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_44_delhi_cp_center_cp_inner_rad5",
+      "source": "delhi_cp_center",
+      "target": "cp_inner_rad5",
+      "distance": 206.0,
+      "roadType": "service",
+      "roadName": "Central Park South Walk",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2197,
+          28.6328
+        ],
+        [
+          77.2192,
+          28.631
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_45_cp_inner_rad3_delhi_cp_center",
+      "source": "cp_inner_rad3",
+      "target": "delhi_cp_center",
+      "distance": 212.4,
+      "roadType": "service",
+      "roadName": "Central Park East Walk",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2218,
+          28.6323
+        ],
+        [
+          77.2197,
+          28.6328
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_46_delhi_cp_center_cp_inner_rad3",
+      "source": "delhi_cp_center",
+      "target": "cp_inner_rad3",
+      "distance": 212.4,
+      "roadType": "service",
+      "roadName": "Central Park East Walk",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2197,
+          28.6328
+        ],
+        [
+          77.2218,
+          28.6323
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_47_cp_inner_rad7_delhi_cp_center",
+      "source": "cp_inner_rad7",
+      "target": "delhi_cp_center",
+      "distance": 206.2,
+      "roadType": "service",
+      "roadName": "Central Park West Walk",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2176,
+          28.633
+        ],
+        [
+          77.2197,
+          28.6328
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_48_delhi_cp_center_cp_inner_rad7",
+      "source": "delhi_cp_center",
+      "target": "cp_inner_rad7",
+      "distance": 206.2,
+      "roadType": "service",
+      "roadName": "Central Park West Walk",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2197,
+          28.6328
+        ],
+        [
+          77.2176,
+          28.633
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_49_cp_outer_rad1_ndls_paharganj",
+      "source": "cp_outer_rad1",
+      "target": "ndls_paharganj",
+      "distance": 838.7,
+      "roadType": "primary",
+      "roadName": "Chelmsford Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2197,
+          28.6358
+        ],
+        [
+          77.2165,
+          28.6428
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_50_ndls_paharganj_cp_outer_rad1",
+      "source": "ndls_paharganj",
+      "target": "cp_outer_rad1",
+      "distance": 838.7,
+      "roadType": "primary",
+      "roadName": "Chelmsford Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2165,
+          28.6428
+        ],
+        [
+          77.2197,
+          28.6358
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_51_cp_outer_rad2_minto_bridge",
+      "source": "cp_outer_rad2",
+      "target": "minto_bridge",
+      "distance": 328.8,
+      "roadType": "primary",
+      "roadName": "Minto Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2232,
+          28.635
+        ],
+        [
+          77.225,
+          28.6375
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_52_minto_bridge_cp_outer_rad2",
+      "source": "minto_bridge",
+      "target": "cp_outer_rad2",
+      "distance": 328.8,
+      "roadType": "primary",
+      "roadName": "Minto Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.225,
+          28.6375
+        ],
+        [
+          77.2232,
+          28.635
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_53_minto_bridge_bhavbhuti_marg",
+      "source": "minto_bridge",
+      "target": "bhavbhuti_marg",
+      "distance": 313.2,
+      "roadType": "secondary",
+      "roadName": "Bhavbhuti Marg",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.225,
+          28.6375
+        ],
+        [
+          77.222,
+          28.6385
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_54_bhavbhuti_marg_minto_bridge",
+      "source": "bhavbhuti_marg",
+      "target": "minto_bridge",
+      "distance": 313.2,
+      "roadType": "secondary",
+      "roadName": "Bhavbhuti Marg",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.222,
+          28.6385
+        ],
+        [
+          77.225,
+          28.6375
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_55_bhavbhuti_marg_ndls_ajmeri_gate",
+      "source": "bhavbhuti_marg",
+      "target": "ndls_ajmeri_gate",
+      "distance": 337.1,
+      "roadType": "secondary",
+      "roadName": "Station Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.222,
+          28.6385
+        ],
+        [
+          77.2225,
+          28.6415
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_56_ndls_ajmeri_gate_bhavbhuti_marg",
+      "source": "ndls_ajmeri_gate",
+      "target": "bhavbhuti_marg",
+      "distance": 337.1,
+      "roadType": "secondary",
+      "roadName": "Station Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2225,
+          28.6415
+        ],
+        [
+          77.222,
+          28.6385
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_57_ndls_paharganj_ndls_ajmeri_gate",
+      "source": "ndls_paharganj",
+      "target": "ndls_ajmeri_gate",
+      "distance": 603.1,
+      "roadType": "residential",
+      "roadName": "Station Footover Underpass",
+      "speedLimit": 20,
+      "geometry": [
+        [
+          77.2165,
+          28.6428
+        ],
+        [
+          77.2225,
+          28.6415
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_58_ndls_ajmeri_gate_ndls_paharganj",
+      "source": "ndls_ajmeri_gate",
+      "target": "ndls_paharganj",
+      "distance": 603.1,
+      "roadType": "residential",
+      "roadName": "Station Footover Underpass",
+      "speedLimit": 20,
+      "geometry": [
+        [
+          77.2225,
+          28.6415
+        ],
+        [
+          77.2165,
+          28.6428
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_59_minto_bridge_ddu_marg",
+      "source": "minto_bridge",
+      "target": "ddu_marg",
+      "distance": 477.4,
+      "roadType": "primary",
+      "roadName": "Deen Dayal Upadhyaya Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.225,
+          28.6375
+        ],
+        [
+          77.2285,
+          28.6345
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_60_ddu_marg_minto_bridge",
+      "source": "ddu_marg",
+      "target": "minto_bridge",
+      "distance": 477.4,
+      "roadType": "primary",
+      "roadName": "Deen Dayal Upadhyaya Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2285,
+          28.6345
+        ],
+        [
+          77.225,
+          28.6375
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_61_cp_outer_rad3_barakhamba_mid",
+      "source": "cp_outer_rad3",
+      "target": "barakhamba_mid",
+      "distance": 534.7,
+      "roadType": "primary",
+      "roadName": "Barakhamba Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2245,
+          28.6322
+        ],
+        [
+          77.228,
+          28.6285
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_62_barakhamba_mid_cp_outer_rad3",
+      "source": "barakhamba_mid",
+      "target": "cp_outer_rad3",
+      "distance": 534.7,
+      "roadType": "primary",
+      "roadName": "Barakhamba Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.228,
+          28.6285
+        ],
+        [
+          77.2245,
+          28.6322
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_63_barakhamba_mid_barakhamba_tolstoy",
+      "source": "barakhamba_mid",
+      "target": "barakhamba_tolstoy",
+      "distance": 294.6,
+      "roadType": "primary",
+      "roadName": "Barakhamba Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.228,
+          28.6285
+        ],
+        [
+          77.227,
+          28.626
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_64_barakhamba_tolstoy_barakhamba_mid",
+      "source": "barakhamba_tolstoy",
+      "target": "barakhamba_mid",
+      "distance": 294.6,
+      "roadType": "primary",
+      "roadName": "Barakhamba Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.227,
+          28.626
+        ],
+        [
+          77.228,
+          28.6285
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_65_barakhamba_tolstoy_mandi_house_circle",
+      "source": "barakhamba_tolstoy",
+      "target": "mandi_house_circle",
+      "distance": 685.5,
+      "roadType": "primary",
+      "roadName": "Barakhamba Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.227,
+          28.626
+        ],
+        [
+          77.234,
+          28.6255
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_66_mandi_house_circle_barakhamba_tolstoy",
+      "source": "mandi_house_circle",
+      "target": "barakhamba_tolstoy",
+      "distance": 685.5,
+      "roadType": "primary",
+      "roadName": "Barakhamba Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.234,
+          28.6255
+        ],
+        [
+          77.227,
+          28.626
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_67_mandi_house_circle_sikandra_rd",
+      "source": "mandi_house_circle",
+      "target": "sikandra_rd",
+      "distance": 380.2,
+      "roadType": "primary",
+      "roadName": "Sikandra Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.234,
+          28.6255
+        ],
+        [
+          77.2375,
+          28.624
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_68_sikandra_rd_mandi_house_circle",
+      "source": "sikandra_rd",
+      "target": "mandi_house_circle",
+      "distance": 380.2,
+      "roadType": "primary",
+      "roadName": "Sikandra Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2375,
+          28.624
+        ],
+        [
+          77.234,
+          28.6255
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_69_sikandra_rd_pragati_maidan_gate",
+      "source": "sikandra_rd",
+      "target": "pragati_maidan_gate",
+      "distance": 716.2,
+      "roadType": "trunk",
+      "roadName": "Mathura Road Link",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2375,
+          28.624
+        ],
+        [
+          77.2415,
+          28.6186
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_70_pragati_maidan_gate_sikandra_rd",
+      "source": "pragati_maidan_gate",
+      "target": "sikandra_rd",
+      "distance": 716.2,
+      "roadType": "trunk",
+      "roadName": "Mathura Road Link",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2415,
+          28.6186
+        ],
+        [
+          77.2375,
+          28.624
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_71_mandi_house_circle_tilak_marg_mandi",
+      "source": "mandi_house_circle",
+      "target": "tilak_marg_mandi",
+      "distance": 364.3,
+      "roadType": "primary",
+      "roadName": "Tilak Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.234,
+          28.6255
+        ],
+        [
+          77.2355,
+          28.6225
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_72_tilak_marg_mandi_mandi_house_circle",
+      "source": "tilak_marg_mandi",
+      "target": "mandi_house_circle",
+      "distance": 364.3,
+      "roadType": "primary",
+      "roadName": "Tilak Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2355,
+          28.6225
+        ],
+        [
+          77.234,
+          28.6255
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_73_tilak_marg_mandi_india_gate_north",
+      "source": "tilak_marg_mandi",
+      "target": "india_gate_north",
+      "distance": 974.1,
+      "roadType": "primary",
+      "roadName": "Tilak Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2355,
+          28.6225
+        ],
+        [
+          77.2295,
+          28.6155
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_74_india_gate_north_tilak_marg_mandi",
+      "source": "india_gate_north",
+      "target": "tilak_marg_mandi",
+      "distance": 974.1,
+      "roadType": "primary",
+      "roadName": "Tilak Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2295,
+          28.6155
+        ],
+        [
+          77.2355,
+          28.6225
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_75_cp_outer_rad5_janpath_tolstoy",
+      "source": "cp_outer_rad5",
+      "target": "janpath_tolstoy",
+      "distance": 444.8,
+      "roadType": "primary",
+      "roadName": "Janpath",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2192,
+          28.629
+        ],
+        [
+          77.2192,
+          28.625
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_76_janpath_tolstoy_cp_outer_rad5",
+      "source": "janpath_tolstoy",
+      "target": "cp_outer_rad5",
+      "distance": 444.8,
+      "roadType": "primary",
+      "roadName": "Janpath",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2192,
+          28.625
+        ],
+        [
+          77.2192,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_77_janpath_tolstoy_kg_tolstoy",
+      "source": "janpath_tolstoy",
+      "target": "kg_tolstoy",
+      "distance": 371.6,
+      "roadType": "primary",
+      "roadName": "Tolstoy Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2192,
+          28.625
+        ],
+        [
+          77.223,
+          28.6252
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_78_kg_tolstoy_janpath_tolstoy",
+      "source": "kg_tolstoy",
+      "target": "janpath_tolstoy",
+      "distance": 371.6,
+      "roadType": "primary",
+      "roadName": "Tolstoy Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.223,
+          28.6252
+        ],
+        [
+          77.2192,
+          28.625
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_79_kg_tolstoy_barakhamba_tolstoy",
+      "source": "kg_tolstoy",
+      "target": "barakhamba_tolstoy",
+      "distance": 400.4,
+      "roadType": "primary",
+      "roadName": "Tolstoy Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.223,
+          28.6252
+        ],
+        [
+          77.227,
+          28.626
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_80_barakhamba_tolstoy_kg_tolstoy",
+      "source": "barakhamba_tolstoy",
+      "target": "kg_tolstoy",
+      "distance": 400.4,
+      "roadType": "primary",
+      "roadName": "Tolstoy Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.227,
+          28.626
+        ],
+        [
+          77.223,
+          28.6252
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_81_cp_outer_rad4_kg_tolstoy",
+      "source": "cp_outer_rad4",
+      "target": "kg_tolstoy",
+      "distance": 484.5,
+      "roadType": "primary",
+      "roadName": "Kasturba Gandhi Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2222,
+          28.6295
+        ],
+        [
+          77.223,
+          28.6252
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_82_kg_tolstoy_cp_outer_rad4",
+      "source": "kg_tolstoy",
+      "target": "cp_outer_rad4",
+      "distance": 484.5,
+      "roadType": "primary",
+      "roadName": "Kasturba Gandhi Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.223,
+          28.6252
+        ],
+        [
+          77.2222,
+          28.6295
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_83_kg_tolstoy_india_gate_north",
+      "source": "kg_tolstoy",
+      "target": "india_gate_north",
+      "distance": 1251.4,
+      "roadType": "primary",
+      "roadName": "Kasturba Gandhi Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.223,
+          28.6252
+        ],
+        [
+          77.2295,
+          28.6155
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_84_india_gate_north_kg_tolstoy",
+      "source": "india_gate_north",
+      "target": "kg_tolstoy",
+      "distance": 1251.4,
+      "roadType": "primary",
+      "roadName": "Kasturba Gandhi Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2295,
+          28.6155
+        ],
+        [
+          77.223,
+          28.6252
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_85_janpath_tolstoy_windsor_place",
+      "source": "janpath_tolstoy",
+      "target": "windsor_place",
+      "distance": 596.0,
+      "roadType": "primary",
+      "roadName": "Janpath",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2192,
+          28.625
+        ],
+        [
+          77.217,
+          28.62
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_86_windsor_place_janpath_tolstoy",
+      "source": "windsor_place",
+      "target": "janpath_tolstoy",
+      "distance": 596.0,
+      "roadType": "primary",
+      "roadName": "Janpath",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.217,
+          28.62
+        ],
+        [
+          77.2192,
+          28.625
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_87_windsor_place_ashoka_rd_windsor",
+      "source": "windsor_place",
+      "target": "ashoka_rd_windsor",
+      "distance": 346.1,
+      "roadType": "primary",
+      "roadName": "Ashoka Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.217,
+          28.62
+        ],
+        [
+          77.2135,
+          28.6205
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_88_ashoka_rd_windsor_windsor_place",
+      "source": "ashoka_rd_windsor",
+      "target": "windsor_place",
+      "distance": 346.1,
+      "roadType": "primary",
+      "roadName": "Ashoka Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2135,
+          28.6205
+        ],
+        [
+          77.217,
+          28.62
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_89_ashoka_rd_windsor_patel_chowk",
+      "source": "ashoka_rd_windsor",
+      "target": "patel_chowk",
+      "distance": 294.7,
+      "roadType": "primary",
+      "roadName": "Ashoka Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2135,
+          28.6205
+        ],
+        [
+          77.212,
+          28.6228
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_90_patel_chowk_ashoka_rd_windsor",
+      "source": "patel_chowk",
+      "target": "ashoka_rd_windsor",
+      "distance": 294.7,
+      "roadType": "primary",
+      "roadName": "Ashoka Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.212,
+          28.6228
+        ],
+        [
+          77.2135,
+          28.6205
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_91_patel_chowk_cp_outer_rad6",
+      "source": "patel_chowk",
+      "target": "cp_outer_rad6",
+      "distance": 941.0,
+      "roadType": "primary",
+      "roadName": "Sansad Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.212,
+          28.6228
+        ],
+        [
+          77.216,
+          28.6305
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_92_cp_outer_rad6_patel_chowk",
+      "source": "cp_outer_rad6",
+      "target": "patel_chowk",
+      "distance": 941.0,
+      "roadType": "primary",
+      "roadName": "Sansad Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.216,
+          28.6305
+        ],
+        [
+          77.212,
+          28.6228
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_93_windsor_place_kartavya_janpath",
+      "source": "windsor_place",
+      "target": "kartavya_janpath",
+      "distance": 716.5,
+      "roadType": "primary",
+      "roadName": "Janpath",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.217,
+          28.62
+        ],
+        [
+          77.219,
+          28.6138
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_94_kartavya_janpath_windsor_place",
+      "source": "kartavya_janpath",
+      "target": "windsor_place",
+      "distance": 716.5,
+      "roadType": "primary",
+      "roadName": "Janpath",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.219,
+          28.6138
+        ],
+        [
+          77.217,
+          28.62
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_95_cp_outer_rad6_sansad_bhavan",
+      "source": "cp_outer_rad6",
+      "target": "sansad_bhavan",
+      "distance": 1663.3,
+      "roadType": "primary",
+      "roadName": "Sansad Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.216,
+          28.6305
+        ],
+        [
+          77.2082,
+          28.6172
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_96_sansad_bhavan_cp_outer_rad6",
+      "source": "sansad_bhavan",
+      "target": "cp_outer_rad6",
+      "distance": 1663.3,
+      "roadType": "primary",
+      "roadName": "Sansad Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2082,
+          28.6172
+        ],
+        [
+          77.216,
+          28.6305
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_97_sansad_bhavan_vijay_chowk",
+      "source": "sansad_bhavan",
+      "target": "vijay_chowk",
+      "distance": 369.1,
+      "roadType": "secondary",
+      "roadName": "North Avenue Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2082,
+          28.6172
+        ],
+        [
+          77.206,
+          28.6145
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_98_vijay_chowk_sansad_bhavan",
+      "source": "vijay_chowk",
+      "target": "sansad_bhavan",
+      "distance": 369.1,
+      "roadType": "secondary",
+      "roadName": "North Avenue Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.206,
+          28.6145
+        ],
+        [
+          77.2082,
+          28.6172
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_99_vijay_chowk_kartavya_rafi",
+      "source": "vijay_chowk",
+      "target": "kartavya_rafi",
+      "distance": 635.4,
+      "roadType": "primary",
+      "roadName": "Kartavya Path",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.206,
+          28.6145
+        ],
+        [
+          77.2125,
+          28.6142
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_100_kartavya_rafi_vijay_chowk",
+      "source": "kartavya_rafi",
+      "target": "vijay_chowk",
+      "distance": 635.4,
+      "roadType": "primary",
+      "roadName": "Kartavya Path",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2125,
+          28.6142
+        ],
+        [
+          77.206,
+          28.6145
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_101_kartavya_rafi_kartavya_janpath",
+      "source": "kartavya_rafi",
+      "target": "kartavya_janpath",
+      "distance": 636.0,
+      "roadType": "primary",
+      "roadName": "Kartavya Path",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2125,
+          28.6142
+        ],
+        [
+          77.219,
+          28.6138
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_102_kartavya_janpath_kartavya_rafi",
+      "source": "kartavya_janpath",
+      "target": "kartavya_rafi",
+      "distance": 636.0,
+      "roadType": "primary",
+      "roadName": "Kartavya Path",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.219,
+          28.6138
+        ],
+        [
+          77.2125,
+          28.6142
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_103_kartavya_janpath_kartavya_mansingh",
+      "source": "kartavya_janpath",
+      "target": "kartavya_mansingh",
+      "distance": 538.7,
+      "roadType": "primary",
+      "roadName": "Kartavya Path",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.219,
+          28.6138
+        ],
+        [
+          77.2245,
+          28.6134
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_104_kartavya_mansingh_kartavya_janpath",
+      "source": "kartavya_mansingh",
+      "target": "kartavya_janpath",
+      "distance": 538.7,
+      "roadType": "primary",
+      "roadName": "Kartavya Path",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2245,
+          28.6134
+        ],
+        [
+          77.219,
+          28.6138
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_105_kartavya_mansingh_india_gate_west",
+      "source": "kartavya_mansingh",
+      "target": "india_gate_west",
+      "distance": 206.3,
+      "roadType": "primary",
+      "roadName": "Kartavya Path",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2245,
+          28.6134
+        ],
+        [
+          77.2265,
+          28.6128
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_106_india_gate_west_kartavya_mansingh",
+      "source": "india_gate_west",
+      "target": "kartavya_mansingh",
+      "distance": 206.3,
+      "roadType": "primary",
+      "roadName": "Kartavya Path",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2265,
+          28.6128
+        ],
+        [
+          77.2245,
+          28.6134
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_107_india_gate_north_india_gate_east",
+      "source": "india_gate_north",
+      "target": "india_gate_east",
+      "distance": 403.8,
+      "roadType": "trunk",
+      "roadName": "C-Hexagon",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2295,
+          28.6155
+        ],
+        [
+          77.2325,
+          28.613
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_108_india_gate_east_india_gate_south",
+      "source": "india_gate_east",
+      "target": "india_gate_south",
+      "distance": 487.1,
+      "roadType": "trunk",
+      "roadName": "C-Hexagon",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2325,
+          28.613
+        ],
+        [
+          77.2295,
+          28.6095
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_109_india_gate_south_india_gate_west",
+      "source": "india_gate_south",
+      "target": "india_gate_west",
+      "distance": 469.5,
+      "roadType": "trunk",
+      "roadName": "C-Hexagon",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2295,
+          28.6095
+        ],
+        [
+          77.2265,
+          28.6128
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_110_india_gate_west_india_gate_north",
+      "source": "india_gate_west",
+      "target": "india_gate_north",
+      "distance": 419.4,
+      "roadType": "trunk",
+      "roadName": "C-Hexagon",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2265,
+          28.6128
+        ],
+        [
+          77.2295,
+          28.6155
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_111_india_gate_west_india_gate_center",
+      "source": "india_gate_west",
+      "target": "india_gate_center",
+      "distance": 293.1,
+      "roadType": "service",
+      "roadName": "Memorial Promenade",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2265,
+          28.6128
+        ],
+        [
+          77.2295,
+          28.6129
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_112_india_gate_center_india_gate_west",
+      "source": "india_gate_center",
+      "target": "india_gate_west",
+      "distance": 293.1,
+      "roadType": "service",
+      "roadName": "Memorial Promenade",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2295,
+          28.6129
+        ],
+        [
+          77.2265,
+          28.6128
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_113_india_gate_east_india_gate_center",
+      "source": "india_gate_east",
+      "target": "india_gate_center",
+      "distance": 293.1,
+      "roadType": "service",
+      "roadName": "Memorial Promenade",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2325,
+          28.613
+        ],
+        [
+          77.2295,
+          28.6129
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_114_india_gate_center_india_gate_east",
+      "source": "india_gate_center",
+      "target": "india_gate_east",
+      "distance": 293.1,
+      "roadType": "service",
+      "roadName": "Memorial Promenade",
+      "speedLimit": 15,
+      "geometry": [
+        [
+          77.2295,
+          28.6129
+        ],
+        [
+          77.2325,
+          28.613
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_115_india_gate_east_purana_qila",
+      "source": "india_gate_east",
+      "target": "purana_qila",
+      "distance": 916.5,
+      "roadType": "primary",
+      "roadName": "Purana Qila Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2325,
+          28.613
+        ],
+        [
+          77.241,
+          28.6095
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_116_purana_qila_india_gate_east",
+      "source": "purana_qila",
+      "target": "india_gate_east",
+      "distance": 916.5,
+      "roadType": "primary",
+      "roadName": "Purana Qila Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.241,
+          28.6095
+        ],
+        [
+          77.2325,
+          28.613
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_117_pragati_maidan_gate_bhairon_marg",
+      "source": "pragati_maidan_gate",
+      "target": "bhairon_marg",
+      "distance": 963.3,
+      "roadType": "trunk",
+      "roadName": "Bhairon Marg",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2415,
+          28.6186
+        ],
+        [
+          77.245,
+          28.6105
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_118_bhairon_marg_pragati_maidan_gate",
+      "source": "bhairon_marg",
+      "target": "pragati_maidan_gate",
+      "distance": 963.3,
+      "roadType": "trunk",
+      "roadName": "Bhairon Marg",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.245,
+          28.6105
+        ],
+        [
+          77.2415,
+          28.6186
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_119_bhairon_marg_purana_qila",
+      "source": "bhairon_marg",
+      "target": "purana_qila",
+      "distance": 406.0,
+      "roadType": "trunk",
+      "roadName": "Mathura Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.245,
+          28.6105
+        ],
+        [
+          77.241,
+          28.6095
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_120_purana_qila_bhairon_marg",
+      "source": "purana_qila",
+      "target": "bhairon_marg",
+      "distance": 406.0,
+      "roadType": "trunk",
+      "roadName": "Mathura Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.241,
+          28.6095
+        ],
+        [
+          77.245,
+          28.6105
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_121_purana_qila_subramaniam_bharti",
+      "source": "purana_qila",
+      "target": "subramaniam_bharti",
+      "distance": 1070.5,
+      "roadType": "trunk",
+      "roadName": "Mathura Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.241,
+          28.6095
+        ],
+        [
+          77.232,
+          28.604
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_122_subramaniam_bharti_purana_qila",
+      "source": "subramaniam_bharti",
+      "target": "purana_qila",
+      "distance": 1070.5,
+      "roadType": "trunk",
+      "roadName": "Mathura Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.232,
+          28.604
+        ],
+        [
+          77.241,
+          28.6095
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_123_india_gate_south_shahjahan_crossing",
+      "source": "india_gate_south",
+      "target": "shahjahan_crossing",
+      "distance": 798.8,
+      "roadType": "primary",
+      "roadName": "Shahjahan Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2295,
+          28.6095
+        ],
+        [
+          77.225,
+          28.6035
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_124_shahjahan_crossing_india_gate_south",
+      "source": "shahjahan_crossing",
+      "target": "india_gate_south",
+      "distance": 798.8,
+      "roadType": "primary",
+      "roadName": "Shahjahan Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.225,
+          28.6035
+        ],
+        [
+          77.2295,
+          28.6095
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_125_shahjahan_crossing_khan_market_hub",
+      "source": "shahjahan_crossing",
+      "target": "khan_market_hub",
+      "distance": 405.9,
+      "roadType": "secondary",
+      "roadName": "Humayun Road",
+      "speedLimit": 35,
+      "geometry": [
+        [
+          77.225,
+          28.6035
+        ],
+        [
+          77.227,
+          28.6003
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_126_khan_market_hub_shahjahan_crossing",
+      "source": "khan_market_hub",
+      "target": "shahjahan_crossing",
+      "distance": 405.9,
+      "roadType": "secondary",
+      "roadName": "Humayun Road",
+      "speedLimit": 35,
+      "geometry": [
+        [
+          77.227,
+          28.6003
+        ],
+        [
+          77.225,
+          28.6035
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_127_subramaniam_bharti_khan_market_hub",
+      "source": "subramaniam_bharti",
+      "target": "khan_market_hub",
+      "distance": 638.4,
+      "roadType": "primary",
+      "roadName": "Subramaniam Bharti Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.232,
+          28.604
+        ],
+        [
+          77.227,
+          28.6003
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_128_khan_market_hub_subramaniam_bharti",
+      "source": "khan_market_hub",
+      "target": "subramaniam_bharti",
+      "distance": 638.4,
+      "roadType": "primary",
+      "roadName": "Subramaniam Bharti Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.227,
+          28.6003
+        ],
+        [
+          77.232,
+          28.604
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_129_shahjahan_crossing_prithviraj_circle",
+      "source": "shahjahan_crossing",
+      "target": "prithviraj_circle",
+      "distance": 786.4,
+      "roadType": "primary",
+      "roadName": "Prithviraj Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.225,
+          28.6035
+        ],
+        [
+          77.218,
+          28.6
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_130_prithviraj_circle_shahjahan_crossing",
+      "source": "prithviraj_circle",
+      "target": "shahjahan_crossing",
+      "distance": 786.4,
+      "roadType": "primary",
+      "roadName": "Prithviraj Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.218,
+          28.6
+        ],
+        [
+          77.225,
+          28.6035
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_131_prithviraj_circle_lodhi_garden",
+      "source": "prithviraj_circle",
+      "target": "lodhi_garden",
+      "distance": 792.0,
+      "roadType": "secondary",
+      "roadName": "Amrita Shergill Marg",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.218,
+          28.6
+        ],
+        [
+          77.2195,
+          28.593
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_132_lodhi_garden_prithviraj_circle",
+      "source": "lodhi_garden",
+      "target": "prithviraj_circle",
+      "distance": 792.0,
+      "roadType": "secondary",
+      "roadName": "Amrita Shergill Marg",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2195,
+          28.593
+        ],
+        [
+          77.218,
+          28.6
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_133_khan_market_hub_lodhi_colony_hub",
+      "source": "khan_market_hub",
+      "target": "lodhi_colony_hub",
+      "distance": 1379.5,
+      "roadType": "primary",
+      "roadName": "Lodhi Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.227,
+          28.6003
+        ],
+        [
+          77.2217,
+          28.5888
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_134_lodhi_colony_hub_khan_market_hub",
+      "source": "lodhi_colony_hub",
+      "target": "khan_market_hub",
+      "distance": 1379.5,
+      "roadType": "primary",
+      "roadName": "Lodhi Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.2217,
+          28.5888
+        ],
+        [
+          77.227,
+          28.6003
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_135_lodhi_garden_lodhi_colony_hub",
+      "source": "lodhi_garden",
+      "target": "lodhi_colony_hub",
+      "distance": 514.0,
+      "roadType": "primary",
+      "roadName": "Lodhi Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.2195,
+          28.593
+        ],
+        [
+          77.2217,
+          28.5888
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_136_lodhi_colony_hub_lodhi_garden",
+      "source": "lodhi_colony_hub",
+      "target": "lodhi_garden",
+      "distance": 514.0,
+      "roadType": "primary",
+      "roadName": "Lodhi Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.2217,
+          28.5888
+        ],
+        [
+          77.2195,
+          28.593
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_137_lodhi_colony_hub_jor_bagh",
+      "source": "lodhi_colony_hub",
+      "target": "jor_bagh",
+      "distance": 757.1,
+      "roadType": "secondary",
+      "roadName": "Jor Bagh Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2217,
+          28.5888
+        ],
+        [
+          77.214,
+          28.588
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_138_jor_bagh_lodhi_colony_hub",
+      "source": "jor_bagh",
+      "target": "lodhi_colony_hub",
+      "distance": 757.1,
+      "roadType": "secondary",
+      "roadName": "Jor Bagh Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.214,
+          28.588
+        ],
+        [
+          77.2217,
+          28.5888
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_139_jor_bagh_prithviraj_circle",
+      "source": "jor_bagh",
+      "target": "prithviraj_circle",
+      "distance": 1390.3,
+      "roadType": "primary",
+      "roadName": "Safdarjung Road Link",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.214,
+          28.588
+        ],
+        [
+          77.218,
+          28.6
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_140_prithviraj_circle_jor_bagh",
+      "source": "prithviraj_circle",
+      "target": "jor_bagh",
+      "distance": 1390.3,
+      "roadType": "primary",
+      "roadName": "Safdarjung Road Link",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.218,
+          28.6
+        ],
+        [
+          77.214,
+          28.588
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_141_cp_outer_rad8_panchkuian_mid",
+      "source": "cp_outer_rad8",
+      "target": "panchkuian_mid",
+      "distance": 898.5,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.217,
+          28.6355
+        ],
+        [
+          77.209,
+          28.6395
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_142_panchkuian_mid_cp_outer_rad8",
+      "source": "panchkuian_mid",
+      "target": "cp_outer_rad8",
+      "distance": 898.5,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.209,
+          28.6395
+        ],
+        [
+          77.217,
+          28.6355
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_143_panchkuian_mid_jhandewalan",
+      "source": "panchkuian_mid",
+      "target": "jhandewalan",
+      "distance": 807.9,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.209,
+          28.6395
+        ],
+        [
+          77.2025,
+          28.644
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_144_jhandewalan_panchkuian_mid",
+      "source": "jhandewalan",
+      "target": "panchkuian_mid",
+      "distance": 807.9,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.2025,
+          28.644
+        ],
+        [
+          77.209,
+          28.6395
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_145_jhandewalan_db_gupta_rd",
+      "source": "jhandewalan",
+      "target": "db_gupta_rd",
+      "distance": 551.5,
+      "roadType": "trunk",
+      "roadName": "Rani Jhansi Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2025,
+          28.644
+        ],
+        [
+          77.198,
+          28.647
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_146_db_gupta_rd_jhandewalan",
+      "source": "db_gupta_rd",
+      "target": "jhandewalan",
+      "distance": 551.5,
+      "roadType": "trunk",
+      "roadName": "Rani Jhansi Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.198,
+          28.647
+        ],
+        [
+          77.2025,
+          28.644
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_147_db_gupta_rd_karol_bagh_hub",
+      "source": "db_gupta_rd",
+      "target": "karol_bagh_hub",
+      "distance": 891.4,
+      "roadType": "primary",
+      "roadName": "Desh Bandhu Gupta Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.198,
+          28.647
+        ],
+        [
+          77.1906,
+          28.6517
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_148_karol_bagh_hub_db_gupta_rd",
+      "source": "karol_bagh_hub",
+      "target": "db_gupta_rd",
+      "distance": 891.4,
+      "roadType": "primary",
+      "roadName": "Desh Bandhu Gupta Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.1906,
+          28.6517
+        ],
+        [
+          77.198,
+          28.647
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_149_ndls_paharganj_panchkuian_mid",
+      "source": "ndls_paharganj",
+      "target": "panchkuian_mid",
+      "distance": 818.7,
+      "roadType": "secondary",
+      "roadName": "Basant Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2165,
+          28.6428
+        ],
+        [
+          77.209,
+          28.6395
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_150_panchkuian_mid_ndls_paharganj",
+      "source": "panchkuian_mid",
+      "target": "ndls_paharganj",
+      "distance": 818.7,
+      "roadType": "secondary",
+      "roadName": "Basant Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.209,
+          28.6395
+        ],
+        [
+          77.2165,
+          28.6428
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_151_vijay_chowk_teen_murti",
+      "source": "vijay_chowk",
+      "target": "teen_murti",
+      "distance": 1368.7,
+      "roadType": "secondary",
+      "roadName": "South Avenue Road",
+      "speedLimit": 35,
+      "geometry": [
+        [
+          77.206,
+          28.6145
+        ],
+        [
+          77.201,
+          28.603
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_152_teen_murti_vijay_chowk",
+      "source": "teen_murti",
+      "target": "vijay_chowk",
+      "distance": 1368.7,
+      "roadType": "secondary",
+      "roadName": "South Avenue Road",
+      "speedLimit": 35,
+      "geometry": [
+        [
+          77.201,
+          28.603
+        ],
+        [
+          77.206,
+          28.6145
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_153_teen_murti_race_course",
+      "source": "teen_murti",
+      "target": "race_course",
+      "distance": 849.3,
+      "roadType": "primary",
+      "roadName": "Teen Murti Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.201,
+          28.603
+        ],
+        [
+          77.209,
+          28.6
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_154_race_course_teen_murti",
+      "source": "race_course",
+      "target": "teen_murti",
+      "distance": 849.3,
+      "roadType": "primary",
+      "roadName": "Teen Murti Marg",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.209,
+          28.6
+        ],
+        [
+          77.201,
+          28.603
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_155_race_course_prithviraj_circle",
+      "source": "race_course",
+      "target": "prithviraj_circle",
+      "distance": 878.6,
+      "roadType": "primary",
+      "roadName": "Tuglak Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.209,
+          28.6
+        ],
+        [
+          77.218,
+          28.6
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_156_prithviraj_circle_race_course",
+      "source": "prithviraj_circle",
+      "target": "race_course",
+      "distance": 878.6,
+      "roadType": "primary",
+      "roadName": "Tuglak Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.218,
+          28.6
+        ],
+        [
+          77.209,
+          28.6
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_157_teen_murti_chanakyapuri_hub",
+      "source": "teen_murti",
+      "target": "chanakyapuri_hub",
+      "distance": 1265.0,
+      "roadType": "primary",
+      "roadName": "Kautilya Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.201,
+          28.603
+        ],
+        [
+          77.1892,
+          28.5983
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_158_chanakyapuri_hub_teen_murti",
+      "source": "chanakyapuri_hub",
+      "target": "teen_murti",
+      "distance": 1265.0,
+      "roadType": "primary",
+      "roadName": "Kautilya Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.1892,
+          28.5983
+        ],
+        [
+          77.201,
+          28.603
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_159_chanakyapuri_hub_shanti_path",
+      "source": "chanakyapuri_hub",
+      "target": "shanti_path",
+      "distance": 792.7,
+      "roadType": "trunk",
+      "roadName": "Shanti Path",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.1892,
+          28.5983
+        ],
+        [
+          77.193,
+          28.592
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_160_shanti_path_chanakyapuri_hub",
+      "source": "shanti_path",
+      "target": "chanakyapuri_hub",
+      "distance": 792.7,
+      "roadType": "trunk",
+      "roadName": "Shanti Path",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.193,
+          28.592
+        ],
+        [
+          77.1892,
+          28.5983
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_161_shanti_path_jor_bagh",
+      "source": "shanti_path",
+      "target": "jor_bagh",
+      "distance": 2098.1,
+      "roadType": "primary",
+      "roadName": "Brigadier Hoshiar Singh Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.193,
+          28.592
+        ],
+        [
+          77.214,
+          28.588
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_162_jor_bagh_shanti_path",
+      "source": "jor_bagh",
+      "target": "shanti_path",
+      "distance": 2098.1,
+      "roadType": "primary",
+      "roadName": "Brigadier Hoshiar Singh Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.214,
+          28.588
+        ],
+        [
+          77.193,
+          28.592
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    }
+  ]
+}
