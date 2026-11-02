@@ -95,10 +95,12 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   const waypointsRef = useRef(waypoints);
   waypointsRef.current = waypoints;
 
+  const routeResultRef = useRef(routeResult);
+  routeResultRef.current = routeResult;
+
   // Synchronize GeoJSON source and canvas icon textures for WebGL markers
   const syncWaypointsSource = (mapInstance: maplibregl.Map, currentWaypoints: WaypointInfo[]) => {
-    if (!mapInstance.isStyleLoaded()) return;
-    const source = mapInstance.getSource('waypoints') as maplibregl.GeoJSONSource;
+    const source = mapInstance.getSource('waypoints') as maplibregl.GeoJSONSource | undefined;
     if (!source) return;
 
     currentWaypoints.forEach((wp) => {
@@ -168,6 +170,43 @@ export const MapComponent: React.FC<MapComponentProps> = ({
       type: 'FeatureCollection',
       features,
     });
+  };
+
+  // Synchronize GeoJSON source for calculated route line and fit camera bounds
+  const syncRoutePathSource = (mapInstance: maplibregl.Map, currentRoute: FullRouteResult | null) => {
+    const source = mapInstance.getSource('route-path') as maplibregl.GeoJSONSource | undefined;
+    if (!source) return;
+
+    if (!currentRoute || !currentRoute.fullCoordinates || currentRoute.fullCoordinates.length < 2) {
+      source.setData({ type: 'FeatureCollection', features: [] });
+      return;
+    }
+
+    source.setData({
+      type: 'FeatureCollection',
+      features: [
+        {
+          type: 'Feature' as const,
+          properties: {},
+          geometry: {
+            type: 'LineString' as const,
+            coordinates: currentRoute.fullCoordinates,
+          },
+        },
+      ],
+    });
+
+    // Auto-fit bounds with padding so the full calculated path is brought cleanly into view
+    try {
+      const coords = currentRoute.fullCoordinates;
+      if (coords.length >= 2) {
+        const bounds = new maplibregl.LngLatBounds(coords[0], coords[0]);
+        coords.forEach((pt) => bounds.extend(pt));
+        mapInstance.fitBounds(bounds, { padding: 80, maxZoom: 15, duration: 600 });
+      }
+    } catch (e) {
+      console.warn('Could not fit bounds for route:', e);
+    }
   };
 
   // Initialize MapLibre
@@ -257,20 +296,20 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         data: { type: 'FeatureCollection', features: [] },
       });
 
-      // Route Casing
+      // Route Casing (Dark contrast outline)
       map.addLayer({
         id: 'route-path-casing',
         type: 'line',
         source: 'route-path',
         layout: { 'line-join': 'round', 'line-cap': 'round' },
         paint: {
-          'line-color': '#1e3a8a',
-          'line-width': 9,
-          'line-opacity': 0.65,
+          'line-color': '#0f172a',
+          'line-width': 10,
+          'line-opacity': 0.95,
         },
       });
 
-      // Route Core Line
+      // Route Core Line (Vibrant Electric Blue)
       map.addLayer({
         id: 'route-path-line',
         type: 'line',
@@ -278,7 +317,21 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         layout: { 'line-join': 'round', 'line-cap': 'round' },
         paint: {
           'line-color': '#2563eb',
-          'line-width': 5,
+          'line-width': 6,
+          'line-opacity': 1.0,
+        },
+      });
+
+      // Route Inner Highlight (Bright inner spine for maximum visibility)
+      map.addLayer({
+        id: 'route-path-inner',
+        type: 'line',
+        source: 'route-path',
+        layout: { 'line-join': 'round', 'line-cap': 'round' },
+        paint: {
+          'line-color': '#93c5fd',
+          'line-width': 2.5,
+          'line-opacity': 1.0,
         },
       });
 
@@ -397,8 +450,9 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         popup.remove();
       });
 
-      // Synchronize waypoints immediately if already present
+      // Synchronize waypoints and route path immediately if already present
       syncWaypointsSource(map, waypointsRef.current);
+      syncRoutePathSource(map, routeResultRef.current);
 
       // Single Unified Click Handler: reads latest mode from ref
       map.on('click', (e) => {
@@ -468,9 +522,9 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   // Update Road Network Layer
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded() || !graphData) return;
+    if (!map || !graphData) return;
 
-    const source = map.getSource('road-network') as maplibregl.GeoJSONSource;
+    const source = map.getSource('road-network') as maplibregl.GeoJSONSource | undefined;
     if (!source) return;
 
     const features = graphData.edges.map((edge) => {
@@ -517,38 +571,18 @@ export const MapComponent: React.FC<MapComponentProps> = ({
 
   // Update Calculated Route Path
   useEffect(() => {
+    routeResultRef.current = routeResult;
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
-
-    const source = map.getSource('route-path') as maplibregl.GeoJSONSource;
-    if (!source) return;
-
-    if (!routeResult || routeResult.fullCoordinates.length < 2) {
-      source.setData({ type: 'FeatureCollection', features: [] });
-      return;
-    }
-
-    source.setData({
-      type: 'FeatureCollection',
-      features: [
-        {
-          type: 'Feature' as const,
-          properties: {},
-          geometry: {
-            type: 'LineString' as const,
-            coordinates: routeResult.fullCoordinates,
-          },
-        },
-      ],
-    });
+    if (!map) return;
+    syncRoutePathSource(map, routeResult);
   }, [routeResult]);
 
   // Update Search Node Visualization Trace
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !map.isStyleLoaded()) return;
+    if (!map) return;
 
-    const source = map.getSource('search-trace') as maplibregl.GeoJSONSource;
+    const source = map.getSource('search-trace') as maplibregl.GeoJSONSource | undefined;
     if (!source) return;
 
     if (!stepTrace || stepTrace.length === 0) {
