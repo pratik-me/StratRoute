@@ -1,6 +1,6 @@
 # Intelligent Delivery Route Optimizer (IDRO)
 
-An academic Artificial Intelligence and heuristic search project demonstrating, visualizing, and benchmarking AI search algorithms and local optimization techniques on a real-world road network (New Delhi, India).
+An academic Artificial Intelligence and heuristic search project demonstrating, visualizing, and benchmarking AI search algorithms and local optimization techniques on a real-world road network (Whole Delhi / NCT of Delhi, India).
 
 Built for an undergraduate/postgraduate **Artificial Intelligence** course evaluation.
 
@@ -8,7 +8,7 @@ Built for an undergraduate/postgraduate **Artificial Intelligence** course evalu
 
 ## 1. Project Overview
 
-The **Intelligent Delivery Route Optimizer** demonstrates how classical and heuristic AI search algorithms behave when applied to real-world geospatial road graphs. The application provides an interactive map interface (inspired by BBBike.org) centered on New Delhi, India, allowing users to:
+The **Intelligent Delivery Route Optimizer** demonstrates how classical and heuristic AI search algorithms behave when applied to real-world geospatial road graphs. The application provides an interactive map interface (inspired by BBBike.org) centered on Whole Delhi (NCT of Delhi), India, allowing users to:
 
 1. Select a starting warehouse location.
 2. Add multiple intermediate delivery locations in arbitrary order.

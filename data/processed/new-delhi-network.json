@@ -1,20 +1,20 @@
 {
   "metadata": {
-    "name": "New Delhi Drivable Road Network",
-    "city": "New Delhi, India",
-    "nodeCount": 60,
-    "edgeCount": 162,
+    "name": "Delhi Drivable Road Network (NCT of Delhi)",
+    "city": "Delhi, India",
+    "nodeCount": 136,
+    "edgeCount": 378,
     "bbox": [
-      77.1892,
-      28.588,
-      77.245,
-      28.6517
+      76.985,
+      28.498,
+      77.332,
+      28.852
     ],
     "center": [
-      77.2167,
-      28.6328
+      77.16,
+      28.63
     ],
-    "maxSpeedKmh": 60
+    "maxSpeedKmh": 80
   },
   "nodes": [
     {
@@ -45,7 +45,7 @@
       "id": "cp_inner_rad4",
       "lat": 28.6312,
       "lon": 77.2208,
-      "name": "Inner Circle - Radial 4 (Kasturba Gandhi Marg)"
+      "name": "Inner Circle - Radial 4 (KG Marg)"
     },
     {
       "id": "cp_inner_rad5",
@@ -57,13 +57,13 @@
       "id": "cp_inner_rad6",
       "lat": 28.6318,
       "lon": 77.2178,
-      "name": "Inner Circle - Radial 6 (Sansad Marg / Parliament St)"
+      "name": "Inner Circle - Radial 6 (Sansad Marg)"
     },
     {
       "id": "cp_inner_rad7",
       "lat": 28.633,
       "lon": 77.2176,
-      "name": "Inner Circle - Radial 7 (Baba Kharak Singh Marg)"
+      "name": "Inner Circle - Radial 7 (BKS Marg)"
     },
     {
       "id": "cp_inner_rad8",
@@ -123,13 +123,13 @@
       "id": "ndls_paharganj",
       "lat": 28.6428,
       "lon": 77.2165,
-      "name": "NDLS Station - Paharganj Entrance"
+      "name": "New Delhi Railway Station - Paharganj Entry"
     },
     {
       "id": "ndls_ajmeri_gate",
       "lat": 28.6415,
       "lon": 77.2225,
-      "name": "NDLS Station - Ajmeri Gate Logistics"
+      "name": "New Delhi Railway Station - Ajmeri Gate Logistics"
     },
     {
       "id": "bhavbhuti_marg",
@@ -183,7 +183,7 @@
       "id": "kg_tolstoy",
       "lat": 28.6252,
       "lon": 77.223,
-      "name": "Kasturba Gandhi Marg - Tolstoy Crossing"
+      "name": "KG Marg - Tolstoy Crossing"
     },
     {
       "id": "barakhamba_tolstoy",
@@ -201,7 +201,7 @@
       "id": "ashoka_rd_windsor",
       "lat": 28.6205,
       "lon": 77.2135,
-      "name": "Ashoka Road - Patel Chowk"
+      "name": "Ashoka Road - Patel Chowk Link"
     },
     {
       "id": "patel_chowk",
@@ -219,7 +219,7 @@
       "id": "vijay_chowk",
       "lat": 28.6145,
       "lon": 77.206,
-      "name": "Vijay Chowk / Rashtrapati Bhavan West"
+      "name": "Vijay Chowk / Rashtrapati Bhavan"
     },
     {
       "id": "kartavya_rafi",
@@ -243,13 +243,13 @@
       "id": "india_gate_north",
       "lat": 28.6155,
       "lon": 77.2295,
-      "name": "C-Hexagon - Tilak Marg / Kasturba Gandhi Exit"
+      "name": "C-Hexagon - Tilak Marg Exit"
     },
     {
       "id": "india_gate_east",
       "lat": 28.613,
       "lon": 77.2325,
-      "name": "C-Hexagon - Purana Qila Road Entry"
+      "name": "C-Hexagon - Purana Qila Road"
     },
     {
       "id": "india_gate_center",
@@ -261,7 +261,7 @@
       "id": "india_gate_south",
       "lat": 28.6095,
       "lon": 77.2295,
-      "name": "C-Hexagon - Shahjahan Rd / Pandara Rd Exit"
+      "name": "C-Hexagon - Shahjahan Rd Exit"
     },
     {
       "id": "india_gate_west",
@@ -273,7 +273,19 @@
       "id": "pragati_maidan_gate",
       "lat": 28.6186,
       "lon": 77.2415,
-      "name": "Bharat Mandapam / Pragati Maidan Gate"
+      "name": "Bharat Mandapam / Pragati Maidan"
+    },
+    {
+      "id": "ito_chowk",
+      "lat": 28.6285,
+      "lon": 77.241,
+      "name": "ITO Junction / Bahadur Shah Zafar Marg"
+    },
+    {
+      "id": "rajghat_chowk",
+      "lat": 28.641,
+      "lon": 77.248,
+      "name": "Rajghat Memorial - Ring Road Junction"
     },
     {
       "id": "bhairon_marg",
@@ -285,13 +297,7 @@
       "id": "purana_qila",
       "lat": 28.6095,
       "lon": 77.241,
-      "name": "Mathura Road - Purana Qila Crossing"
-    },
-    {
-      "id": "subramaniam_bharti",
-      "lat": 28.604,
-      "lon": 77.232,
-      "name": "Subramaniam Bharti Marg Junction"
+      "name": "Mathura Road - Purana Qila"
     },
     {
       "id": "khan_market_hub",
@@ -303,13 +309,13 @@
       "id": "shahjahan_crossing",
       "lat": 28.6035,
       "lon": 77.225,
-      "name": "Shahjahan Road - Humayun Rd Crossing"
+      "name": "Shahjahan Road - Humayun Rd"
     },
     {
       "id": "prithviraj_circle",
       "lat": 28.6,
       "lon": 77.218,
-      "name": "Prithviraj Road - Aurangzeb Rd Roundabout"
+      "name": "Prithviraj Road Roundabout"
     },
     {
       "id": "lodhi_garden",
@@ -328,6 +334,24 @@
       "lat": 28.588,
       "lon": 77.214,
       "name": "Jor Bagh Metro Logistics"
+    },
+    {
+      "id": "chanakyapuri_hub",
+      "lat": 28.5983,
+      "lon": 77.1892,
+      "name": "Chanakyapuri Diplomatic Enclave"
+    },
+    {
+      "id": "shanti_path",
+      "lat": 28.592,
+      "lon": 77.193,
+      "name": "Shanti Path Avenue"
+    },
+    {
+      "id": "teen_murti",
+      "lat": 28.603,
+      "lon": 77.201,
+      "name": "Teen Murti Marg Roundabout"
     },
     {
       "id": "karol_bagh_hub",
@@ -351,31 +375,463 @@
       "id": "panchkuian_mid",
       "lat": 28.6395,
       "lon": 77.209,
-      "name": "Panchkuian Road Commercial Center"
+      "name": "Panchkuian Road Center"
     },
     {
-      "id": "chanakyapuri_hub",
-      "lat": 28.5983,
-      "lon": 77.1892,
-      "name": "Chanakyapuri Diplomatic Enclave"
+      "id": "patel_nagar",
+      "lat": 28.6475,
+      "lon": 77.172,
+      "name": "Patel Nagar Commercial Hub"
     },
     {
-      "id": "shanti_path",
-      "lat": 28.592,
+      "id": "shadipur_metro",
+      "lat": 28.651,
+      "lon": 77.158,
+      "name": "Shadipur Metro / West Patel Nagar"
+    },
+    {
+      "id": "isbt_kashmere_gate",
+      "lat": 28.6675,
+      "lon": 77.2285,
+      "name": "Kashmere Gate ISBT Transit Hub"
+    },
+    {
+      "id": "civil_lines",
+      "lat": 28.681,
+      "lon": 77.224,
+      "name": "Civil Lines / Delhi University South"
+    },
+    {
+      "id": "timarpur_chowk",
+      "lat": 28.691,
+      "lon": 77.218,
+      "name": "Timarpur Ring Road Crossing"
+    },
+    {
+      "id": "model_town",
+      "lat": 28.7025,
       "lon": 77.193,
-      "name": "Shanti Path Avenue"
+      "name": "Model Town Metro / Ring Road"
     },
     {
-      "id": "teen_murti",
-      "lat": 28.603,
+      "id": "azadpur_mandi",
+      "lat": 28.713,
+      "lon": 77.176,
+      "name": "Azadpur Mandi Logistics Terminal"
+    },
+    {
+      "id": "shalimar_bagh",
+      "lat": 28.708,
+      "lon": 77.16,
+      "name": "Shalimar Bagh Ring Road Junction"
+    },
+    {
+      "id": "pitampura_tv_tower",
+      "lat": 28.694,
+      "lon": 77.15,
+      "name": "Netaji Subhash Place / Pitampura Hub"
+    },
+    {
+      "id": "shakurpur_chowk",
+      "lat": 28.688,
+      "lon": 77.148,
+      "name": "Shakurpur Ring Road Crossing"
+    },
+    {
+      "id": "mukarba_chowk",
+      "lat": 28.735,
+      "lon": 77.155,
+      "name": "Mukarba Chowk (NH44 / Outer Ring Rd)"
+    },
+    {
+      "id": "alipur_gt_karnal",
+      "lat": 28.795,
+      "lon": 77.135,
+      "name": "Alipur NH44 Freight Corridor"
+    },
+    {
+      "id": "narela_industrial_hub",
+      "lat": 28.852,
+      "lon": 77.098,
+      "name": "Narela Industrial Logistics Zone"
+    },
+    {
+      "id": "burari_chowk",
+      "lat": 28.742,
       "lon": 77.201,
-      "name": "Teen Murti Marg Roundabout"
+      "name": "Burari Outer Ring Road Interchange"
     },
     {
-      "id": "race_course",
-      "lat": 28.6,
-      "lon": 77.209,
-      "name": "Lok Kalyan Marg / Race Course"
+      "id": "wazirabad_signature_bridge",
+      "lat": 28.718,
+      "lon": 77.232,
+      "name": "Signature Bridge Yamuna Crossing"
+    },
+    {
+      "id": "rohini_sec3",
+      "lat": 28.704,
+      "lon": 77.1235,
+      "name": "Rohini Madhuban Chowk"
+    },
+    {
+      "id": "rohini_sec14",
+      "lat": 28.718,
+      "lon": 77.112,
+      "name": "Rohini Sector 14 Metro Hub"
+    },
+    {
+      "id": "rohini_sec22",
+      "lat": 28.729,
+      "lon": 77.085,
+      "name": "Rohini Sector 22 / Avantika Terminal"
+    },
+    {
+      "id": "punjabi_bagh_roundabout",
+      "lat": 28.672,
+      "lon": 77.135,
+      "name": "Punjabi Bagh Club Roundabout (Rohtak Rd)"
+    },
+    {
+      "id": "peera_garhi_chowk",
+      "lat": 28.6775,
+      "lon": 77.093,
+      "name": "Peera Garhi Chowk (NH9 Rohtak Rd / Outer Ring)"
+    },
+    {
+      "id": "paschim_vihar_hub",
+      "lat": 28.665,
+      "lon": 77.105,
+      "name": "Paschim Vihar Commercial Hub"
+    },
+    {
+      "id": "nangloi_chowk",
+      "lat": 28.682,
+      "lon": 77.06,
+      "name": "Nangloi Rohtak Road Junction"
+    },
+    {
+      "id": "mundka_industrial_area",
+      "lat": 28.684,
+      "lon": 77.025,
+      "name": "Mundka Industrial Logistics Area"
+    },
+    {
+      "id": "raja_garden_flyover",
+      "lat": 28.652,
+      "lon": 77.127,
+      "name": "Raja Garden Flyover (Ring Road)"
+    },
+    {
+      "id": "rajouri_garden_hub",
+      "lat": 28.648,
+      "lon": 77.121,
+      "name": "Rajouri Garden Commercial District"
+    },
+    {
+      "id": "keshopur_chowk",
+      "lat": 28.648,
+      "lon": 77.089,
+      "name": "Keshopur Outer Ring Road Depot"
+    },
+    {
+      "id": "tilak_nagar_chowk",
+      "lat": 28.636,
+      "lon": 77.096,
+      "name": "Tilak Nagar Najafgarh Road Crossing"
+    },
+    {
+      "id": "janakpuri_district_centre",
+      "lat": 28.629,
+      "lon": 77.078,
+      "name": "Janakpuri District Centre Hub"
+    },
+    {
+      "id": "uttam_nagar_terminal",
+      "lat": 28.622,
+      "lon": 77.054,
+      "name": "Uttam Nagar East Terminal"
+    },
+    {
+      "id": "naraina_industrial_area",
+      "lat": 28.625,
+      "lon": 77.139,
+      "name": "Naraina Industrial Area (Ring Road)"
+    },
+    {
+      "id": "mayapuri_chowk",
+      "lat": 28.636,
+      "lon": 77.128,
+      "name": "Mayapuri Industrial Corridor"
+    },
+    {
+      "id": "delhi_cantt_station",
+      "lat": 28.601,
+      "lon": 77.128,
+      "name": "Delhi Cantt Logistics Terminal"
+    },
+    {
+      "id": "dhaula_kuan_interchange",
+      "lat": 28.5925,
+      "lon": 77.162,
+      "name": "Dhaula Kuan Mega Interchange"
+    },
+    {
+      "id": "moti_bagh",
+      "lat": 28.581,
+      "lon": 77.168,
+      "name": "Moti Bagh Ring Road Junction"
+    },
+    {
+      "id": "bhikaji_cama_place",
+      "lat": 28.568,
+      "lon": 77.186,
+      "name": "Bhikaji Cama Place Business District"
+    },
+    {
+      "id": "dwarka_mor",
+      "lat": 28.618,
+      "lon": 77.032,
+      "name": "Dwarka Mor Intersection"
+    },
+    {
+      "id": "najafgarh_terminal",
+      "lat": 28.612,
+      "lon": 76.985,
+      "name": "Najafgarh Regional Freight Terminal"
+    },
+    {
+      "id": "dwarka_sec6",
+      "lat": 28.591,
+      "lon": 77.062,
+      "name": "Dwarka Central Market (Sector 6)"
+    },
+    {
+      "id": "dwarka_sec10",
+      "lat": 28.581,
+      "lon": 77.056,
+      "name": "Dwarka District Centre (Sector 10)"
+    },
+    {
+      "id": "dwarka_sec21_isbt",
+      "lat": 28.5525,
+      "lon": 77.058,
+      "name": "Dwarka Sector 21 Transportation Hub"
+    },
+    {
+      "id": "igi_airport_t3",
+      "lat": 28.556,
+      "lon": 77.099,
+      "name": "IGI Airport Terminal 3 / Cargo Complex"
+    },
+    {
+      "id": "igi_airport_t1",
+      "lat": 28.568,
+      "lon": 77.121,
+      "name": "IGI Airport Terminal 1 / Palam Flyover"
+    },
+    {
+      "id": "mahipalpur_chowk",
+      "lat": 28.547,
+      "lon": 77.129,
+      "name": "Mahipalpur NH48 Airport Highway"
+    },
+    {
+      "id": "ina_market",
+      "lat": 28.577,
+      "lon": 77.211,
+      "name": "INA / Dilli Haat (Barapullah West)"
+    },
+    {
+      "id": "aiims_safdarjung",
+      "lat": 28.5695,
+      "lon": 77.2085,
+      "name": "AIIMS - Safdarjung Ring Road Junction"
+    },
+    {
+      "id": "hauz_khas_iit",
+      "lat": 28.546,
+      "lon": 77.195,
+      "name": "IIT Flyover / Hauz Khas (Outer Ring Rd)"
+    },
+    {
+      "id": "vasant_kunj_promenade",
+      "lat": 28.541,
+      "lon": 77.155,
+      "name": "Vasant Kunj Nelson Mandela Marg"
+    },
+    {
+      "id": "munirka_chowk",
+      "lat": 28.554,
+      "lon": 77.174,
+      "name": "Munirka Outer Ring Road Junction"
+    },
+    {
+      "id": "saket_district_centre",
+      "lat": 28.528,
+      "lon": 77.2185,
+      "name": "Saket District Centre & Healthcare Hub"
+    },
+    {
+      "id": "qutub_minar_mehrauli",
+      "lat": 28.524,
+      "lon": 77.185,
+      "name": "Qutub Minar / Mehrauli-Badarpur Rd"
+    },
+    {
+      "id": "panchsheel_enclave",
+      "lat": 28.544,
+      "lon": 77.215,
+      "name": "Panchsheel Enclave (Outer Ring Rd)"
+    },
+    {
+      "id": "chirag_delhi_flyover",
+      "lat": 28.543,
+      "lon": 77.228,
+      "name": "Chirag Delhi Flyover / BRT Crossing"
+    },
+    {
+      "id": "greater_kailash_m_block",
+      "lat": 28.549,
+      "lon": 77.238,
+      "name": "Greater Kailash Commercial Zone"
+    },
+    {
+      "id": "nehru_place_it_hub",
+      "lat": 28.5485,
+      "lon": 77.2515,
+      "name": "Nehru Place IT Hub (Outer Ring Rd)"
+    },
+    {
+      "id": "kalkaji_mandir_chowk",
+      "lat": 28.547,
+      "lon": 77.261,
+      "name": "Kalkaji Mandir Outer Ring Road"
+    },
+    {
+      "id": "modi_mill_flyover",
+      "lat": 28.558,
+      "lon": 77.268,
+      "name": "Modi Mill Flyover Okhla Link"
+    },
+    {
+      "id": "moolchand_flyover",
+      "lat": 28.568,
+      "lon": 77.2345,
+      "name": "Moolchand Underpass (Ring Road)"
+    },
+    {
+      "id": "lajpat_nagar_central",
+      "lat": 28.57,
+      "lon": 77.243,
+      "name": "Lajpat Nagar Central Market (Ring Rd)"
+    },
+    {
+      "id": "ashram_chowk",
+      "lat": 28.571,
+      "lon": 77.26,
+      "name": "Ashram Chowk Mega Interchange"
+    },
+    {
+      "id": "sarai_kale_khan_isbt",
+      "lat": 28.5895,
+      "lon": 77.256,
+      "name": "Sarai Kale Khan ISBT & Nizamuddin Station"
+    },
+    {
+      "id": "okhla_industrial_area_ph3",
+      "lat": 28.536,
+      "lon": 77.272,
+      "name": "Okhla Industrial Phase-3 Logistics Hub"
+    },
+    {
+      "id": "sarita_vihar_underpass",
+      "lat": 28.531,
+      "lon": 77.294,
+      "name": "Sarita Vihar Mathura Road (NH19)"
+    },
+    {
+      "id": "badarpur_border_terminal",
+      "lat": 28.498,
+      "lon": 77.304,
+      "name": "Badarpur Border Freight Hub (NH19)"
+    },
+    {
+      "id": "ito_yamuna_bridge",
+      "lat": 28.629,
+      "lon": 77.253,
+      "name": "Vikas Marg Yamuna Bridge Entry"
+    },
+    {
+      "id": "laxmi_nagar_metro",
+      "lat": 28.631,
+      "lon": 77.277,
+      "name": "Laxmi Nagar Commercial Hub"
+    },
+    {
+      "id": "preet_vihar_hub",
+      "lat": 28.638,
+      "lon": 77.295,
+      "name": "Preet Vihar Vikas Marg East"
+    },
+    {
+      "id": "anand_vihar_isbt",
+      "lat": 28.6475,
+      "lon": 77.316,
+      "name": "Anand Vihar ISBT & Railway Mega Hub"
+    },
+    {
+      "id": "akshardham_setu",
+      "lat": 28.618,
+      "lon": 77.279,
+      "name": "Akshardham Setu (Delhi-Meerut Expy)"
+    },
+    {
+      "id": "mayur_vihar_phase1",
+      "lat": 28.601,
+      "lon": 77.293,
+      "name": "Mayur Vihar Phase-1 Noida Link"
+    },
+    {
+      "id": "mayur_vihar_phase3",
+      "lat": 28.608,
+      "lon": 77.332,
+      "name": "Mayur Vihar Phase-3 East Border"
+    },
+    {
+      "id": "dnd_flyway_toll",
+      "lat": 28.578,
+      "lon": 77.288,
+      "name": "DND Flyway Toll Plaza"
+    },
+    {
+      "id": "shastri_park_chowk",
+      "lat": 28.67,
+      "lon": 77.252,
+      "name": "Shastri Park IT Park Interchange"
+    },
+    {
+      "id": "seelampur_chowk",
+      "lat": 28.669,
+      "lon": 77.266,
+      "name": "Seelampur GT Road Junction"
+    },
+    {
+      "id": "shahdara_junction",
+      "lat": 28.673,
+      "lon": 77.289,
+      "name": "Shahdara Grand Trunk Road Junction"
+    },
+    {
+      "id": "dilshad_garden_hub",
+      "lat": 28.678,
+      "lon": 77.319,
+      "name": "Dilshad Garden Terminal Hub"
+    },
+    {
+      "id": "khajuri_khas_chowk",
+      "lat": 28.715,
+      "lon": 77.265,
+      "name": "Khajuri Khas Wazirabad Road Crossing"
     }
   ],
   "edges": [
@@ -1015,7 +1471,7 @@
       "target": "cp_outer_rad4",
       "distance": 233.2,
       "roadType": "primary",
-      "roadName": "Kasturba Gandhi Marg Radial",
+      "roadName": "KG Marg Radial",
       "speedLimit": 40,
       "geometry": [
         [
@@ -1036,7 +1492,7 @@
       "target": "cp_inner_rad4",
       "distance": 233.2,
       "roadType": "primary",
-      "roadName": "Kasturba Gandhi Marg Radial",
+      "roadName": "KG Marg Radial",
       "speedLimit": 40,
       "geometry": [
         [
@@ -1141,7 +1597,7 @@
       "target": "cp_outer_rad7",
       "distance": 235.3,
       "roadType": "primary",
-      "roadName": "Baba Kharak Singh Marg Radial",
+      "roadName": "BKS Marg Radial",
       "speedLimit": 40,
       "geometry": [
         [
@@ -1162,7 +1618,7 @@
       "target": "cp_inner_rad7",
       "distance": 235.3,
       "roadType": "primary",
-      "roadName": "Baba Kharak Singh Marg Radial",
+      "roadName": "BKS Marg Radial",
       "speedLimit": 40,
       "geometry": [
         [
@@ -1640,7 +2096,49 @@
       "isBlocked": false
     },
     {
-      "id": "edge_61_cp_outer_rad3_barakhamba_mid",
+      "id": "edge_61_ddu_marg_ito_chowk",
+      "source": "ddu_marg",
+      "target": "ito_chowk",
+      "distance": 1390.5,
+      "roadType": "primary",
+      "roadName": "Deen Dayal Upadhyaya Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2285,
+          28.6345
+        ],
+        [
+          77.241,
+          28.6285
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_62_ito_chowk_ddu_marg",
+      "source": "ito_chowk",
+      "target": "ddu_marg",
+      "distance": 1390.5,
+      "roadType": "primary",
+      "roadName": "Deen Dayal Upadhyaya Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.241,
+          28.6285
+        ],
+        [
+          77.2285,
+          28.6345
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_63_cp_outer_rad3_barakhamba_mid",
       "source": "cp_outer_rad3",
       "target": "barakhamba_mid",
       "distance": 534.7,
@@ -1661,7 +2159,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_62_barakhamba_mid_cp_outer_rad3",
+      "id": "edge_64_barakhamba_mid_cp_outer_rad3",
       "source": "barakhamba_mid",
       "target": "cp_outer_rad3",
       "distance": 534.7,
@@ -1682,7 +2180,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_63_barakhamba_mid_barakhamba_tolstoy",
+      "id": "edge_65_barakhamba_mid_barakhamba_tolstoy",
       "source": "barakhamba_mid",
       "target": "barakhamba_tolstoy",
       "distance": 294.6,
@@ -1703,7 +2201,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_64_barakhamba_tolstoy_barakhamba_mid",
+      "id": "edge_66_barakhamba_tolstoy_barakhamba_mid",
       "source": "barakhamba_tolstoy",
       "target": "barakhamba_mid",
       "distance": 294.6,
@@ -1724,7 +2222,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_65_barakhamba_tolstoy_mandi_house_circle",
+      "id": "edge_67_barakhamba_tolstoy_mandi_house_circle",
       "source": "barakhamba_tolstoy",
       "target": "mandi_house_circle",
       "distance": 685.5,
@@ -1745,7 +2243,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_66_mandi_house_circle_barakhamba_tolstoy",
+      "id": "edge_68_mandi_house_circle_barakhamba_tolstoy",
       "source": "mandi_house_circle",
       "target": "barakhamba_tolstoy",
       "distance": 685.5,
@@ -1766,7 +2264,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_67_mandi_house_circle_sikandra_rd",
+      "id": "edge_69_mandi_house_circle_sikandra_rd",
       "source": "mandi_house_circle",
       "target": "sikandra_rd",
       "distance": 380.2,
@@ -1787,7 +2285,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_68_sikandra_rd_mandi_house_circle",
+      "id": "edge_70_sikandra_rd_mandi_house_circle",
       "source": "sikandra_rd",
       "target": "mandi_house_circle",
       "distance": 380.2,
@@ -1808,7 +2306,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_69_sikandra_rd_pragati_maidan_gate",
+      "id": "edge_71_sikandra_rd_pragati_maidan_gate",
       "source": "sikandra_rd",
       "target": "pragati_maidan_gate",
       "distance": 716.2,
@@ -1829,7 +2327,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_70_pragati_maidan_gate_sikandra_rd",
+      "id": "edge_72_pragati_maidan_gate_sikandra_rd",
       "source": "pragati_maidan_gate",
       "target": "sikandra_rd",
       "distance": 716.2,
@@ -1850,7 +2348,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_71_mandi_house_circle_tilak_marg_mandi",
+      "id": "edge_73_mandi_house_circle_tilak_marg_mandi",
       "source": "mandi_house_circle",
       "target": "tilak_marg_mandi",
       "distance": 364.3,
@@ -1871,7 +2369,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_72_tilak_marg_mandi_mandi_house_circle",
+      "id": "edge_74_tilak_marg_mandi_mandi_house_circle",
       "source": "tilak_marg_mandi",
       "target": "mandi_house_circle",
       "distance": 364.3,
@@ -1892,7 +2390,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_73_tilak_marg_mandi_india_gate_north",
+      "id": "edge_75_tilak_marg_mandi_india_gate_north",
       "source": "tilak_marg_mandi",
       "target": "india_gate_north",
       "distance": 974.1,
@@ -1913,7 +2411,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_74_india_gate_north_tilak_marg_mandi",
+      "id": "edge_76_india_gate_north_tilak_marg_mandi",
       "source": "india_gate_north",
       "target": "tilak_marg_mandi",
       "distance": 974.1,
@@ -1934,7 +2432,49 @@
       "isBlocked": false
     },
     {
-      "id": "edge_75_cp_outer_rad5_janpath_tolstoy",
+      "id": "edge_77_mandi_house_circle_ito_chowk",
+      "source": "mandi_house_circle",
+      "target": "ito_chowk",
+      "distance": 760.3,
+      "roadType": "primary",
+      "roadName": "Bahadur Shah Zafar Marg Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.234,
+          28.6255
+        ],
+        [
+          77.241,
+          28.6285
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_78_ito_chowk_mandi_house_circle",
+      "source": "ito_chowk",
+      "target": "mandi_house_circle",
+      "distance": 760.3,
+      "roadType": "primary",
+      "roadName": "Bahadur Shah Zafar Marg Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.241,
+          28.6285
+        ],
+        [
+          77.234,
+          28.6255
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_79_cp_outer_rad5_janpath_tolstoy",
       "source": "cp_outer_rad5",
       "target": "janpath_tolstoy",
       "distance": 444.8,
@@ -1955,7 +2495,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_76_janpath_tolstoy_cp_outer_rad5",
+      "id": "edge_80_janpath_tolstoy_cp_outer_rad5",
       "source": "janpath_tolstoy",
       "target": "cp_outer_rad5",
       "distance": 444.8,
@@ -1976,7 +2516,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_77_janpath_tolstoy_kg_tolstoy",
+      "id": "edge_81_janpath_tolstoy_kg_tolstoy",
       "source": "janpath_tolstoy",
       "target": "kg_tolstoy",
       "distance": 371.6,
@@ -1997,7 +2537,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_78_kg_tolstoy_janpath_tolstoy",
+      "id": "edge_82_kg_tolstoy_janpath_tolstoy",
       "source": "kg_tolstoy",
       "target": "janpath_tolstoy",
       "distance": 371.6,
@@ -2018,7 +2558,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_79_kg_tolstoy_barakhamba_tolstoy",
+      "id": "edge_83_kg_tolstoy_barakhamba_tolstoy",
       "source": "kg_tolstoy",
       "target": "barakhamba_tolstoy",
       "distance": 400.4,
@@ -2039,7 +2579,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_80_barakhamba_tolstoy_kg_tolstoy",
+      "id": "edge_84_barakhamba_tolstoy_kg_tolstoy",
       "source": "barakhamba_tolstoy",
       "target": "kg_tolstoy",
       "distance": 400.4,
@@ -2060,7 +2600,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_81_cp_outer_rad4_kg_tolstoy",
+      "id": "edge_85_cp_outer_rad4_kg_tolstoy",
       "source": "cp_outer_rad4",
       "target": "kg_tolstoy",
       "distance": 484.5,
@@ -2081,7 +2621,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_82_kg_tolstoy_cp_outer_rad4",
+      "id": "edge_86_kg_tolstoy_cp_outer_rad4",
       "source": "kg_tolstoy",
       "target": "cp_outer_rad4",
       "distance": 484.5,
@@ -2102,7 +2642,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_83_kg_tolstoy_india_gate_north",
+      "id": "edge_87_kg_tolstoy_india_gate_north",
       "source": "kg_tolstoy",
       "target": "india_gate_north",
       "distance": 1251.4,
@@ -2123,7 +2663,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_84_india_gate_north_kg_tolstoy",
+      "id": "edge_88_india_gate_north_kg_tolstoy",
       "source": "india_gate_north",
       "target": "kg_tolstoy",
       "distance": 1251.4,
@@ -2144,7 +2684,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_85_janpath_tolstoy_windsor_place",
+      "id": "edge_89_janpath_tolstoy_windsor_place",
       "source": "janpath_tolstoy",
       "target": "windsor_place",
       "distance": 596.0,
@@ -2165,7 +2705,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_86_windsor_place_janpath_tolstoy",
+      "id": "edge_90_windsor_place_janpath_tolstoy",
       "source": "windsor_place",
       "target": "janpath_tolstoy",
       "distance": 596.0,
@@ -2186,7 +2726,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_87_windsor_place_ashoka_rd_windsor",
+      "id": "edge_91_windsor_place_ashoka_rd_windsor",
       "source": "windsor_place",
       "target": "ashoka_rd_windsor",
       "distance": 346.1,
@@ -2207,7 +2747,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_88_ashoka_rd_windsor_windsor_place",
+      "id": "edge_92_ashoka_rd_windsor_windsor_place",
       "source": "ashoka_rd_windsor",
       "target": "windsor_place",
       "distance": 346.1,
@@ -2228,7 +2768,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_89_ashoka_rd_windsor_patel_chowk",
+      "id": "edge_93_ashoka_rd_windsor_patel_chowk",
       "source": "ashoka_rd_windsor",
       "target": "patel_chowk",
       "distance": 294.7,
@@ -2249,7 +2789,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_90_patel_chowk_ashoka_rd_windsor",
+      "id": "edge_94_patel_chowk_ashoka_rd_windsor",
       "source": "patel_chowk",
       "target": "ashoka_rd_windsor",
       "distance": 294.7,
@@ -2270,7 +2810,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_91_patel_chowk_cp_outer_rad6",
+      "id": "edge_95_patel_chowk_cp_outer_rad6",
       "source": "patel_chowk",
       "target": "cp_outer_rad6",
       "distance": 941.0,
@@ -2291,7 +2831,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_92_cp_outer_rad6_patel_chowk",
+      "id": "edge_96_cp_outer_rad6_patel_chowk",
       "source": "cp_outer_rad6",
       "target": "patel_chowk",
       "distance": 941.0,
@@ -2312,7 +2852,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_93_windsor_place_kartavya_janpath",
+      "id": "edge_97_windsor_place_kartavya_janpath",
       "source": "windsor_place",
       "target": "kartavya_janpath",
       "distance": 716.5,
@@ -2333,7 +2873,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_94_kartavya_janpath_windsor_place",
+      "id": "edge_98_kartavya_janpath_windsor_place",
       "source": "kartavya_janpath",
       "target": "windsor_place",
       "distance": 716.5,
@@ -2354,7 +2894,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_95_cp_outer_rad6_sansad_bhavan",
+      "id": "edge_99_cp_outer_rad6_sansad_bhavan",
       "source": "cp_outer_rad6",
       "target": "sansad_bhavan",
       "distance": 1663.3,
@@ -2375,7 +2915,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_96_sansad_bhavan_cp_outer_rad6",
+      "id": "edge_100_sansad_bhavan_cp_outer_rad6",
       "source": "sansad_bhavan",
       "target": "cp_outer_rad6",
       "distance": 1663.3,
@@ -2396,7 +2936,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_97_sansad_bhavan_vijay_chowk",
+      "id": "edge_101_sansad_bhavan_vijay_chowk",
       "source": "sansad_bhavan",
       "target": "vijay_chowk",
       "distance": 369.1,
@@ -2417,7 +2957,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_98_vijay_chowk_sansad_bhavan",
+      "id": "edge_102_vijay_chowk_sansad_bhavan",
       "source": "vijay_chowk",
       "target": "sansad_bhavan",
       "distance": 369.1,
@@ -2438,7 +2978,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_99_vijay_chowk_kartavya_rafi",
+      "id": "edge_103_vijay_chowk_kartavya_rafi",
       "source": "vijay_chowk",
       "target": "kartavya_rafi",
       "distance": 635.4,
@@ -2459,7 +2999,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_100_kartavya_rafi_vijay_chowk",
+      "id": "edge_104_kartavya_rafi_vijay_chowk",
       "source": "kartavya_rafi",
       "target": "vijay_chowk",
       "distance": 635.4,
@@ -2480,7 +3020,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_101_kartavya_rafi_kartavya_janpath",
+      "id": "edge_105_kartavya_rafi_kartavya_janpath",
       "source": "kartavya_rafi",
       "target": "kartavya_janpath",
       "distance": 636.0,
@@ -2501,7 +3041,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_102_kartavya_janpath_kartavya_rafi",
+      "id": "edge_106_kartavya_janpath_kartavya_rafi",
       "source": "kartavya_janpath",
       "target": "kartavya_rafi",
       "distance": 636.0,
@@ -2522,7 +3062,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_103_kartavya_janpath_kartavya_mansingh",
+      "id": "edge_107_kartavya_janpath_kartavya_mansingh",
       "source": "kartavya_janpath",
       "target": "kartavya_mansingh",
       "distance": 538.7,
@@ -2543,7 +3083,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_104_kartavya_mansingh_kartavya_janpath",
+      "id": "edge_108_kartavya_mansingh_kartavya_janpath",
       "source": "kartavya_mansingh",
       "target": "kartavya_janpath",
       "distance": 538.7,
@@ -2564,7 +3104,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_105_kartavya_mansingh_india_gate_west",
+      "id": "edge_109_kartavya_mansingh_india_gate_west",
       "source": "kartavya_mansingh",
       "target": "india_gate_west",
       "distance": 206.3,
@@ -2585,7 +3125,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_106_india_gate_west_kartavya_mansingh",
+      "id": "edge_110_india_gate_west_kartavya_mansingh",
       "source": "india_gate_west",
       "target": "kartavya_mansingh",
       "distance": 206.3,
@@ -2606,7 +3146,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_107_india_gate_north_india_gate_east",
+      "id": "edge_111_india_gate_north_india_gate_east",
       "source": "india_gate_north",
       "target": "india_gate_east",
       "distance": 403.8,
@@ -2627,7 +3167,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_108_india_gate_east_india_gate_south",
+      "id": "edge_112_india_gate_east_india_gate_south",
       "source": "india_gate_east",
       "target": "india_gate_south",
       "distance": 487.1,
@@ -2648,7 +3188,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_109_india_gate_south_india_gate_west",
+      "id": "edge_113_india_gate_south_india_gate_west",
       "source": "india_gate_south",
       "target": "india_gate_west",
       "distance": 469.5,
@@ -2669,7 +3209,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_110_india_gate_west_india_gate_north",
+      "id": "edge_114_india_gate_west_india_gate_north",
       "source": "india_gate_west",
       "target": "india_gate_north",
       "distance": 419.4,
@@ -2690,7 +3230,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_111_india_gate_west_india_gate_center",
+      "id": "edge_115_india_gate_west_india_gate_center",
       "source": "india_gate_west",
       "target": "india_gate_center",
       "distance": 293.1,
@@ -2711,7 +3251,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_112_india_gate_center_india_gate_west",
+      "id": "edge_116_india_gate_center_india_gate_west",
       "source": "india_gate_center",
       "target": "india_gate_west",
       "distance": 293.1,
@@ -2732,7 +3272,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_113_india_gate_east_india_gate_center",
+      "id": "edge_117_india_gate_east_india_gate_center",
       "source": "india_gate_east",
       "target": "india_gate_center",
       "distance": 293.1,
@@ -2753,7 +3293,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_114_india_gate_center_india_gate_east",
+      "id": "edge_118_india_gate_center_india_gate_east",
       "source": "india_gate_center",
       "target": "india_gate_east",
       "distance": 293.1,
@@ -2774,7 +3314,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_115_india_gate_east_purana_qila",
+      "id": "edge_119_india_gate_east_purana_qila",
       "source": "india_gate_east",
       "target": "purana_qila",
       "distance": 916.5,
@@ -2795,7 +3335,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_116_purana_qila_india_gate_east",
+      "id": "edge_120_purana_qila_india_gate_east",
       "source": "purana_qila",
       "target": "india_gate_east",
       "distance": 916.5,
@@ -2816,7 +3356,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_117_pragati_maidan_gate_bhairon_marg",
+      "id": "edge_121_pragati_maidan_gate_bhairon_marg",
       "source": "pragati_maidan_gate",
       "target": "bhairon_marg",
       "distance": 963.3,
@@ -2837,7 +3377,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_118_bhairon_marg_pragati_maidan_gate",
+      "id": "edge_122_bhairon_marg_pragati_maidan_gate",
       "source": "bhairon_marg",
       "target": "pragati_maidan_gate",
       "distance": 963.3,
@@ -2858,7 +3398,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_119_bhairon_marg_purana_qila",
+      "id": "edge_123_bhairon_marg_purana_qila",
       "source": "bhairon_marg",
       "target": "purana_qila",
       "distance": 406.0,
@@ -2879,7 +3419,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_120_purana_qila_bhairon_marg",
+      "id": "edge_124_purana_qila_bhairon_marg",
       "source": "purana_qila",
       "target": "bhairon_marg",
       "distance": 406.0,
@@ -2900,49 +3440,91 @@
       "isBlocked": false
     },
     {
-      "id": "edge_121_purana_qila_subramaniam_bharti",
-      "source": "purana_qila",
-      "target": "subramaniam_bharti",
-      "distance": 1070.5,
+      "id": "edge_125_pragati_maidan_gate_ito_chowk",
+      "source": "pragati_maidan_gate",
+      "target": "ito_chowk",
+      "distance": 1101.9,
       "roadType": "trunk",
       "roadName": "Mathura Road",
       "speedLimit": 60,
       "geometry": [
         [
-          77.241,
-          28.6095
+          77.2415,
+          28.6186
         ],
         [
-          77.232,
-          28.604
+          77.241,
+          28.6285
         ]
       ],
       "trafficMultiplier": 1.0,
       "isBlocked": false
     },
     {
-      "id": "edge_122_subramaniam_bharti_purana_qila",
-      "source": "subramaniam_bharti",
-      "target": "purana_qila",
-      "distance": 1070.5,
+      "id": "edge_126_ito_chowk_pragati_maidan_gate",
+      "source": "ito_chowk",
+      "target": "pragati_maidan_gate",
+      "distance": 1101.9,
       "roadType": "trunk",
       "roadName": "Mathura Road",
       "speedLimit": 60,
       "geometry": [
         [
-          77.232,
-          28.604
+          77.241,
+          28.6285
         ],
         [
-          77.241,
-          28.6095
+          77.2415,
+          28.6186
         ]
       ],
       "trafficMultiplier": 1.0,
       "isBlocked": false
     },
     {
-      "id": "edge_123_india_gate_south_shahjahan_crossing",
+      "id": "edge_127_ito_chowk_rajghat_chowk",
+      "source": "ito_chowk",
+      "target": "rajghat_chowk",
+      "distance": 1548.8,
+      "roadType": "trunk",
+      "roadName": "Bahadur Shah Zafar Marg / Ring Rd",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.241,
+          28.6285
+        ],
+        [
+          77.248,
+          28.641
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_128_rajghat_chowk_ito_chowk",
+      "source": "rajghat_chowk",
+      "target": "ito_chowk",
+      "distance": 1548.8,
+      "roadType": "trunk",
+      "roadName": "Bahadur Shah Zafar Marg / Ring Rd",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.248,
+          28.641
+        ],
+        [
+          77.241,
+          28.6285
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_129_india_gate_south_shahjahan_crossing",
       "source": "india_gate_south",
       "target": "shahjahan_crossing",
       "distance": 798.8,
@@ -2963,7 +3545,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_124_shahjahan_crossing_india_gate_south",
+      "id": "edge_130_shahjahan_crossing_india_gate_south",
       "source": "shahjahan_crossing",
       "target": "india_gate_south",
       "distance": 798.8,
@@ -2984,7 +3566,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_125_shahjahan_crossing_khan_market_hub",
+      "id": "edge_131_shahjahan_crossing_khan_market_hub",
       "source": "shahjahan_crossing",
       "target": "khan_market_hub",
       "distance": 405.9,
@@ -3005,7 +3587,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_126_khan_market_hub_shahjahan_crossing",
+      "id": "edge_132_khan_market_hub_shahjahan_crossing",
       "source": "khan_market_hub",
       "target": "shahjahan_crossing",
       "distance": 405.9,
@@ -3026,17 +3608,17 @@
       "isBlocked": false
     },
     {
-      "id": "edge_127_subramaniam_bharti_khan_market_hub",
-      "source": "subramaniam_bharti",
+      "id": "edge_133_purana_qila_khan_market_hub",
+      "source": "purana_qila",
       "target": "khan_market_hub",
-      "distance": 638.4,
+      "distance": 1707.2,
       "roadType": "primary",
       "roadName": "Subramaniam Bharti Marg",
       "speedLimit": 40,
       "geometry": [
         [
-          77.232,
-          28.604
+          77.241,
+          28.6095
         ],
         [
           77.227,
@@ -3047,10 +3629,10 @@
       "isBlocked": false
     },
     {
-      "id": "edge_128_khan_market_hub_subramaniam_bharti",
+      "id": "edge_134_khan_market_hub_purana_qila",
       "source": "khan_market_hub",
-      "target": "subramaniam_bharti",
-      "distance": 638.4,
+      "target": "purana_qila",
+      "distance": 1707.2,
       "roadType": "primary",
       "roadName": "Subramaniam Bharti Marg",
       "speedLimit": 40,
@@ -3060,15 +3642,15 @@
           28.6003
         ],
         [
-          77.232,
-          28.604
+          77.241,
+          28.6095
         ]
       ],
       "trafficMultiplier": 1.0,
       "isBlocked": false
     },
     {
-      "id": "edge_129_shahjahan_crossing_prithviraj_circle",
+      "id": "edge_135_shahjahan_crossing_prithviraj_circle",
       "source": "shahjahan_crossing",
       "target": "prithviraj_circle",
       "distance": 786.4,
@@ -3089,7 +3671,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_130_prithviraj_circle_shahjahan_crossing",
+      "id": "edge_136_prithviraj_circle_shahjahan_crossing",
       "source": "prithviraj_circle",
       "target": "shahjahan_crossing",
       "distance": 786.4,
@@ -3110,7 +3692,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_131_prithviraj_circle_lodhi_garden",
+      "id": "edge_137_prithviraj_circle_lodhi_garden",
       "source": "prithviraj_circle",
       "target": "lodhi_garden",
       "distance": 792.0,
@@ -3131,7 +3713,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_132_lodhi_garden_prithviraj_circle",
+      "id": "edge_138_lodhi_garden_prithviraj_circle",
       "source": "lodhi_garden",
       "target": "prithviraj_circle",
       "distance": 792.0,
@@ -3152,7 +3734,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_133_khan_market_hub_lodhi_colony_hub",
+      "id": "edge_139_khan_market_hub_lodhi_colony_hub",
       "source": "khan_market_hub",
       "target": "lodhi_colony_hub",
       "distance": 1379.5,
@@ -3173,7 +3755,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_134_lodhi_colony_hub_khan_market_hub",
+      "id": "edge_140_lodhi_colony_hub_khan_market_hub",
       "source": "lodhi_colony_hub",
       "target": "khan_market_hub",
       "distance": 1379.5,
@@ -3194,7 +3776,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_135_lodhi_garden_lodhi_colony_hub",
+      "id": "edge_141_lodhi_garden_lodhi_colony_hub",
       "source": "lodhi_garden",
       "target": "lodhi_colony_hub",
       "distance": 514.0,
@@ -3215,7 +3797,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_136_lodhi_colony_hub_lodhi_garden",
+      "id": "edge_142_lodhi_colony_hub_lodhi_garden",
       "source": "lodhi_colony_hub",
       "target": "lodhi_garden",
       "distance": 514.0,
@@ -3236,7 +3818,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_137_lodhi_colony_hub_jor_bagh",
+      "id": "edge_143_lodhi_colony_hub_jor_bagh",
       "source": "lodhi_colony_hub",
       "target": "jor_bagh",
       "distance": 757.1,
@@ -3257,7 +3839,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_138_jor_bagh_lodhi_colony_hub",
+      "id": "edge_144_jor_bagh_lodhi_colony_hub",
       "source": "jor_bagh",
       "target": "lodhi_colony_hub",
       "distance": 757.1,
@@ -3278,7 +3860,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_139_jor_bagh_prithviraj_circle",
+      "id": "edge_145_jor_bagh_prithviraj_circle",
       "source": "jor_bagh",
       "target": "prithviraj_circle",
       "distance": 1390.3,
@@ -3299,7 +3881,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_140_prithviraj_circle_jor_bagh",
+      "id": "edge_146_prithviraj_circle_jor_bagh",
       "source": "prithviraj_circle",
       "target": "jor_bagh",
       "distance": 1390.3,
@@ -3320,217 +3902,49 @@
       "isBlocked": false
     },
     {
-      "id": "edge_141_cp_outer_rad8_panchkuian_mid",
-      "source": "cp_outer_rad8",
-      "target": "panchkuian_mid",
-      "distance": 898.5,
+      "id": "edge_147_lodhi_colony_hub_ina_market",
+      "source": "lodhi_colony_hub",
+      "target": "ina_market",
+      "distance": 1677.3,
       "roadType": "primary",
-      "roadName": "Panchkuian Road",
+      "roadName": "Aurobindo Marg Link",
       "speedLimit": 45,
       "geometry": [
         [
-          77.217,
-          28.6355
+          77.2217,
+          28.5888
         ],
         [
-          77.209,
-          28.6395
+          77.211,
+          28.577
         ]
       ],
       "trafficMultiplier": 1.0,
       "isBlocked": false
     },
     {
-      "id": "edge_142_panchkuian_mid_cp_outer_rad8",
-      "source": "panchkuian_mid",
-      "target": "cp_outer_rad8",
-      "distance": 898.5,
+      "id": "edge_148_ina_market_lodhi_colony_hub",
+      "source": "ina_market",
+      "target": "lodhi_colony_hub",
+      "distance": 1677.3,
       "roadType": "primary",
-      "roadName": "Panchkuian Road",
+      "roadName": "Aurobindo Marg Link",
       "speedLimit": 45,
       "geometry": [
         [
-          77.209,
-          28.6395
+          77.211,
+          28.577
         ],
         [
-          77.217,
-          28.6355
+          77.2217,
+          28.5888
         ]
       ],
       "trafficMultiplier": 1.0,
       "isBlocked": false
     },
     {
-      "id": "edge_143_panchkuian_mid_jhandewalan",
-      "source": "panchkuian_mid",
-      "target": "jhandewalan",
-      "distance": 807.9,
-      "roadType": "primary",
-      "roadName": "Panchkuian Road",
-      "speedLimit": 45,
-      "geometry": [
-        [
-          77.209,
-          28.6395
-        ],
-        [
-          77.2025,
-          28.644
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_144_jhandewalan_panchkuian_mid",
-      "source": "jhandewalan",
-      "target": "panchkuian_mid",
-      "distance": 807.9,
-      "roadType": "primary",
-      "roadName": "Panchkuian Road",
-      "speedLimit": 45,
-      "geometry": [
-        [
-          77.2025,
-          28.644
-        ],
-        [
-          77.209,
-          28.6395
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_145_jhandewalan_db_gupta_rd",
-      "source": "jhandewalan",
-      "target": "db_gupta_rd",
-      "distance": 551.5,
-      "roadType": "trunk",
-      "roadName": "Rani Jhansi Road",
-      "speedLimit": 50,
-      "geometry": [
-        [
-          77.2025,
-          28.644
-        ],
-        [
-          77.198,
-          28.647
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_146_db_gupta_rd_jhandewalan",
-      "source": "db_gupta_rd",
-      "target": "jhandewalan",
-      "distance": 551.5,
-      "roadType": "trunk",
-      "roadName": "Rani Jhansi Road",
-      "speedLimit": 50,
-      "geometry": [
-        [
-          77.198,
-          28.647
-        ],
-        [
-          77.2025,
-          28.644
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_147_db_gupta_rd_karol_bagh_hub",
-      "source": "db_gupta_rd",
-      "target": "karol_bagh_hub",
-      "distance": 891.4,
-      "roadType": "primary",
-      "roadName": "Desh Bandhu Gupta Road",
-      "speedLimit": 40,
-      "geometry": [
-        [
-          77.198,
-          28.647
-        ],
-        [
-          77.1906,
-          28.6517
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_148_karol_bagh_hub_db_gupta_rd",
-      "source": "karol_bagh_hub",
-      "target": "db_gupta_rd",
-      "distance": 891.4,
-      "roadType": "primary",
-      "roadName": "Desh Bandhu Gupta Road",
-      "speedLimit": 40,
-      "geometry": [
-        [
-          77.1906,
-          28.6517
-        ],
-        [
-          77.198,
-          28.647
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_149_ndls_paharganj_panchkuian_mid",
-      "source": "ndls_paharganj",
-      "target": "panchkuian_mid",
-      "distance": 818.7,
-      "roadType": "secondary",
-      "roadName": "Basant Road",
-      "speedLimit": 30,
-      "geometry": [
-        [
-          77.2165,
-          28.6428
-        ],
-        [
-          77.209,
-          28.6395
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_150_panchkuian_mid_ndls_paharganj",
-      "source": "panchkuian_mid",
-      "target": "ndls_paharganj",
-      "distance": 818.7,
-      "roadType": "secondary",
-      "roadName": "Basant Road",
-      "speedLimit": 30,
-      "geometry": [
-        [
-          77.209,
-          28.6395
-        ],
-        [
-          77.2165,
-          28.6428
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_151_vijay_chowk_teen_murti",
+      "id": "edge_149_vijay_chowk_teen_murti",
       "source": "vijay_chowk",
       "target": "teen_murti",
       "distance": 1368.7,
@@ -3551,7 +3965,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_152_teen_murti_vijay_chowk",
+      "id": "edge_150_teen_murti_vijay_chowk",
       "source": "teen_murti",
       "target": "vijay_chowk",
       "distance": 1368.7,
@@ -3572,59 +3986,17 @@
       "isBlocked": false
     },
     {
-      "id": "edge_153_teen_murti_race_course",
+      "id": "edge_151_teen_murti_prithviraj_circle",
       "source": "teen_murti",
-      "target": "race_course",
-      "distance": 849.3,
-      "roadType": "primary",
-      "roadName": "Teen Murti Marg",
-      "speedLimit": 40,
-      "geometry": [
-        [
-          77.201,
-          28.603
-        ],
-        [
-          77.209,
-          28.6
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_154_race_course_teen_murti",
-      "source": "race_course",
-      "target": "teen_murti",
-      "distance": 849.3,
-      "roadType": "primary",
-      "roadName": "Teen Murti Marg",
-      "speedLimit": 40,
-      "geometry": [
-        [
-          77.209,
-          28.6
-        ],
-        [
-          77.201,
-          28.603
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_155_race_course_prithviraj_circle",
-      "source": "race_course",
       "target": "prithviraj_circle",
-      "distance": 878.6,
+      "distance": 1692.8,
       "roadType": "primary",
       "roadName": "Tuglak Road",
       "speedLimit": 40,
       "geometry": [
         [
-          77.209,
-          28.6
+          77.201,
+          28.603
         ],
         [
           77.218,
@@ -3635,10 +4007,10 @@
       "isBlocked": false
     },
     {
-      "id": "edge_156_prithviraj_circle_race_course",
+      "id": "edge_152_prithviraj_circle_teen_murti",
       "source": "prithviraj_circle",
-      "target": "race_course",
-      "distance": 878.6,
+      "target": "teen_murti",
+      "distance": 1692.8,
       "roadType": "primary",
       "roadName": "Tuglak Road",
       "speedLimit": 40,
@@ -3648,15 +4020,15 @@
           28.6
         ],
         [
-          77.209,
-          28.6
+          77.201,
+          28.603
         ]
       ],
       "trafficMultiplier": 1.0,
       "isBlocked": false
     },
     {
-      "id": "edge_157_teen_murti_chanakyapuri_hub",
+      "id": "edge_153_teen_murti_chanakyapuri_hub",
       "source": "teen_murti",
       "target": "chanakyapuri_hub",
       "distance": 1265.0,
@@ -3677,7 +4049,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_158_chanakyapuri_hub_teen_murti",
+      "id": "edge_154_chanakyapuri_hub_teen_murti",
       "source": "chanakyapuri_hub",
       "target": "teen_murti",
       "distance": 1265.0,
@@ -3698,7 +4070,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_159_chanakyapuri_hub_shanti_path",
+      "id": "edge_155_chanakyapuri_hub_shanti_path",
       "source": "chanakyapuri_hub",
       "target": "shanti_path",
       "distance": 792.7,
@@ -3719,7 +4091,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_160_shanti_path_chanakyapuri_hub",
+      "id": "edge_156_shanti_path_chanakyapuri_hub",
       "source": "shanti_path",
       "target": "chanakyapuri_hub",
       "distance": 792.7,
@@ -3740,7 +4112,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_161_shanti_path_jor_bagh",
+      "id": "edge_157_shanti_path_jor_bagh",
       "source": "shanti_path",
       "target": "jor_bagh",
       "distance": 2098.1,
@@ -3761,7 +4133,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_162_jor_bagh_shanti_path",
+      "id": "edge_158_jor_bagh_shanti_path",
       "source": "jor_bagh",
       "target": "shanti_path",
       "distance": 2098.1,
@@ -3776,6 +4148,4626 @@
         [
           77.193,
           28.592
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_159_shanti_path_moti_bagh",
+      "source": "shanti_path",
+      "target": "moti_bagh",
+      "distance": 2730.3,
+      "roadType": "primary",
+      "roadName": "Shanti Path South",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.193,
+          28.592
+        ],
+        [
+          77.168,
+          28.581
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_160_moti_bagh_shanti_path",
+      "source": "moti_bagh",
+      "target": "shanti_path",
+      "distance": 2730.3,
+      "roadType": "primary",
+      "roadName": "Shanti Path South",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.168,
+          28.581
+        ],
+        [
+          77.193,
+          28.592
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_161_chanakyapuri_hub_dhaula_kuan_interchange",
+      "source": "chanakyapuri_hub",
+      "target": "dhaula_kuan_interchange",
+      "distance": 2732.8,
+      "roadType": "primary",
+      "roadName": "San Martin Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.1892,
+          28.5983
+        ],
+        [
+          77.162,
+          28.5925
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_162_dhaula_kuan_interchange_chanakyapuri_hub",
+      "source": "dhaula_kuan_interchange",
+      "target": "chanakyapuri_hub",
+      "distance": 2732.8,
+      "roadType": "primary",
+      "roadName": "San Martin Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.162,
+          28.5925
+        ],
+        [
+          77.1892,
+          28.5983
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_163_cp_outer_rad8_panchkuian_mid",
+      "source": "cp_outer_rad8",
+      "target": "panchkuian_mid",
+      "distance": 898.5,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.217,
+          28.6355
+        ],
+        [
+          77.209,
+          28.6395
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_164_panchkuian_mid_cp_outer_rad8",
+      "source": "panchkuian_mid",
+      "target": "cp_outer_rad8",
+      "distance": 898.5,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.209,
+          28.6395
+        ],
+        [
+          77.217,
+          28.6355
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_165_panchkuian_mid_jhandewalan",
+      "source": "panchkuian_mid",
+      "target": "jhandewalan",
+      "distance": 807.9,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.209,
+          28.6395
+        ],
+        [
+          77.2025,
+          28.644
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_166_jhandewalan_panchkuian_mid",
+      "source": "jhandewalan",
+      "target": "panchkuian_mid",
+      "distance": 807.9,
+      "roadType": "primary",
+      "roadName": "Panchkuian Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.2025,
+          28.644
+        ],
+        [
+          77.209,
+          28.6395
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_167_jhandewalan_db_gupta_rd",
+      "source": "jhandewalan",
+      "target": "db_gupta_rd",
+      "distance": 551.5,
+      "roadType": "trunk",
+      "roadName": "Rani Jhansi Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2025,
+          28.644
+        ],
+        [
+          77.198,
+          28.647
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_168_db_gupta_rd_jhandewalan",
+      "source": "db_gupta_rd",
+      "target": "jhandewalan",
+      "distance": 551.5,
+      "roadType": "trunk",
+      "roadName": "Rani Jhansi Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.198,
+          28.647
+        ],
+        [
+          77.2025,
+          28.644
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_169_db_gupta_rd_karol_bagh_hub",
+      "source": "db_gupta_rd",
+      "target": "karol_bagh_hub",
+      "distance": 891.4,
+      "roadType": "primary",
+      "roadName": "Desh Bandhu Gupta Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.198,
+          28.647
+        ],
+        [
+          77.1906,
+          28.6517
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_170_karol_bagh_hub_db_gupta_rd",
+      "source": "karol_bagh_hub",
+      "target": "db_gupta_rd",
+      "distance": 891.4,
+      "roadType": "primary",
+      "roadName": "Desh Bandhu Gupta Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.1906,
+          28.6517
+        ],
+        [
+          77.198,
+          28.647
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_171_ndls_paharganj_panchkuian_mid",
+      "source": "ndls_paharganj",
+      "target": "panchkuian_mid",
+      "distance": 818.7,
+      "roadType": "secondary",
+      "roadName": "Basant Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2165,
+          28.6428
+        ],
+        [
+          77.209,
+          28.6395
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_172_panchkuian_mid_ndls_paharganj",
+      "source": "panchkuian_mid",
+      "target": "ndls_paharganj",
+      "distance": 818.7,
+      "roadType": "secondary",
+      "roadName": "Basant Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.209,
+          28.6395
+        ],
+        [
+          77.2165,
+          28.6428
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_173_karol_bagh_hub_patel_nagar",
+      "source": "karol_bagh_hub",
+      "target": "patel_nagar",
+      "distance": 1874.1,
+      "roadType": "primary",
+      "roadName": "Pusa Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.1906,
+          28.6517
+        ],
+        [
+          77.172,
+          28.6475
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_174_patel_nagar_karol_bagh_hub",
+      "source": "patel_nagar",
+      "target": "karol_bagh_hub",
+      "distance": 1874.1,
+      "roadType": "primary",
+      "roadName": "Pusa Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.172,
+          28.6475
+        ],
+        [
+          77.1906,
+          28.6517
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_175_patel_nagar_shadipur_metro",
+      "source": "patel_nagar",
+      "target": "shadipur_metro",
+      "distance": 1420.5,
+      "roadType": "primary",
+      "roadName": "Patel Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.172,
+          28.6475
+        ],
+        [
+          77.158,
+          28.651
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_176_shadipur_metro_patel_nagar",
+      "source": "shadipur_metro",
+      "target": "patel_nagar",
+      "distance": 1420.5,
+      "roadType": "primary",
+      "roadName": "Patel Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.158,
+          28.651
+        ],
+        [
+          77.172,
+          28.6475
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_177_shadipur_metro_raja_garden_flyover",
+      "source": "shadipur_metro",
+      "target": "raja_garden_flyover",
+      "distance": 3027.0,
+      "roadType": "primary",
+      "roadName": "Shivaji Marg Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.158,
+          28.651
+        ],
+        [
+          77.127,
+          28.652
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_178_raja_garden_flyover_shadipur_metro",
+      "source": "raja_garden_flyover",
+      "target": "shadipur_metro",
+      "distance": 3027.0,
+      "roadType": "primary",
+      "roadName": "Shivaji Marg Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.127,
+          28.652
+        ],
+        [
+          77.158,
+          28.651
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_179_isbt_kashmere_gate_rajghat_chowk",
+      "source": "isbt_kashmere_gate",
+      "target": "rajghat_chowk",
+      "distance": 3507.6,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Riverfront)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2285,
+          28.6675
+        ],
+        [
+          77.248,
+          28.641
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_180_rajghat_chowk_isbt_kashmere_gate",
+      "source": "rajghat_chowk",
+      "target": "isbt_kashmere_gate",
+      "distance": 3507.6,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Riverfront)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.248,
+          28.641
+        ],
+        [
+          77.2285,
+          28.6675
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_181_rajghat_chowk_ito_chowk",
+      "source": "rajghat_chowk",
+      "target": "ito_chowk",
+      "distance": 1548.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Vikas Minar)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.248,
+          28.641
+        ],
+        [
+          77.241,
+          28.6285
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_182_ito_chowk_rajghat_chowk",
+      "source": "ito_chowk",
+      "target": "rajghat_chowk",
+      "distance": 1548.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Vikas Minar)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.241,
+          28.6285
+        ],
+        [
+          77.248,
+          28.641
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_183_ito_chowk_pragati_maidan_gate",
+      "source": "ito_chowk",
+      "target": "pragati_maidan_gate",
+      "distance": 1101.9,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Bhairon Link)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.241,
+          28.6285
+        ],
+        [
+          77.2415,
+          28.6186
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_184_pragati_maidan_gate_ito_chowk",
+      "source": "pragati_maidan_gate",
+      "target": "ito_chowk",
+      "distance": 1101.9,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Bhairon Link)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2415,
+          28.6186
+        ],
+        [
+          77.241,
+          28.6285
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_185_pragati_maidan_gate_sarai_kale_khan_isbt",
+      "source": "pragati_maidan_gate",
+      "target": "sarai_kale_khan_isbt",
+      "distance": 3531.9,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2415,
+          28.6186
+        ],
+        [
+          77.256,
+          28.5895
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_186_sarai_kale_khan_isbt_pragati_maidan_gate",
+      "source": "sarai_kale_khan_isbt",
+      "target": "pragati_maidan_gate",
+      "distance": 3531.9,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.256,
+          28.5895
+        ],
+        [
+          77.2415,
+          28.6186
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_187_sarai_kale_khan_isbt_ashram_chowk",
+      "source": "sarai_kale_khan_isbt",
+      "target": "ashram_chowk",
+      "distance": 2093.9,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Nizamuddin)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.256,
+          28.5895
+        ],
+        [
+          77.26,
+          28.571
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_188_ashram_chowk_sarai_kale_khan_isbt",
+      "source": "ashram_chowk",
+      "target": "sarai_kale_khan_isbt",
+      "distance": 2093.9,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Nizamuddin)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.26,
+          28.571
+        ],
+        [
+          77.256,
+          28.5895
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_189_ashram_chowk_lajpat_nagar_central",
+      "source": "ashram_chowk",
+      "target": "lajpat_nagar_central",
+      "distance": 1663.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.26,
+          28.571
+        ],
+        [
+          77.243,
+          28.57
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_190_lajpat_nagar_central_ashram_chowk",
+      "source": "lajpat_nagar_central",
+      "target": "ashram_chowk",
+      "distance": 1663.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.243,
+          28.57
+        ],
+        [
+          77.26,
+          28.571
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_191_lajpat_nagar_central_moolchand_flyover",
+      "source": "lajpat_nagar_central",
+      "target": "moolchand_flyover",
+      "distance": 859.4,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.243,
+          28.57
+        ],
+        [
+          77.2345,
+          28.568
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_192_moolchand_flyover_lajpat_nagar_central",
+      "source": "moolchand_flyover",
+      "target": "lajpat_nagar_central",
+      "distance": 859.4,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2345,
+          28.568
+        ],
+        [
+          77.243,
+          28.57
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_193_moolchand_flyover_aiims_safdarjung",
+      "source": "moolchand_flyover",
+      "target": "aiims_safdarjung",
+      "distance": 2544.5,
+      "roadType": "trunk",
+      "roadName": "Ring Road (South Extension)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2345,
+          28.568
+        ],
+        [
+          77.2085,
+          28.5695
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_194_aiims_safdarjung_moolchand_flyover",
+      "source": "aiims_safdarjung",
+      "target": "moolchand_flyover",
+      "distance": 2544.5,
+      "roadType": "trunk",
+      "roadName": "Ring Road (South Extension)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2085,
+          28.5695
+        ],
+        [
+          77.2345,
+          28.568
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_195_aiims_safdarjung_ina_market",
+      "source": "aiims_safdarjung",
+      "target": "ina_market",
+      "distance": 869.0,
+      "roadType": "primary",
+      "roadName": "Aurobindo Marg Crossing",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2085,
+          28.5695
+        ],
+        [
+          77.211,
+          28.577
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_196_ina_market_aiims_safdarjung",
+      "source": "ina_market",
+      "target": "aiims_safdarjung",
+      "distance": 869.0,
+      "roadType": "primary",
+      "roadName": "Aurobindo Marg Crossing",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.211,
+          28.577
+        ],
+        [
+          77.2085,
+          28.5695
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_197_aiims_safdarjung_bhikaji_cama_place",
+      "source": "aiims_safdarjung",
+      "target": "bhikaji_cama_place",
+      "distance": 2203.6,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Safdarjung)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2085,
+          28.5695
+        ],
+        [
+          77.186,
+          28.568
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_198_bhikaji_cama_place_aiims_safdarjung",
+      "source": "bhikaji_cama_place",
+      "target": "aiims_safdarjung",
+      "distance": 2203.6,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Safdarjung)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.186,
+          28.568
+        ],
+        [
+          77.2085,
+          28.5695
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_199_bhikaji_cama_place_moti_bagh",
+      "source": "bhikaji_cama_place",
+      "target": "moti_bagh",
+      "distance": 2275.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.186,
+          28.568
+        ],
+        [
+          77.168,
+          28.581
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_200_moti_bagh_bhikaji_cama_place",
+      "source": "moti_bagh",
+      "target": "bhikaji_cama_place",
+      "distance": 2275.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.168,
+          28.581
+        ],
+        [
+          77.186,
+          28.568
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_201_moti_bagh_dhaula_kuan_interchange",
+      "source": "moti_bagh",
+      "target": "dhaula_kuan_interchange",
+      "distance": 1406.6,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.168,
+          28.581
+        ],
+        [
+          77.162,
+          28.5925
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_202_dhaula_kuan_interchange_moti_bagh",
+      "source": "dhaula_kuan_interchange",
+      "target": "moti_bagh",
+      "distance": 1406.6,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.162,
+          28.5925
+        ],
+        [
+          77.168,
+          28.581
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_203_dhaula_kuan_interchange_delhi_cantt_station",
+      "source": "dhaula_kuan_interchange",
+      "target": "delhi_cantt_station",
+      "distance": 3451.4,
+      "roadType": "primary",
+      "roadName": "Cantonment Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.162,
+          28.5925
+        ],
+        [
+          77.128,
+          28.601
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_204_delhi_cantt_station_dhaula_kuan_interchange",
+      "source": "delhi_cantt_station",
+      "target": "dhaula_kuan_interchange",
+      "distance": 3451.4,
+      "roadType": "primary",
+      "roadName": "Cantonment Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.128,
+          28.601
+        ],
+        [
+          77.162,
+          28.5925
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_205_dhaula_kuan_interchange_naraina_industrial_area",
+      "source": "dhaula_kuan_interchange",
+      "target": "naraina_industrial_area",
+      "distance": 4254.5,
+      "roadType": "trunk",
+      "roadName": "Ring Road West",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.162,
+          28.5925
+        ],
+        [
+          77.139,
+          28.625
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_206_naraina_industrial_area_dhaula_kuan_interchange",
+      "source": "naraina_industrial_area",
+      "target": "dhaula_kuan_interchange",
+      "distance": 4254.5,
+      "roadType": "trunk",
+      "roadName": "Ring Road West",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.139,
+          28.625
+        ],
+        [
+          77.162,
+          28.5925
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_207_naraina_industrial_area_mayapuri_chowk",
+      "source": "naraina_industrial_area",
+      "target": "mayapuri_chowk",
+      "distance": 1627.5,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.139,
+          28.625
+        ],
+        [
+          77.128,
+          28.636
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_208_mayapuri_chowk_naraina_industrial_area",
+      "source": "mayapuri_chowk",
+      "target": "naraina_industrial_area",
+      "distance": 1627.5,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.128,
+          28.636
+        ],
+        [
+          77.139,
+          28.625
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_209_mayapuri_chowk_raja_garden_flyover",
+      "source": "mayapuri_chowk",
+      "target": "raja_garden_flyover",
+      "distance": 1781.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.128,
+          28.636
+        ],
+        [
+          77.127,
+          28.652
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_210_raja_garden_flyover_mayapuri_chowk",
+      "source": "raja_garden_flyover",
+      "target": "mayapuri_chowk",
+      "distance": 1781.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.127,
+          28.652
+        ],
+        [
+          77.128,
+          28.636
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_211_raja_garden_flyover_punjabi_bagh_roundabout",
+      "source": "raja_garden_flyover",
+      "target": "punjabi_bagh_roundabout",
+      "distance": 2356.9,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Club Road)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.127,
+          28.652
+        ],
+        [
+          77.135,
+          28.672
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_212_punjabi_bagh_roundabout_raja_garden_flyover",
+      "source": "punjabi_bagh_roundabout",
+      "target": "raja_garden_flyover",
+      "distance": 2356.9,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Club Road)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.135,
+          28.672
+        ],
+        [
+          77.127,
+          28.652
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_213_punjabi_bagh_roundabout_shakurpur_chowk",
+      "source": "punjabi_bagh_roundabout",
+      "target": "shakurpur_chowk",
+      "distance": 2184.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.135,
+          28.672
+        ],
+        [
+          77.148,
+          28.688
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_214_shakurpur_chowk_punjabi_bagh_roundabout",
+      "source": "shakurpur_chowk",
+      "target": "punjabi_bagh_roundabout",
+      "distance": 2184.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.148,
+          28.688
+        ],
+        [
+          77.135,
+          28.672
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_215_shakurpur_chowk_pitampura_tv_tower",
+      "source": "shakurpur_chowk",
+      "target": "pitampura_tv_tower",
+      "distance": 695.1,
+      "roadType": "primary",
+      "roadName": "Britannia Chowk Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.148,
+          28.688
+        ],
+        [
+          77.15,
+          28.694
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_216_pitampura_tv_tower_shakurpur_chowk",
+      "source": "pitampura_tv_tower",
+      "target": "shakurpur_chowk",
+      "distance": 695.1,
+      "roadType": "primary",
+      "roadName": "Britannia Chowk Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.15,
+          28.694
+        ],
+        [
+          77.148,
+          28.688
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_217_shakurpur_chowk_shalimar_bagh",
+      "source": "shakurpur_chowk",
+      "target": "shalimar_bagh",
+      "distance": 2513.1,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.148,
+          28.688
+        ],
+        [
+          77.16,
+          28.708
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_218_shalimar_bagh_shakurpur_chowk",
+      "source": "shalimar_bagh",
+      "target": "shakurpur_chowk",
+      "distance": 2513.1,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.16,
+          28.708
+        ],
+        [
+          77.148,
+          28.688
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_219_shalimar_bagh_azadpur_mandi",
+      "source": "shalimar_bagh",
+      "target": "azadpur_mandi",
+      "distance": 1656.5,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Azadpur Flyover)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.16,
+          28.708
+        ],
+        [
+          77.176,
+          28.713
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_220_azadpur_mandi_shalimar_bagh",
+      "source": "azadpur_mandi",
+      "target": "shalimar_bagh",
+      "distance": 1656.5,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Azadpur Flyover)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.176,
+          28.713
+        ],
+        [
+          77.16,
+          28.708
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_221_azadpur_mandi_model_town",
+      "source": "azadpur_mandi",
+      "target": "model_town",
+      "distance": 2027.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.176,
+          28.713
+        ],
+        [
+          77.193,
+          28.7025
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_222_model_town_azadpur_mandi",
+      "source": "model_town",
+      "target": "azadpur_mandi",
+      "distance": 2027.8,
+      "roadType": "trunk",
+      "roadName": "Ring Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.193,
+          28.7025
+        ],
+        [
+          77.176,
+          28.713
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_223_model_town_timarpur_chowk",
+      "source": "model_town",
+      "target": "timarpur_chowk",
+      "distance": 2753.4,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Mall Road)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.193,
+          28.7025
+        ],
+        [
+          77.218,
+          28.691
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_224_timarpur_chowk_model_town",
+      "source": "timarpur_chowk",
+      "target": "model_town",
+      "distance": 2753.4,
+      "roadType": "trunk",
+      "roadName": "Ring Road (Mall Road)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.218,
+          28.691
+        ],
+        [
+          77.193,
+          28.7025
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_225_timarpur_chowk_civil_lines",
+      "source": "timarpur_chowk",
+      "target": "civil_lines",
+      "distance": 1256.6,
+      "roadType": "primary",
+      "roadName": "Sham Nath Marg Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.218,
+          28.691
+        ],
+        [
+          77.224,
+          28.681
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_226_civil_lines_timarpur_chowk",
+      "source": "civil_lines",
+      "target": "timarpur_chowk",
+      "distance": 1256.6,
+      "roadType": "primary",
+      "roadName": "Sham Nath Marg Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.224,
+          28.681
+        ],
+        [
+          77.218,
+          28.691
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_227_civil_lines_isbt_kashmere_gate",
+      "source": "civil_lines",
+      "target": "isbt_kashmere_gate",
+      "distance": 1564.0,
+      "roadType": "trunk",
+      "roadName": "Ring Road North",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.224,
+          28.681
+        ],
+        [
+          77.2285,
+          28.6675
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_228_isbt_kashmere_gate_civil_lines",
+      "source": "isbt_kashmere_gate",
+      "target": "civil_lines",
+      "distance": 1564.0,
+      "roadType": "trunk",
+      "roadName": "Ring Road North",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2285,
+          28.6675
+        ],
+        [
+          77.224,
+          28.681
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_229_ina_market_sarai_kale_khan_isbt",
+      "source": "ina_market",
+      "target": "sarai_kale_khan_isbt",
+      "distance": 4608.5,
+      "roadType": "motorway",
+      "roadName": "Barapullah Elevated Corridor",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.211,
+          28.577
+        ],
+        [
+          77.256,
+          28.5895
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_230_sarai_kale_khan_isbt_ina_market",
+      "source": "sarai_kale_khan_isbt",
+      "target": "ina_market",
+      "distance": 4608.5,
+      "roadType": "motorway",
+      "roadName": "Barapullah Elevated Corridor",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.256,
+          28.5895
+        ],
+        [
+          77.211,
+          28.577
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_231_ina_market_ashram_chowk",
+      "source": "ina_market",
+      "target": "ashram_chowk",
+      "distance": 4831.2,
+      "roadType": "motorway",
+      "roadName": "Barapullah - Ashram Link",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.211,
+          28.577
+        ],
+        [
+          77.26,
+          28.571
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_232_ashram_chowk_ina_market",
+      "source": "ashram_chowk",
+      "target": "ina_market",
+      "distance": 4831.2,
+      "roadType": "motorway",
+      "roadName": "Barapullah - Ashram Link",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.26,
+          28.571
+        ],
+        [
+          77.211,
+          28.577
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_233_isbt_kashmere_gate_civil_lines",
+      "source": "isbt_kashmere_gate",
+      "target": "civil_lines",
+      "distance": 1564.0,
+      "roadType": "primary",
+      "roadName": "Alipur Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2285,
+          28.6675
+        ],
+        [
+          77.224,
+          28.681
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_234_civil_lines_isbt_kashmere_gate",
+      "source": "civil_lines",
+      "target": "isbt_kashmere_gate",
+      "distance": 1564.0,
+      "roadType": "primary",
+      "roadName": "Alipur Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.224,
+          28.681
+        ],
+        [
+          77.2285,
+          28.6675
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_235_azadpur_mandi_mukarba_chowk",
+      "source": "azadpur_mandi",
+      "target": "mukarba_chowk",
+      "distance": 3190.2,
+      "roadType": "trunk",
+      "roadName": "GT Karnal Road (NH44)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.176,
+          28.713
+        ],
+        [
+          77.155,
+          28.735
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_236_mukarba_chowk_azadpur_mandi",
+      "source": "mukarba_chowk",
+      "target": "azadpur_mandi",
+      "distance": 3190.2,
+      "roadType": "trunk",
+      "roadName": "GT Karnal Road (NH44)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.155,
+          28.735
+        ],
+        [
+          77.176,
+          28.713
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_237_mukarba_chowk_alipur_gt_karnal",
+      "source": "mukarba_chowk",
+      "target": "alipur_gt_karnal",
+      "distance": 6950.7,
+      "roadType": "trunk",
+      "roadName": "GT Karnal Road (NH44 North)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.155,
+          28.735
+        ],
+        [
+          77.135,
+          28.795
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_238_alipur_gt_karnal_mukarba_chowk",
+      "source": "alipur_gt_karnal",
+      "target": "mukarba_chowk",
+      "distance": 6950.7,
+      "roadType": "trunk",
+      "roadName": "GT Karnal Road (NH44 North)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.135,
+          28.795
+        ],
+        [
+          77.155,
+          28.735
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_239_alipur_gt_karnal_narela_industrial_hub",
+      "source": "alipur_gt_karnal",
+      "target": "narela_industrial_hub",
+      "distance": 7291.4,
+      "roadType": "trunk",
+      "roadName": "Narela Main Road (NH44)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.135,
+          28.795
+        ],
+        [
+          77.098,
+          28.852
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_240_narela_industrial_hub_alipur_gt_karnal",
+      "source": "narela_industrial_hub",
+      "target": "alipur_gt_karnal",
+      "distance": 7291.4,
+      "roadType": "trunk",
+      "roadName": "Narela Main Road (NH44)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.098,
+          28.852
+        ],
+        [
+          77.135,
+          28.795
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_241_mukarba_chowk_burari_chowk",
+      "source": "mukarba_chowk",
+      "target": "burari_chowk",
+      "distance": 4552.0,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road North",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.155,
+          28.735
+        ],
+        [
+          77.201,
+          28.742
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_242_burari_chowk_mukarba_chowk",
+      "source": "burari_chowk",
+      "target": "mukarba_chowk",
+      "distance": 4552.0,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road North",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.201,
+          28.742
+        ],
+        [
+          77.155,
+          28.735
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_243_burari_chowk_wazirabad_signature_bridge",
+      "source": "burari_chowk",
+      "target": "wazirabad_signature_bridge",
+      "distance": 4032.2,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (Yamuna)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.201,
+          28.742
+        ],
+        [
+          77.232,
+          28.718
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_244_wazirabad_signature_bridge_burari_chowk",
+      "source": "wazirabad_signature_bridge",
+      "target": "burari_chowk",
+      "distance": 4032.2,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (Yamuna)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.232,
+          28.718
+        ],
+        [
+          77.201,
+          28.742
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_245_timarpur_chowk_wazirabad_signature_bridge",
+      "source": "timarpur_chowk",
+      "target": "wazirabad_signature_bridge",
+      "distance": 3298.2,
+      "roadType": "primary",
+      "roadName": "Wazirabad Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.218,
+          28.691
+        ],
+        [
+          77.232,
+          28.718
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_246_wazirabad_signature_bridge_timarpur_chowk",
+      "source": "wazirabad_signature_bridge",
+      "target": "timarpur_chowk",
+      "distance": 3298.2,
+      "roadType": "primary",
+      "roadName": "Wazirabad Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.232,
+          28.718
+        ],
+        [
+          77.218,
+          28.691
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_247_mukarba_chowk_rohini_sec3",
+      "source": "mukarba_chowk",
+      "target": "rohini_sec3",
+      "distance": 4617.1,
+      "roadType": "primary",
+      "roadName": "Madhuban Chowk Road",
+      "speedLimit": 55,
+      "geometry": [
+        [
+          77.155,
+          28.735
+        ],
+        [
+          77.1235,
+          28.704
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_248_rohini_sec3_mukarba_chowk",
+      "source": "rohini_sec3",
+      "target": "mukarba_chowk",
+      "distance": 4617.1,
+      "roadType": "primary",
+      "roadName": "Madhuban Chowk Road",
+      "speedLimit": 55,
+      "geometry": [
+        [
+          77.1235,
+          28.704
+        ],
+        [
+          77.155,
+          28.735
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_249_shalimar_bagh_pitampura_tv_tower",
+      "source": "shalimar_bagh",
+      "target": "pitampura_tv_tower",
+      "distance": 1837.0,
+      "roadType": "primary",
+      "roadName": "Pitampura Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.16,
+          28.708
+        ],
+        [
+          77.15,
+          28.694
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_250_pitampura_tv_tower_shalimar_bagh",
+      "source": "pitampura_tv_tower",
+      "target": "shalimar_bagh",
+      "distance": 1837.0,
+      "roadType": "primary",
+      "roadName": "Pitampura Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.15,
+          28.694
+        ],
+        [
+          77.16,
+          28.708
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_251_pitampura_tv_tower_rohini_sec3",
+      "source": "pitampura_tv_tower",
+      "target": "rohini_sec3",
+      "distance": 2813.7,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (Madhuban)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.15,
+          28.694
+        ],
+        [
+          77.1235,
+          28.704
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_252_rohini_sec3_pitampura_tv_tower",
+      "source": "rohini_sec3",
+      "target": "pitampura_tv_tower",
+      "distance": 2813.7,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (Madhuban)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.1235,
+          28.704
+        ],
+        [
+          77.15,
+          28.694
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_253_rohini_sec3_rohini_sec14",
+      "source": "rohini_sec3",
+      "target": "rohini_sec14",
+      "distance": 1918.7,
+      "roadType": "primary",
+      "roadName": "Bhagwan Mahavir Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.1235,
+          28.704
+        ],
+        [
+          77.112,
+          28.718
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_254_rohini_sec14_rohini_sec3",
+      "source": "rohini_sec14",
+      "target": "rohini_sec3",
+      "distance": 1918.7,
+      "roadType": "primary",
+      "roadName": "Bhagwan Mahavir Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.112,
+          28.718
+        ],
+        [
+          77.1235,
+          28.704
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_255_rohini_sec14_rohini_sec22",
+      "source": "rohini_sec14",
+      "target": "rohini_sec22",
+      "distance": 2903.1,
+      "roadType": "primary",
+      "roadName": "Kanjhawala Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.112,
+          28.718
+        ],
+        [
+          77.085,
+          28.729
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_256_rohini_sec22_rohini_sec14",
+      "source": "rohini_sec22",
+      "target": "rohini_sec14",
+      "distance": 2903.1,
+      "roadType": "primary",
+      "roadName": "Kanjhawala Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.085,
+          28.729
+        ],
+        [
+          77.112,
+          28.718
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_257_rohini_sec3_peera_garhi_chowk",
+      "source": "rohini_sec3",
+      "target": "peera_garhi_chowk",
+      "distance": 4187.3,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road West",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.1235,
+          28.704
+        ],
+        [
+          77.093,
+          28.6775
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_258_peera_garhi_chowk_rohini_sec3",
+      "source": "peera_garhi_chowk",
+      "target": "rohini_sec3",
+      "distance": 4187.3,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road West",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.093,
+          28.6775
+        ],
+        [
+          77.1235,
+          28.704
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_259_punjabi_bagh_roundabout_peera_garhi_chowk",
+      "source": "punjabi_bagh_roundabout",
+      "target": "peera_garhi_chowk",
+      "distance": 4142.8,
+      "roadType": "trunk",
+      "roadName": "Rohtak Road (NH9)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.135,
+          28.672
+        ],
+        [
+          77.093,
+          28.6775
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_260_peera_garhi_chowk_punjabi_bagh_roundabout",
+      "source": "peera_garhi_chowk",
+      "target": "punjabi_bagh_roundabout",
+      "distance": 4142.8,
+      "roadType": "trunk",
+      "roadName": "Rohtak Road (NH9)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.093,
+          28.6775
+        ],
+        [
+          77.135,
+          28.672
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_261_peera_garhi_chowk_nangloi_chowk",
+      "source": "peera_garhi_chowk",
+      "target": "nangloi_chowk",
+      "distance": 3257.9,
+      "roadType": "trunk",
+      "roadName": "Rohtak Road (NH9 West)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.093,
+          28.6775
+        ],
+        [
+          77.06,
+          28.682
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_262_nangloi_chowk_peera_garhi_chowk",
+      "source": "nangloi_chowk",
+      "target": "peera_garhi_chowk",
+      "distance": 3257.9,
+      "roadType": "trunk",
+      "roadName": "Rohtak Road (NH9 West)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.06,
+          28.682
+        ],
+        [
+          77.093,
+          28.6775
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_263_nangloi_chowk_mundka_industrial_area",
+      "source": "nangloi_chowk",
+      "target": "mundka_industrial_area",
+      "distance": 3421.5,
+      "roadType": "trunk",
+      "roadName": "Rohtak Road (NH9 Outskirts)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.06,
+          28.682
+        ],
+        [
+          77.025,
+          28.684
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_264_mundka_industrial_area_nangloi_chowk",
+      "source": "mundka_industrial_area",
+      "target": "nangloi_chowk",
+      "distance": 3421.5,
+      "roadType": "trunk",
+      "roadName": "Rohtak Road (NH9 Outskirts)",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.025,
+          28.684
+        ],
+        [
+          77.06,
+          28.682
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_265_peera_garhi_chowk_paschim_vihar_hub",
+      "source": "peera_garhi_chowk",
+      "target": "paschim_vihar_hub",
+      "distance": 1817.3,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.093,
+          28.6775
+        ],
+        [
+          77.105,
+          28.665
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_266_paschim_vihar_hub_peera_garhi_chowk",
+      "source": "paschim_vihar_hub",
+      "target": "peera_garhi_chowk",
+      "distance": 1817.3,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.105,
+          28.665
+        ],
+        [
+          77.093,
+          28.6775
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_267_paschim_vihar_hub_keshopur_chowk",
+      "source": "paschim_vihar_hub",
+      "target": "keshopur_chowk",
+      "distance": 2451.7,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.105,
+          28.665
+        ],
+        [
+          77.089,
+          28.648
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_268_keshopur_chowk_paschim_vihar_hub",
+      "source": "keshopur_chowk",
+      "target": "paschim_vihar_hub",
+      "distance": 2451.7,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.089,
+          28.648
+        ],
+        [
+          77.105,
+          28.665
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_269_keshopur_chowk_janakpuri_district_centre",
+      "source": "keshopur_chowk",
+      "target": "janakpuri_district_centre",
+      "distance": 2369.8,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road South",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.089,
+          28.648
+        ],
+        [
+          77.078,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_270_janakpuri_district_centre_keshopur_chowk",
+      "source": "janakpuri_district_centre",
+      "target": "keshopur_chowk",
+      "distance": 2369.8,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road South",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.078,
+          28.629
+        ],
+        [
+          77.089,
+          28.648
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_271_raja_garden_flyover_rajouri_garden_hub",
+      "source": "raja_garden_flyover",
+      "target": "rajouri_garden_hub",
+      "distance": 735.3,
+      "roadType": "primary",
+      "roadName": "Shivaji Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.127,
+          28.652
+        ],
+        [
+          77.121,
+          28.648
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_272_rajouri_garden_hub_raja_garden_flyover",
+      "source": "rajouri_garden_hub",
+      "target": "raja_garden_flyover",
+      "distance": 735.3,
+      "roadType": "primary",
+      "roadName": "Shivaji Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.121,
+          28.648
+        ],
+        [
+          77.127,
+          28.652
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_273_rajouri_garden_hub_tilak_nagar_chowk",
+      "source": "rajouri_garden_hub",
+      "target": "tilak_nagar_chowk",
+      "distance": 2780.8,
+      "roadType": "primary",
+      "roadName": "Najafgarh Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.121,
+          28.648
+        ],
+        [
+          77.096,
+          28.636
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_274_tilak_nagar_chowk_rajouri_garden_hub",
+      "source": "tilak_nagar_chowk",
+      "target": "rajouri_garden_hub",
+      "distance": 2780.8,
+      "roadType": "primary",
+      "roadName": "Najafgarh Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.096,
+          28.636
+        ],
+        [
+          77.121,
+          28.648
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_275_tilak_nagar_chowk_janakpuri_district_centre",
+      "source": "tilak_nagar_chowk",
+      "target": "janakpuri_district_centre",
+      "distance": 1921.5,
+      "roadType": "primary",
+      "roadName": "District Centre Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.096,
+          28.636
+        ],
+        [
+          77.078,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_276_janakpuri_district_centre_tilak_nagar_chowk",
+      "source": "janakpuri_district_centre",
+      "target": "tilak_nagar_chowk",
+      "distance": 1921.5,
+      "roadType": "primary",
+      "roadName": "District Centre Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.078,
+          28.629
+        ],
+        [
+          77.096,
+          28.636
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_277_tilak_nagar_chowk_uttam_nagar_terminal",
+      "source": "tilak_nagar_chowk",
+      "target": "uttam_nagar_terminal",
+      "distance": 4384.9,
+      "roadType": "primary",
+      "roadName": "Najafgarh Road West",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.096,
+          28.636
+        ],
+        [
+          77.054,
+          28.622
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_278_uttam_nagar_terminal_tilak_nagar_chowk",
+      "source": "uttam_nagar_terminal",
+      "target": "tilak_nagar_chowk",
+      "distance": 4384.9,
+      "roadType": "primary",
+      "roadName": "Najafgarh Road West",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.054,
+          28.622
+        ],
+        [
+          77.096,
+          28.636
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_279_uttam_nagar_terminal_dwarka_mor",
+      "source": "uttam_nagar_terminal",
+      "target": "dwarka_mor",
+      "distance": 2193.0,
+      "roadType": "primary",
+      "roadName": "Najafgarh Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.054,
+          28.622
+        ],
+        [
+          77.032,
+          28.618
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_280_dwarka_mor_uttam_nagar_terminal",
+      "source": "dwarka_mor",
+      "target": "uttam_nagar_terminal",
+      "distance": 2193.0,
+      "roadType": "primary",
+      "roadName": "Najafgarh Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.032,
+          28.618
+        ],
+        [
+          77.054,
+          28.622
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_281_dwarka_mor_najafgarh_terminal",
+      "source": "dwarka_mor",
+      "target": "najafgarh_terminal",
+      "distance": 4636.1,
+      "roadType": "primary",
+      "roadName": "Najafgarh Main Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.032,
+          28.618
+        ],
+        [
+          76.985,
+          28.612
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_282_najafgarh_terminal_dwarka_mor",
+      "source": "najafgarh_terminal",
+      "target": "dwarka_mor",
+      "distance": 4636.1,
+      "roadType": "primary",
+      "roadName": "Najafgarh Main Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          76.985,
+          28.612
+        ],
+        [
+          77.032,
+          28.618
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_283_dwarka_mor_dwarka_sec6",
+      "source": "dwarka_mor",
+      "target": "dwarka_sec6",
+      "distance": 4194.1,
+      "roadType": "primary",
+      "roadName": "Dwarka Sector 3-6 Main Rd",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.032,
+          28.618
+        ],
+        [
+          77.062,
+          28.591
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_284_dwarka_sec6_dwarka_mor",
+      "source": "dwarka_sec6",
+      "target": "dwarka_mor",
+      "distance": 4194.1,
+      "roadType": "primary",
+      "roadName": "Dwarka Sector 3-6 Main Rd",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.062,
+          28.591
+        ],
+        [
+          77.032,
+          28.618
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_285_dwarka_sec6_dwarka_sec10",
+      "source": "dwarka_sec6",
+      "target": "dwarka_sec10",
+      "distance": 1256.8,
+      "roadType": "primary",
+      "roadName": "Dwarka Road (Sector 6-10)",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.062,
+          28.591
+        ],
+        [
+          77.056,
+          28.581
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_286_dwarka_sec10_dwarka_sec6",
+      "source": "dwarka_sec10",
+      "target": "dwarka_sec6",
+      "distance": 1256.8,
+      "roadType": "primary",
+      "roadName": "Dwarka Road (Sector 6-10)",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.056,
+          28.581
+        ],
+        [
+          77.062,
+          28.591
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_287_dwarka_sec10_dwarka_sec21_isbt",
+      "source": "dwarka_sec10",
+      "target": "dwarka_sec21_isbt",
+      "distance": 3175.1,
+      "roadType": "primary",
+      "roadName": "Dwarka Sector 21 Link",
+      "speedLimit": 55,
+      "geometry": [
+        [
+          77.056,
+          28.581
+        ],
+        [
+          77.058,
+          28.5525
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_288_dwarka_sec21_isbt_dwarka_sec10",
+      "source": "dwarka_sec21_isbt",
+      "target": "dwarka_sec10",
+      "distance": 3175.1,
+      "roadType": "primary",
+      "roadName": "Dwarka Sector 21 Link",
+      "speedLimit": 55,
+      "geometry": [
+        [
+          77.058,
+          28.5525
+        ],
+        [
+          77.056,
+          28.581
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_289_dwarka_sec21_isbt_igi_airport_t3",
+      "source": "dwarka_sec21_isbt",
+      "target": "igi_airport_t3",
+      "distance": 4023.3,
+      "roadType": "motorway",
+      "roadName": "Urban Extension Road / Airport Tunnel",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.058,
+          28.5525
+        ],
+        [
+          77.099,
+          28.556
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_290_igi_airport_t3_dwarka_sec21_isbt",
+      "source": "igi_airport_t3",
+      "target": "dwarka_sec21_isbt",
+      "distance": 4023.3,
+      "roadType": "motorway",
+      "roadName": "Urban Extension Road / Airport Tunnel",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.099,
+          28.556
+        ],
+        [
+          77.058,
+          28.5525
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_291_dwarka_sec21_isbt_najafgarh_terminal",
+      "source": "dwarka_sec21_isbt",
+      "target": "najafgarh_terminal",
+      "distance": 9725.3,
+      "roadType": "trunk",
+      "roadName": "Najafgarh-Dwarka Expressway",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.058,
+          28.5525
+        ],
+        [
+          76.985,
+          28.612
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_292_najafgarh_terminal_dwarka_sec21_isbt",
+      "source": "najafgarh_terminal",
+      "target": "dwarka_sec21_isbt",
+      "distance": 9725.3,
+      "roadType": "trunk",
+      "roadName": "Najafgarh-Dwarka Expressway",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          76.985,
+          28.612
+        ],
+        [
+          77.058,
+          28.5525
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_293_delhi_cantt_station_janakpuri_district_centre",
+      "source": "delhi_cantt_station",
+      "target": "janakpuri_district_centre",
+      "distance": 5789.2,
+      "roadType": "primary",
+      "roadName": "Jail Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.128,
+          28.601
+        ],
+        [
+          77.078,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_294_janakpuri_district_centre_delhi_cantt_station",
+      "source": "janakpuri_district_centre",
+      "target": "delhi_cantt_station",
+      "distance": 5789.2,
+      "roadType": "primary",
+      "roadName": "Jail Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.078,
+          28.629
+        ],
+        [
+          77.128,
+          28.601
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_295_dhaula_kuan_interchange_igi_airport_t1",
+      "source": "dhaula_kuan_interchange",
+      "target": "igi_airport_t1",
+      "distance": 4842.5,
+      "roadType": "motorway",
+      "roadName": "National Highway 48 (Airport Link)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.162,
+          28.5925
+        ],
+        [
+          77.121,
+          28.568
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_296_igi_airport_t1_dhaula_kuan_interchange",
+      "source": "igi_airport_t1",
+      "target": "dhaula_kuan_interchange",
+      "distance": 4842.5,
+      "roadType": "motorway",
+      "roadName": "National Highway 48 (Airport Link)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.121,
+          28.568
+        ],
+        [
+          77.162,
+          28.5925
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_297_igi_airport_t1_igi_airport_t3",
+      "source": "igi_airport_t1",
+      "target": "igi_airport_t3",
+      "distance": 2529.2,
+      "roadType": "motorway",
+      "roadName": "Northern Access Airport Road",
+      "speedLimit": 75,
+      "geometry": [
+        [
+          77.121,
+          28.568
+        ],
+        [
+          77.099,
+          28.556
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_298_igi_airport_t3_igi_airport_t1",
+      "source": "igi_airport_t3",
+      "target": "igi_airport_t1",
+      "distance": 2529.2,
+      "roadType": "motorway",
+      "roadName": "Northern Access Airport Road",
+      "speedLimit": 75,
+      "geometry": [
+        [
+          77.099,
+          28.556
+        ],
+        [
+          77.121,
+          28.568
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_299_dhaula_kuan_interchange_mahipalpur_chowk",
+      "source": "dhaula_kuan_interchange",
+      "target": "mahipalpur_chowk",
+      "distance": 5998.5,
+      "roadType": "motorway",
+      "roadName": "NH48 (Delhi-Jaipur Highway)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.162,
+          28.5925
+        ],
+        [
+          77.129,
+          28.547
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_300_mahipalpur_chowk_dhaula_kuan_interchange",
+      "source": "mahipalpur_chowk",
+      "target": "dhaula_kuan_interchange",
+      "distance": 5998.5,
+      "roadType": "motorway",
+      "roadName": "NH48 (Delhi-Jaipur Highway)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.129,
+          28.547
+        ],
+        [
+          77.162,
+          28.5925
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_301_mahipalpur_chowk_igi_airport_t3",
+      "source": "mahipalpur_chowk",
+      "target": "igi_airport_t3",
+      "distance": 3096.4,
+      "roadType": "motorway",
+      "roadName": "Airport Cargo Road",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.129,
+          28.547
+        ],
+        [
+          77.099,
+          28.556
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_302_igi_airport_t3_mahipalpur_chowk",
+      "source": "igi_airport_t3",
+      "target": "mahipalpur_chowk",
+      "distance": 3096.4,
+      "roadType": "motorway",
+      "roadName": "Airport Cargo Road",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.099,
+          28.556
+        ],
+        [
+          77.129,
+          28.547
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_303_mahipalpur_chowk_vasant_kunj_promenade",
+      "source": "mahipalpur_chowk",
+      "target": "vasant_kunj_promenade",
+      "distance": 2625.8,
+      "roadType": "primary",
+      "roadName": "Mahipalpur Bypass",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.129,
+          28.547
+        ],
+        [
+          77.155,
+          28.541
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_304_vasant_kunj_promenade_mahipalpur_chowk",
+      "source": "vasant_kunj_promenade",
+      "target": "mahipalpur_chowk",
+      "distance": 2625.8,
+      "roadType": "primary",
+      "roadName": "Mahipalpur Bypass",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.155,
+          28.541
+        ],
+        [
+          77.129,
+          28.547
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_305_dhaula_kuan_interchange_munirka_chowk",
+      "source": "dhaula_kuan_interchange",
+      "target": "munirka_chowk",
+      "distance": 4438.5,
+      "roadType": "trunk",
+      "roadName": "Benito Juarez Marg / Outer Ring",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.162,
+          28.5925
+        ],
+        [
+          77.174,
+          28.554
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_306_munirka_chowk_dhaula_kuan_interchange",
+      "source": "munirka_chowk",
+      "target": "dhaula_kuan_interchange",
+      "distance": 4438.5,
+      "roadType": "trunk",
+      "roadName": "Benito Juarez Marg / Outer Ring",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.174,
+          28.554
+        ],
+        [
+          77.162,
+          28.5925
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_307_munirka_chowk_vasant_kunj_promenade",
+      "source": "munirka_chowk",
+      "target": "vasant_kunj_promenade",
+      "distance": 2352.4,
+      "roadType": "primary",
+      "roadName": "Nelson Mandela Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.174,
+          28.554
+        ],
+        [
+          77.155,
+          28.541
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_308_vasant_kunj_promenade_munirka_chowk",
+      "source": "vasant_kunj_promenade",
+      "target": "munirka_chowk",
+      "distance": 2352.4,
+      "roadType": "primary",
+      "roadName": "Nelson Mandela Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.155,
+          28.541
+        ],
+        [
+          77.174,
+          28.554
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_309_munirka_chowk_hauz_khas_iit",
+      "source": "munirka_chowk",
+      "target": "hauz_khas_iit",
+      "distance": 2235.7,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (IIT Flyover)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.174,
+          28.554
+        ],
+        [
+          77.195,
+          28.546
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_310_hauz_khas_iit_munirka_chowk",
+      "source": "hauz_khas_iit",
+      "target": "munirka_chowk",
+      "distance": 2235.7,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (IIT Flyover)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.195,
+          28.546
+        ],
+        [
+          77.174,
+          28.554
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_311_hauz_khas_iit_panchsheel_enclave",
+      "source": "hauz_khas_iit",
+      "target": "panchsheel_enclave",
+      "distance": 1966.2,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.195,
+          28.546
+        ],
+        [
+          77.215,
+          28.544
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_312_panchsheel_enclave_hauz_khas_iit",
+      "source": "panchsheel_enclave",
+      "target": "hauz_khas_iit",
+      "distance": 1966.2,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.215,
+          28.544
+        ],
+        [
+          77.195,
+          28.546
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_313_panchsheel_enclave_chirag_delhi_flyover",
+      "source": "panchsheel_enclave",
+      "target": "chirag_delhi_flyover",
+      "distance": 1274.7,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.215,
+          28.544
+        ],
+        [
+          77.228,
+          28.543
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_314_chirag_delhi_flyover_panchsheel_enclave",
+      "source": "chirag_delhi_flyover",
+      "target": "panchsheel_enclave",
+      "distance": 1274.7,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.228,
+          28.543
+        ],
+        [
+          77.215,
+          28.544
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_315_chirag_delhi_flyover_greater_kailash_m_block",
+      "source": "chirag_delhi_flyover",
+      "target": "greater_kailash_m_block",
+      "distance": 1182.9,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (GK)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.228,
+          28.543
+        ],
+        [
+          77.238,
+          28.549
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_316_greater_kailash_m_block_chirag_delhi_flyover",
+      "source": "greater_kailash_m_block",
+      "target": "chirag_delhi_flyover",
+      "distance": 1182.9,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (GK)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.238,
+          28.549
+        ],
+        [
+          77.228,
+          28.543
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_317_greater_kailash_m_block_nehru_place_it_hub",
+      "source": "greater_kailash_m_block",
+      "target": "nehru_place_it_hub",
+      "distance": 1319.8,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.238,
+          28.549
+        ],
+        [
+          77.2515,
+          28.5485
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_318_nehru_place_it_hub_greater_kailash_m_block",
+      "source": "nehru_place_it_hub",
+      "target": "greater_kailash_m_block",
+      "distance": 1319.8,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.2515,
+          28.5485
+        ],
+        [
+          77.238,
+          28.549
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_319_nehru_place_it_hub_kalkaji_mandir_chowk",
+      "source": "nehru_place_it_hub",
+      "target": "kalkaji_mandir_chowk",
+      "distance": 942.8,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (Kalkaji)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.2515,
+          28.5485
+        ],
+        [
+          77.261,
+          28.547
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_320_kalkaji_mandir_chowk_nehru_place_it_hub",
+      "source": "kalkaji_mandir_chowk",
+      "target": "nehru_place_it_hub",
+      "distance": 942.8,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road (Kalkaji)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.261,
+          28.547
+        ],
+        [
+          77.2515,
+          28.5485
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_321_kalkaji_mandir_chowk_modi_mill_flyover",
+      "source": "kalkaji_mandir_chowk",
+      "target": "modi_mill_flyover",
+      "distance": 1401.3,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road East",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.261,
+          28.547
+        ],
+        [
+          77.268,
+          28.558
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_322_modi_mill_flyover_kalkaji_mandir_chowk",
+      "source": "modi_mill_flyover",
+      "target": "kalkaji_mandir_chowk",
+      "distance": 1401.3,
+      "roadType": "trunk",
+      "roadName": "Outer Ring Road East",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.268,
+          28.558
+        ],
+        [
+          77.261,
+          28.547
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_323_modi_mill_flyover_ashram_chowk",
+      "source": "modi_mill_flyover",
+      "target": "ashram_chowk",
+      "distance": 1643.2,
+      "roadType": "primary",
+      "roadName": "Captain Gaur Marg Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.268,
+          28.558
+        ],
+        [
+          77.26,
+          28.571
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_324_ashram_chowk_modi_mill_flyover",
+      "source": "ashram_chowk",
+      "target": "modi_mill_flyover",
+      "distance": 1643.2,
+      "roadType": "primary",
+      "roadName": "Captain Gaur Marg Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.26,
+          28.571
+        ],
+        [
+          77.268,
+          28.558
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_325_aiims_safdarjung_hauz_khas_iit",
+      "source": "aiims_safdarjung",
+      "target": "hauz_khas_iit",
+      "distance": 2926.9,
+      "roadType": "primary",
+      "roadName": "Sri Aurobindo Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2085,
+          28.5695
+        ],
+        [
+          77.195,
+          28.546
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_326_hauz_khas_iit_aiims_safdarjung",
+      "source": "hauz_khas_iit",
+      "target": "aiims_safdarjung",
+      "distance": 2926.9,
+      "roadType": "primary",
+      "roadName": "Sri Aurobindo Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.195,
+          28.546
+        ],
+        [
+          77.2085,
+          28.5695
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_327_hauz_khas_iit_saket_district_centre",
+      "source": "hauz_khas_iit",
+      "target": "saket_district_centre",
+      "distance": 3045.6,
+      "roadType": "primary",
+      "roadName": "Press Enclave Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.195,
+          28.546
+        ],
+        [
+          77.2185,
+          28.528
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_328_saket_district_centre_hauz_khas_iit",
+      "source": "saket_district_centre",
+      "target": "hauz_khas_iit",
+      "distance": 3045.6,
+      "roadType": "primary",
+      "roadName": "Press Enclave Marg",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2185,
+          28.528
+        ],
+        [
+          77.195,
+          28.546
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_329_saket_district_centre_qutub_minar_mehrauli",
+      "source": "saket_district_centre",
+      "target": "qutub_minar_mehrauli",
+      "distance": 3302.9,
+      "roadType": "primary",
+      "roadName": "Mehrauli-Badarpur (MB) Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2185,
+          28.528
+        ],
+        [
+          77.185,
+          28.524
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_330_qutub_minar_mehrauli_saket_district_centre",
+      "source": "qutub_minar_mehrauli",
+      "target": "saket_district_centre",
+      "distance": 3302.9,
+      "roadType": "primary",
+      "roadName": "Mehrauli-Badarpur (MB) Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.185,
+          28.524
+        ],
+        [
+          77.2185,
+          28.528
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_331_vasant_kunj_promenade_qutub_minar_mehrauli",
+      "source": "vasant_kunj_promenade",
+      "target": "qutub_minar_mehrauli",
+      "distance": 3487.4,
+      "roadType": "primary",
+      "roadName": "Mehrauli-Gurugram Road Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.155,
+          28.541
+        ],
+        [
+          77.185,
+          28.524
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_332_qutub_minar_mehrauli_vasant_kunj_promenade",
+      "source": "qutub_minar_mehrauli",
+      "target": "vasant_kunj_promenade",
+      "distance": 3487.4,
+      "roadType": "primary",
+      "roadName": "Mehrauli-Gurugram Road Link",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.185,
+          28.524
+        ],
+        [
+          77.155,
+          28.541
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_333_ashram_chowk_sarita_vihar_underpass",
+      "source": "ashram_chowk",
+      "target": "sarita_vihar_underpass",
+      "distance": 5550.8,
+      "roadType": "trunk",
+      "roadName": "Mathura Road (NH19)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.26,
+          28.571
+        ],
+        [
+          77.294,
+          28.531
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_334_sarita_vihar_underpass_ashram_chowk",
+      "source": "sarita_vihar_underpass",
+      "target": "ashram_chowk",
+      "distance": 5550.8,
+      "roadType": "trunk",
+      "roadName": "Mathura Road (NH19)",
+      "speedLimit": 65,
+      "geometry": [
+        [
+          77.294,
+          28.531
+        ],
+        [
+          77.26,
+          28.571
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_335_kalkaji_mandir_chowk_okhla_industrial_area_ph3",
+      "source": "kalkaji_mandir_chowk",
+      "target": "okhla_industrial_area_ph3",
+      "distance": 1628.1,
+      "roadType": "primary",
+      "roadName": "Maa Anandmayee Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.261,
+          28.547
+        ],
+        [
+          77.272,
+          28.536
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_336_okhla_industrial_area_ph3_kalkaji_mandir_chowk",
+      "source": "okhla_industrial_area_ph3",
+      "target": "kalkaji_mandir_chowk",
+      "distance": 1628.1,
+      "roadType": "primary",
+      "roadName": "Maa Anandmayee Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.272,
+          28.536
+        ],
+        [
+          77.261,
+          28.547
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_337_okhla_industrial_area_ph3_sarita_vihar_underpass",
+      "source": "okhla_industrial_area_ph3",
+      "target": "sarita_vihar_underpass",
+      "distance": 2219.9,
+      "roadType": "primary",
+      "roadName": "Okhla Link Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.272,
+          28.536
+        ],
+        [
+          77.294,
+          28.531
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_338_sarita_vihar_underpass_okhla_industrial_area_ph3",
+      "source": "sarita_vihar_underpass",
+      "target": "okhla_industrial_area_ph3",
+      "distance": 2219.9,
+      "roadType": "primary",
+      "roadName": "Okhla Link Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.294,
+          28.531
+        ],
+        [
+          77.272,
+          28.536
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_339_sarita_vihar_underpass_badarpur_border_terminal",
+      "source": "sarita_vihar_underpass",
+      "target": "badarpur_border_terminal",
+      "distance": 3797.3,
+      "roadType": "trunk",
+      "roadName": "Mathura Road (NH19 to Faridabad)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.294,
+          28.531
+        ],
+        [
+          77.304,
+          28.498
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_340_badarpur_border_terminal_sarita_vihar_underpass",
+      "source": "badarpur_border_terminal",
+      "target": "sarita_vihar_underpass",
+      "distance": 3797.3,
+      "roadType": "trunk",
+      "roadName": "Mathura Road (NH19 to Faridabad)",
+      "speedLimit": 70,
+      "geometry": [
+        [
+          77.304,
+          28.498
+        ],
+        [
+          77.294,
+          28.531
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_341_saket_district_centre_badarpur_border_terminal",
+      "source": "saket_district_centre",
+      "target": "badarpur_border_terminal",
+      "distance": 8995.4,
+      "roadType": "primary",
+      "roadName": "Mehrauli-Badarpur (MB) Road East",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2185,
+          28.528
+        ],
+        [
+          77.304,
+          28.498
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_342_badarpur_border_terminal_saket_district_centre",
+      "source": "badarpur_border_terminal",
+      "target": "saket_district_centre",
+      "distance": 8995.4,
+      "roadType": "primary",
+      "roadName": "Mehrauli-Badarpur (MB) Road East",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.304,
+          28.498
+        ],
+        [
+          77.2185,
+          28.528
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_343_ito_chowk_ito_yamuna_bridge",
+      "source": "ito_chowk",
+      "target": "ito_yamuna_bridge",
+      "distance": 1172.5,
+      "roadType": "trunk",
+      "roadName": "Vikas Marg Yamuna Bridge",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.241,
+          28.6285
+        ],
+        [
+          77.253,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_344_ito_yamuna_bridge_ito_chowk",
+      "source": "ito_yamuna_bridge",
+      "target": "ito_chowk",
+      "distance": 1172.5,
+      "roadType": "trunk",
+      "roadName": "Vikas Marg Yamuna Bridge",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.253,
+          28.629
+        ],
+        [
+          77.241,
+          28.6285
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_345_ito_yamuna_bridge_laxmi_nagar_metro",
+      "source": "ito_yamuna_bridge",
+      "target": "laxmi_nagar_metro",
+      "distance": 2352.9,
+      "roadType": "primary",
+      "roadName": "Vikas Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.253,
+          28.629
+        ],
+        [
+          77.277,
+          28.631
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_346_laxmi_nagar_metro_ito_yamuna_bridge",
+      "source": "laxmi_nagar_metro",
+      "target": "ito_yamuna_bridge",
+      "distance": 2352.9,
+      "roadType": "primary",
+      "roadName": "Vikas Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.277,
+          28.631
+        ],
+        [
+          77.253,
+          28.629
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_347_laxmi_nagar_metro_preet_vihar_hub",
+      "source": "laxmi_nagar_metro",
+      "target": "preet_vihar_hub",
+      "distance": 1921.4,
+      "roadType": "primary",
+      "roadName": "Vikas Marg East",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.277,
+          28.631
+        ],
+        [
+          77.295,
+          28.638
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_348_preet_vihar_hub_laxmi_nagar_metro",
+      "source": "preet_vihar_hub",
+      "target": "laxmi_nagar_metro",
+      "distance": 1921.4,
+      "roadType": "primary",
+      "roadName": "Vikas Marg East",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.295,
+          28.638
+        ],
+        [
+          77.277,
+          28.631
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_349_preet_vihar_hub_anand_vihar_isbt",
+      "source": "preet_vihar_hub",
+      "target": "anand_vihar_isbt",
+      "distance": 2305.6,
+      "roadType": "primary",
+      "roadName": "Vikas Marg / Railway Rd",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.295,
+          28.638
+        ],
+        [
+          77.316,
+          28.6475
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_350_anand_vihar_isbt_preet_vihar_hub",
+      "source": "anand_vihar_isbt",
+      "target": "preet_vihar_hub",
+      "distance": 2305.6,
+      "roadType": "primary",
+      "roadName": "Vikas Marg / Railway Rd",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.316,
+          28.6475
+        ],
+        [
+          77.295,
+          28.638
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_351_sarai_kale_khan_isbt_akshardham_setu",
+      "source": "sarai_kale_khan_isbt",
+      "target": "akshardham_setu",
+      "distance": 3883.9,
+      "roadType": "motorway",
+      "roadName": "Delhi-Meerut Expressway Bridge",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.256,
+          28.5895
+        ],
+        [
+          77.279,
+          28.618
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_352_akshardham_setu_sarai_kale_khan_isbt",
+      "source": "akshardham_setu",
+      "target": "sarai_kale_khan_isbt",
+      "distance": 3883.9,
+      "roadType": "motorway",
+      "roadName": "Delhi-Meerut Expressway Bridge",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.279,
+          28.618
+        ],
+        [
+          77.256,
+          28.5895
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_353_akshardham_setu_laxmi_nagar_metro",
+      "source": "akshardham_setu",
+      "target": "laxmi_nagar_metro",
+      "distance": 1458.7,
+      "roadType": "primary",
+      "roadName": "Noida Link Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.279,
+          28.618
+        ],
+        [
+          77.277,
+          28.631
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_354_laxmi_nagar_metro_akshardham_setu",
+      "source": "laxmi_nagar_metro",
+      "target": "akshardham_setu",
+      "distance": 1458.7,
+      "roadType": "primary",
+      "roadName": "Noida Link Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.277,
+          28.631
+        ],
+        [
+          77.279,
+          28.618
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_355_akshardham_setu_mayur_vihar_phase1",
+      "source": "akshardham_setu",
+      "target": "mayur_vihar_phase1",
+      "distance": 2332.6,
+      "roadType": "trunk",
+      "roadName": "Mayur Vihar Link",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.279,
+          28.618
+        ],
+        [
+          77.293,
+          28.601
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_356_mayur_vihar_phase1_akshardham_setu",
+      "source": "mayur_vihar_phase1",
+      "target": "akshardham_setu",
+      "distance": 2332.6,
+      "roadType": "trunk",
+      "roadName": "Mayur Vihar Link",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.293,
+          28.601
+        ],
+        [
+          77.279,
+          28.618
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_357_mayur_vihar_phase1_mayur_vihar_phase3",
+      "source": "mayur_vihar_phase1",
+      "target": "mayur_vihar_phase3",
+      "distance": 3886.0,
+      "roadType": "primary",
+      "roadName": "Ghazipur Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.293,
+          28.601
+        ],
+        [
+          77.332,
+          28.608
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_358_mayur_vihar_phase3_mayur_vihar_phase1",
+      "source": "mayur_vihar_phase3",
+      "target": "mayur_vihar_phase1",
+      "distance": 3886.0,
+      "roadType": "primary",
+      "roadName": "Ghazipur Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.332,
+          28.608
+        ],
+        [
+          77.293,
+          28.601
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_359_akshardham_setu_anand_vihar_isbt",
+      "source": "akshardham_setu",
+      "target": "anand_vihar_isbt",
+      "distance": 4878.5,
+      "roadType": "motorway",
+      "roadName": "Delhi-Meerut Expressway (NH9)",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.279,
+          28.618
+        ],
+        [
+          77.316,
+          28.6475
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_360_anand_vihar_isbt_akshardham_setu",
+      "source": "anand_vihar_isbt",
+      "target": "akshardham_setu",
+      "distance": 4878.5,
+      "roadType": "motorway",
+      "roadName": "Delhi-Meerut Expressway (NH9)",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.316,
+          28.6475
+        ],
+        [
+          77.279,
+          28.618
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_361_ashram_chowk_dnd_flyway_toll",
+      "source": "ashram_chowk",
+      "target": "dnd_flyway_toll",
+      "distance": 2842.9,
+      "roadType": "motorway",
+      "roadName": "DND Flyway (Delhi Side)",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.26,
+          28.571
+        ],
+        [
+          77.288,
+          28.578
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_362_dnd_flyway_toll_ashram_chowk",
+      "source": "dnd_flyway_toll",
+      "target": "ashram_chowk",
+      "distance": 2842.9,
+      "roadType": "motorway",
+      "roadName": "DND Flyway (Delhi Side)",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.288,
+          28.578
+        ],
+        [
+          77.26,
+          28.571
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_363_dnd_flyway_toll_mayur_vihar_phase1",
+      "source": "dnd_flyway_toll",
+      "target": "mayur_vihar_phase1",
+      "distance": 2603.7,
+      "roadType": "motorway",
+      "roadName": "DND Noida Connection Link",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.288,
+          28.578
+        ],
+        [
+          77.293,
+          28.601
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_364_mayur_vihar_phase1_dnd_flyway_toll",
+      "source": "mayur_vihar_phase1",
+      "target": "dnd_flyway_toll",
+      "distance": 2603.7,
+      "roadType": "motorway",
+      "roadName": "DND Noida Connection Link",
+      "speedLimit": 80,
+      "geometry": [
+        [
+          77.293,
+          28.601
+        ],
+        [
+          77.288,
+          28.578
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_365_isbt_kashmere_gate_shastri_park_chowk",
+      "source": "isbt_kashmere_gate",
+      "target": "shastri_park_chowk",
+      "distance": 2309.5,
+      "roadType": "primary",
+      "roadName": "Old Yamuna Bridge / GT Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.2285,
+          28.6675
+        ],
+        [
+          77.252,
+          28.67
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_366_shastri_park_chowk_isbt_kashmere_gate",
+      "source": "shastri_park_chowk",
+      "target": "isbt_kashmere_gate",
+      "distance": 2309.5,
+      "roadType": "primary",
+      "roadName": "Old Yamuna Bridge / GT Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.252,
+          28.67
+        ],
+        [
+          77.2285,
+          28.6675
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_367_shastri_park_chowk_seelampur_chowk",
+      "source": "shastri_park_chowk",
+      "target": "seelampur_chowk",
+      "distance": 1370.4,
+      "roadType": "primary",
+      "roadName": "Grand Trunk Road East",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.252,
+          28.67
+        ],
+        [
+          77.266,
+          28.669
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_368_seelampur_chowk_shastri_park_chowk",
+      "source": "seelampur_chowk",
+      "target": "shastri_park_chowk",
+      "distance": 1370.4,
+      "roadType": "primary",
+      "roadName": "Grand Trunk Road East",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.266,
+          28.669
+        ],
+        [
+          77.252,
+          28.67
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_369_seelampur_chowk_shahdara_junction",
+      "source": "seelampur_chowk",
+      "target": "shahdara_junction",
+      "distance": 2287.6,
+      "roadType": "primary",
+      "roadName": "Grand Trunk Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.266,
+          28.669
+        ],
+        [
+          77.289,
+          28.673
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_370_shahdara_junction_seelampur_chowk",
+      "source": "shahdara_junction",
+      "target": "seelampur_chowk",
+      "distance": 2287.6,
+      "roadType": "primary",
+      "roadName": "Grand Trunk Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.289,
+          28.673
+        ],
+        [
+          77.266,
+          28.669
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_371_shahdara_junction_dilshad_garden_hub",
+      "source": "shahdara_junction",
+      "target": "dilshad_garden_hub",
+      "distance": 2979.1,
+      "roadType": "primary",
+      "roadName": "GT Road East Border",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.289,
+          28.673
+        ],
+        [
+          77.319,
+          28.678
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_372_dilshad_garden_hub_shahdara_junction",
+      "source": "dilshad_garden_hub",
+      "target": "shahdara_junction",
+      "distance": 2979.1,
+      "roadType": "primary",
+      "roadName": "GT Road East Border",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.319,
+          28.678
+        ],
+        [
+          77.289,
+          28.673
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_373_shahdara_junction_anand_vihar_isbt",
+      "source": "shahdara_junction",
+      "target": "anand_vihar_isbt",
+      "distance": 3870.4,
+      "roadType": "primary",
+      "roadName": "Road No 56 (Surajmal Vihar Link)",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.289,
+          28.673
+        ],
+        [
+          77.316,
+          28.6475
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_374_anand_vihar_isbt_shahdara_junction",
+      "source": "anand_vihar_isbt",
+      "target": "shahdara_junction",
+      "distance": 3870.4,
+      "roadType": "primary",
+      "roadName": "Road No 56 (Surajmal Vihar Link)",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.316,
+          28.6475
+        ],
+        [
+          77.289,
+          28.673
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_375_wazirabad_signature_bridge_khajuri_khas_chowk",
+      "source": "wazirabad_signature_bridge",
+      "target": "khajuri_khas_chowk",
+      "distance": 3235.4,
+      "roadType": "trunk",
+      "roadName": "Wazirabad Road Bridge",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.232,
+          28.718
+        ],
+        [
+          77.265,
+          28.715
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_376_khajuri_khas_chowk_wazirabad_signature_bridge",
+      "source": "khajuri_khas_chowk",
+      "target": "wazirabad_signature_bridge",
+      "distance": 3235.4,
+      "roadType": "trunk",
+      "roadName": "Wazirabad Road Bridge",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.265,
+          28.715
+        ],
+        [
+          77.232,
+          28.718
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_377_khajuri_khas_chowk_seelampur_chowk",
+      "source": "khajuri_khas_chowk",
+      "target": "seelampur_chowk",
+      "distance": 5115.9,
+      "roadType": "primary",
+      "roadName": "Wazirabad-Seelampur Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.265,
+          28.715
+        ],
+        [
+          77.266,
+          28.669
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_378_seelampur_chowk_khajuri_khas_chowk",
+      "source": "seelampur_chowk",
+      "target": "khajuri_khas_chowk",
+      "distance": 5115.9,
+      "roadType": "primary",
+      "roadName": "Wazirabad-Seelampur Road",
+      "speedLimit": 50,
+      "geometry": [
+        [
+          77.266,
+          28.669
+        ],
+        [
+          77.265,
+          28.715
         ]
       ],
       "trafficMultiplier": 1.0,

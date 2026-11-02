@@ -47,7 +47,7 @@ export class SpatialGridIndex {
   public findNearest(
     lat: number,
     lon: number,
-    maxDistanceMeters: number = 10000
+    maxDistanceMeters: number = 100000
   ): { node: GraphNode; distanceMeters: number } | null {
     if (this.allNodes.length === 0) return null;
 

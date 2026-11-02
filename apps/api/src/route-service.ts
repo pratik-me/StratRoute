@@ -31,24 +31,27 @@ export class RouteService {
     let name = input.name;
 
     if (!nodeId || !graph.getNode(nodeId)) {
-      const snapped = graph.snapToNearestNode(input.lat, input.lon);
+      const snapped = graph.snapToNearestNode(input.lat, input.lon, 100000);
       if (snapped) {
         nodeId = snapped.node.id;
-        lat = snapped.node.lat;
-        lon = snapped.node.lon;
         name = name || snapped.node.name || `Node ${nodeId}`;
       } else {
         const firstNode = graph.nodes.values().next().value;
         nodeId = firstNode ? firstNode.id : 'unknown';
-        lat = firstNode ? firstNode.lat : lat;
-        lon = firstNode ? firstNode.lon : lon;
         name = name || `Node ${nodeId}`;
       }
     } else {
       const nodeObj = graph.getNode(nodeId)!;
       name = name || nodeObj.name || `Node ${nodeId}`;
-      lat = nodeObj.lat;
-      lon = nodeObj.lon;
+    }
+
+    // Fallback to node coordinates only if user coordinates were not provided
+    if (typeof lat !== 'number' || typeof lon !== 'number') {
+      const fallbackNode = graph.getNode(nodeId);
+      if (fallbackNode) {
+        lat = fallbackNode.lat;
+        lon = fallbackNode.lon;
+      }
     }
 
     return {
@@ -109,8 +112,26 @@ export class RouteService {
         overallStuck = true;
       }
 
-      // Append leg coordinates
-      for (const pt of legResult.pathCoordinates) {
+      // Assemble leg coordinates connecting exact waypoint positions to the road network
+      const legCoords: [number, number][] = [...legResult.pathCoordinates];
+
+      // If first leg and start waypoint differs from first road path point, prepend start waypoint
+      if (i === 0 && legCoords.length > 0) {
+        if (fromWp.lon !== legCoords[0][0] || fromWp.lat !== legCoords[0][1]) {
+          legCoords.unshift([fromWp.lon, fromWp.lat]);
+        }
+      }
+
+      // If last leg and destination waypoint differs from last road path point, append destination waypoint
+      if (i === orderedWaypoints.length - 2 && legCoords.length > 0) {
+        const lastIdx = legCoords.length - 1;
+        if (toWp.lon !== legCoords[lastIdx][0] || toWp.lat !== legCoords[lastIdx][1]) {
+          legCoords.push([toWp.lon, toWp.lat]);
+        }
+      }
+
+      // Append leg coordinates to full route
+      for (const pt of legCoords) {
         if (
           fullCoordinates.length === 0 ||
           fullCoordinates[fullCoordinates.length - 1][0] !== pt[0] ||

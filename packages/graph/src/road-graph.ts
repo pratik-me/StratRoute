@@ -159,7 +159,7 @@ export class RoadGraph {
   public snapToNearestNode(
     lat: number,
     lon: number,
-    maxDistanceMeters: number = 10000
+    maxDistanceMeters: number = 100000
   ): { node: GraphNode; distanceMeters: number } | null {
     return this.spatialIndex.findNearest(lat, lon, maxDistanceMeters);
   }

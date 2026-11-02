@@ -18,10 +18,52 @@ interface MapComponentProps {
   stepTrace: SearchNodeTrace[] | null;
   currentStepIndex: number;
   clickMode: 'start' | 'stop' | 'destination' | 'inspect';
-  setClickMode: (mode: 'start' | 'stop' | 'destination' | 'inspect') => void;
   onMapClick: (lat: number, lon: number, mode: 'start' | 'stop' | 'destination' | 'inspect') => void;
   onRoadClick: (edge: GraphEdge) => void;
 }
+
+// Generate high-DPI canvas icon for GPU-accelerated WebGL symbol layer
+const createMarkerImageData = (label: string, color: string): ImageData | null => {
+  const size = 56;
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return null;
+
+  const center = size / 2;
+  const radius = 21;
+
+  // Outer shadow
+  ctx.shadowColor = 'rgba(0, 0, 0, 0.35)';
+  ctx.shadowBlur = 6;
+  ctx.shadowOffsetY = 2;
+
+  // Solid background circle
+  ctx.beginPath();
+  ctx.arc(center, center, radius, 0, Math.PI * 2);
+  ctx.fillStyle = color;
+  ctx.fill();
+
+  // Reset shadow for crisp border and text
+  ctx.shadowColor = 'transparent';
+  ctx.shadowBlur = 0;
+  ctx.shadowOffsetY = 0;
+
+  // Crisp white border
+  ctx.lineWidth = 4;
+  ctx.strokeStyle = '#ffffff';
+  ctx.stroke();
+
+  // Centered white label
+  ctx.fillStyle = '#ffffff';
+  ctx.font = 'bold 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(label, center, center + 0.5);
+
+  return ctx.getImageData(0, 0, size, size);
+};
 
 export const MapComponent: React.FC<MapComponentProps> = ({
   graphData,
@@ -30,15 +72,14 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   stepTrace,
   currentStepIndex,
   clickMode,
-  setClickMode,
   onMapClick,
   onRoadClick,
 }) => {
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
-  const markersRef = useRef<maplibregl.Marker[]>([]);
+  const popupRef = useRef<maplibregl.Popup | null>(null);
 
-  // Keep latest refs for callbacks and mode to avoid stale closures in event listeners
+  // Keep latest refs to avoid stale closures in event listeners
   const clickModeRef = useRef(clickMode);
   clickModeRef.current = clickMode;
 
@@ -50,6 +91,84 @@ export const MapComponent: React.FC<MapComponentProps> = ({
 
   const graphDataRef = useRef(graphData);
   graphDataRef.current = graphData;
+
+  const waypointsRef = useRef(waypoints);
+  waypointsRef.current = waypoints;
+
+  // Synchronize GeoJSON source and canvas icon textures for WebGL markers
+  const syncWaypointsSource = (mapInstance: maplibregl.Map, currentWaypoints: WaypointInfo[]) => {
+    if (!mapInstance.isStyleLoaded()) return;
+    const source = mapInstance.getSource('waypoints') as maplibregl.GeoJSONSource;
+    if (!source) return;
+
+    currentWaypoints.forEach((wp) => {
+      let label = '';
+      let color = '#2563eb';
+      let iconKey = '';
+
+      if (wp.type === 'start') {
+        label = 'S';
+        color = '#10b981';
+        iconKey = 'icon-start';
+      } else if (wp.type === 'destination') {
+        label = 'D';
+        color = '#ef4444';
+        iconKey = 'icon-dest';
+      } else {
+        label = `${wp.index ?? '•'}`;
+        color = '#2563eb';
+        iconKey = `icon-stop-${label}`;
+      }
+
+      if (!mapInstance.hasImage(iconKey)) {
+        const imgData = createMarkerImageData(label, color);
+        if (imgData) {
+          mapInstance.addImage(iconKey, imgData, { pixelRatio: 2 });
+        }
+      }
+    });
+
+    const features = currentWaypoints.map((wp) => {
+      let label = '';
+      let color = '#2563eb';
+      let iconKey = '';
+
+      if (wp.type === 'start') {
+        label = 'S';
+        color = '#10b981';
+        iconKey = 'icon-start';
+      } else if (wp.type === 'destination') {
+        label = 'D';
+        color = '#ef4444';
+        iconKey = 'icon-dest';
+      } else {
+        label = `${wp.index ?? '•'}`;
+        color = '#2563eb';
+        iconKey = `icon-stop-${label}`;
+      }
+
+      return {
+        type: 'Feature' as const,
+        properties: {
+          id: wp.id,
+          name: wp.name,
+          type: wp.type,
+          label,
+          color,
+          iconKey,
+        },
+        geometry: {
+          type: 'Point' as const,
+          coordinates: [wp.lon, wp.lat],
+        },
+      };
+    });
+
+    source.setData({
+      type: 'FeatureCollection',
+      features,
+    });
+  };
 
   // Initialize MapLibre
   useEffect(() => {
@@ -78,8 +197,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
           },
         ],
       },
-      center: [77.2167, 28.6328], // Connaught Place, New Delhi
-      zoom: 13.5,
+      center: [77.1600, 28.6300], // Whole Delhi (NCT of Delhi)
+      zoom: 10.8,
       pitch: 0,
     });
 
@@ -195,6 +314,92 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         },
       });
 
+      // Source for interactive waypoints (Start, Stops, Destination)
+      map.addSource('waypoints', {
+        type: 'geojson',
+        data: { type: 'FeatureCollection', features: [] },
+      });
+
+      // Layer: Waypoint soft glow halo
+      map.addLayer({
+        id: 'waypoint-glow',
+        type: 'circle',
+        source: 'waypoints',
+        paint: {
+          'circle-radius': 22,
+          'circle-color': ['get', 'color'],
+          'circle-opacity': 0.28,
+          'circle-blur': 0.5,
+        },
+      });
+
+      // Layer: Embedded WebGL Waypoint Markers (high-DPI canvas texture)
+      map.addLayer({
+        id: 'waypoint-symbols',
+        type: 'symbol',
+        source: 'waypoints',
+        layout: {
+          'icon-image': ['get', 'iconKey'],
+          'icon-size': 1,
+          'icon-allow-overlap': true,
+          'icon-ignore-placement': true,
+        },
+      });
+
+      // Interactive hover popup for waypoints
+      const popup = new maplibregl.Popup({
+        closeButton: false,
+        closeOnClick: false,
+        offset: 16,
+      });
+      popupRef.current = popup;
+
+      map.on('mouseenter', 'waypoint-symbols', (e) => {
+        map.getCanvas().style.cursor = 'pointer';
+        if (!e.features || e.features.length === 0) return;
+        const f = e.features[0];
+        const coordinates = (
+          f.geometry as { type: string; coordinates: [number, number] }
+        ).coordinates.slice() as [number, number];
+        const props = f.properties || {};
+
+        const type = props.type;
+        const name = props.name || 'Waypoint';
+        const label = props.label || '';
+
+        let badgeColor = '#2563eb';
+        let badgeTitle = `Delivery Stop #${label}`;
+        if (type === 'start') {
+          badgeColor = '#059669';
+          badgeTitle = 'Warehouse (Start)';
+        } else if (type === 'destination') {
+          badgeColor = '#dc2626';
+          badgeTitle = 'Final Destination';
+        }
+
+        popup
+          .setLngLat(coordinates)
+          .setHTML(`
+            <div style="font-family: sans-serif; padding: 3px 6px; font-size: 11px;">
+              <div style="font-weight: 700; color: ${badgeColor};">${badgeTitle}</div>
+              <div style="color: #334155; margin-top: 2px; font-weight: 500;">${name}</div>
+            </div>
+          `)
+          .addTo(map);
+      });
+
+      map.on('mouseleave', 'waypoint-symbols', () => {
+        if (clickModeRef.current !== 'inspect') {
+          map.getCanvas().style.cursor = 'crosshair';
+        } else {
+          map.getCanvas().style.cursor = '';
+        }
+        popup.remove();
+      });
+
+      // Synchronize waypoints immediately if already present
+      syncWaypointsSource(map, waypointsRef.current);
+
       // Single Unified Click Handler: reads latest mode from ref
       map.on('click', (e) => {
         const mode = clickModeRef.current;
@@ -237,6 +442,10 @@ export const MapComponent: React.FC<MapComponentProps> = ({
     });
 
     return () => {
+      if (popupRef.current) {
+        popupRef.current.remove();
+        popupRef.current = null;
+      }
       map.remove();
       mapRef.current = null;
     };
@@ -298,37 +507,12 @@ export const MapComponent: React.FC<MapComponentProps> = ({
     });
   }, [graphData]);
 
-  // Update Waypoint Markers
+  // Update Waypoint WebGL Layer
   useEffect(() => {
+    waypointsRef.current = waypoints;
     const map = mapRef.current;
     if (!map) return;
-
-    // Clear old markers
-    markersRef.current.forEach((m) => m.remove());
-    markersRef.current = [];
-
-    waypoints.forEach((wp) => {
-      const el = document.createElement('div');
-      if (wp.type === 'start') {
-        el.className = 'marker-start cursor-pointer hover:scale-110 transition-transform';
-        el.innerHTML = 'S';
-        el.title = `Starting Warehouse: ${wp.name}`;
-      } else if (wp.type === 'destination') {
-        el.className = 'marker-dest cursor-pointer hover:scale-110 transition-transform';
-        el.innerHTML = 'D';
-        el.title = `Final Destination: ${wp.name}`;
-      } else {
-        el.className = 'marker-stop cursor-pointer hover:scale-110 transition-transform';
-        el.innerHTML = `${wp.index}`;
-        el.title = `Delivery Stop #${wp.index}: ${wp.name}`;
-      }
-
-      const marker = new maplibregl.Marker({ element: el })
-        .setLngLat([wp.lon, wp.lat])
-        .addTo(map);
-
-      markersRef.current.push(marker);
-    });
+    syncWaypointsSource(map, waypoints);
   }, [waypoints]);
 
   // Update Calculated Route Path
@@ -395,73 +579,6 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   return (
     <div className="relative w-full h-full">
       <div ref={mapContainerRef} className="w-full h-full" />
-
-      {/* Floating Map Mode Selector & Instruction Pill */}
-      <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md shadow-lg rounded-xl p-2 border border-slate-200 z-10 flex flex-col space-y-1.5 max-w-sm">
-        <div className="flex items-center space-x-1">
-          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 mr-1">
-            Mode:
-          </span>
-          <button
-            onClick={() => setClickMode('start')}
-            className={`px-2 py-1 rounded text-xs font-semibold transition flex items-center space-x-1 ${
-              clickMode === 'start'
-                ? 'bg-emerald-600 text-white shadow-sm ring-2 ring-emerald-300'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-            }`}
-          >
-            <span className="w-2 h-2 rounded-full bg-emerald-400 inline-block" />
-            <span>Start (S)</span>
-          </button>
-
-          <button
-            onClick={() => setClickMode('stop')}
-            className={`px-2 py-1 rounded text-xs font-semibold transition flex items-center space-x-1 ${
-              clickMode === 'stop'
-                ? 'bg-blue-600 text-white shadow-sm ring-2 ring-blue-300'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-            }`}
-          >
-            <span className="w-2 h-2 rounded-full bg-blue-400 inline-block" />
-            <span>+ Stop</span>
-          </button>
-
-          <button
-            onClick={() => setClickMode('destination')}
-            className={`px-2 py-1 rounded text-xs font-semibold transition flex items-center space-x-1 ${
-              clickMode === 'destination'
-                ? 'bg-red-600 text-white shadow-sm ring-2 ring-red-300'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-            }`}
-          >
-            <span className="w-2 h-2 rounded-full bg-red-400 inline-block" />
-            <span>Dest (D)</span>
-          </button>
-
-          <button
-            onClick={() => setClickMode('inspect')}
-            className={`px-2 py-1 rounded text-xs font-semibold transition flex items-center space-x-1 ${
-              clickMode === 'inspect'
-                ? 'bg-amber-600 text-white shadow-sm ring-2 ring-amber-300'
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
-            }`}
-          >
-            <span className="w-2 h-2 rounded-full bg-amber-400 inline-block" />
-            <span>Traffic</span>
-          </button>
-        </div>
-
-        {/* Dynamic Contextual Helper Text */}
-        <div className="text-[11px] text-slate-600 border-t border-slate-100 pt-1 flex items-center space-x-1">
-          <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse shrink-0" />
-          <span>
-            {clickMode === 'start' && 'Click anywhere on the map to set the Starting Warehouse.'}
-            {clickMode === 'stop' && 'Click anywhere on the map to add an Intermediate Delivery Stop.'}
-            {clickMode === 'destination' && 'Click anywhere on the map to set the Final Destination.'}
-            {clickMode === 'inspect' && 'Click any colored road line on the map to edit traffic condition.'}
-          </span>
-        </div>
-      </div>
     </div>
   );
 };

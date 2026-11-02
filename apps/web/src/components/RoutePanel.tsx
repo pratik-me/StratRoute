@@ -129,7 +129,7 @@ export const RoutePanel: React.FC<RoutePanelProps> = ({
             <Navigation className="w-4 h-4 text-blue-600" />
             <span>Delivery Route Optimizer</span>
           </h1>
-          <p className="text-[11px] text-slate-500">AI Search Benchmark (New Delhi OSM)</p>
+          <p className="text-[11px] text-slate-500">AI Search Benchmark (Whole Delhi NCT)</p>
         </div>
         <span className="text-[10px] bg-blue-100 text-blue-800 font-semibold px-2 py-0.5 rounded-full">
           Academic Demo

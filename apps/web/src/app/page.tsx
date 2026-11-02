@@ -86,6 +86,14 @@ export default function HomePage() {
         const data = await res.json();
         setGraphData(data);
       }
+
+      const metaRes = await fetch(`${API_BASE}/api/map/metadata`);
+      if (metaRes.ok) {
+        const metaData = await metaRes.json();
+        if (metaData.presetLocations && metaData.presetLocations.length > 0) {
+          setPresetLocations(metaData.presetLocations);
+        }
+      }
     } catch (err) {
       console.error('Failed to load road graph:', err);
     }
@@ -104,31 +112,34 @@ export default function HomePage() {
     if (mode === 'inspect') return;
 
     try {
-      // Snap clicked coordinates to nearest road node
-      const snapRes = await fetch(`${API_BASE}/api/locations/snap`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ lat, lon, maxDistanceMeters: 10000 }),
-      });
-
-      let name = `Point (${lat.toFixed(3)}, ${lon.toFixed(3)})`;
+      // Find nearest road node for graph routing while preserving exact clicked point
       let snappedNodeId: string | undefined = undefined;
-      let finalLat = lat;
-      let finalLon = lon;
+      let name = `Location (${lat.toFixed(4)}, ${lon.toFixed(4)})`;
 
-      if (snapRes.ok) {
-        const snapData = await snapRes.json();
-        snappedNodeId = snapData.snappedNode.id;
-        name = snapData.snappedNode.name || `Intersection ${snapData.snappedNode.id}`;
-        finalLat = snapData.snappedNode.lat;
-        finalLon = snapData.snappedNode.lon;
+      try {
+        const snapRes = await fetch(`${API_BASE}/api/locations/snap`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ lat, lon, maxDistanceMeters: 100000 }),
+        });
+
+        if (snapRes.ok) {
+          const snapData = await snapRes.json();
+          snappedNodeId = snapData.snappedNode.id;
+          const nodeName = snapData.snappedNode.name;
+          name = nodeName
+            ? `${nodeName} (${lat.toFixed(3)}, ${lon.toFixed(3)})`
+            : `Location (${lat.toFixed(3)}, ${lon.toFixed(3)})`;
+        }
+      } catch (e) {
+        console.warn('Nearest node lookup failed:', e);
       }
 
       const newPoint: DeliveryWaypointInput = {
         id: `map_pt_${Date.now()}`,
         name,
-        lat: finalLat,
-        lon: finalLon,
+        lat, // EXACT clicked coordinate: marker stays precisely where user clicked
+        lon, // EXACT clicked coordinate: marker stays precisely where user clicked
         nodeId: snappedNodeId,
       };
 
@@ -352,7 +363,6 @@ export default function HomePage() {
           stepTrace={isVisualizing ? stepTrace : null}
           currentStepIndex={currentStepIndex}
           clickMode={clickMode}
-          setClickMode={setClickMode}
           onMapClick={handleMapClick}
           onRoadClick={(edge) => {
             setSelectedEdge(edge);

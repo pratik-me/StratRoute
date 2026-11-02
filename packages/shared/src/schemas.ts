@@ -15,7 +15,7 @@ export const WaypointInputSchema = z.object({
 export const SnapLocationRequestSchema = z.object({
   lat: z.number().min(-90).max(90),
   lon: z.number().min(-180).max(180),
-  maxDistanceMeters: z.number().optional().default(5000),
+  maxDistanceMeters: z.number().optional().default(100000),
 });
 
 export const OptimizeOrderRequestSchema = z.object({
