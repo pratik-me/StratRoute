@@ -2,3 +2,8 @@ packages:
   - "apps/*"
   - "packages/*"
 
+allowBuilds:
+  - better-sqlite3
+  - esbuild
+  - "@img/sharp-win32-x64"
+

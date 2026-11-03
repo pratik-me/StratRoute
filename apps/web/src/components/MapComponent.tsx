@@ -65,6 +65,48 @@ const createMarkerImageData = (label: string, color: string): ImageData | null =
   return ctx.getImageData(0, 0, size, size);
 };
 
+// Create a "failed" marker icon with red X
+const createFailedMarkerImageData = (label: string): ImageData | null => {
+  const size = 56;
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return null;
+
+  const center = size / 2;
+  const radius = 21;
+
+  ctx.shadowColor = 'rgba(0, 0, 0, 0.35)';
+  ctx.shadowBlur = 6;
+  ctx.shadowOffsetY = 2;
+
+  // Red background for failed legs
+  ctx.beginPath();
+  ctx.arc(center, center, radius, 0, Math.PI * 2);
+  ctx.fillStyle = '#ef4444';
+  ctx.fill();
+
+  ctx.shadowColor = 'transparent';
+  ctx.shadowBlur = 0;
+  ctx.shadowOffsetY = 0;
+
+  // Orange dashed border to distinguish from destination
+  ctx.lineWidth = 4;
+  ctx.strokeStyle = '#fbbf24';
+  ctx.setLineDash([4, 3]);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.fillStyle = '#ffffff';
+  ctx.font = 'bold 18px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(label, center, center + 0.5);
+
+  return ctx.getImageData(0, 0, size, size);
+};
+
 export const MapComponent: React.FC<MapComponentProps> = ({
   graphData,
   waypoints,
@@ -98,10 +140,30 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   const routeResultRef = useRef(routeResult);
   routeResultRef.current = routeResult;
 
+  // Build the set of leg-index → success mapping from routeResult
+  const getLegSuccessMap = (result: FullRouteResult | null): Map<number, boolean> => {
+    const map = new Map<number, boolean>();
+    if (result) {
+      result.legs.forEach((leg) => map.set(leg.legIndex, leg.success));
+    }
+    return map;
+  };
+
   // Synchronize GeoJSON source and canvas icon textures for WebGL markers
-  const syncWaypointsSource = (mapInstance: maplibregl.Map, currentWaypoints: WaypointInfo[]) => {
+  const syncWaypointsSource = (mapInstance: maplibregl.Map, currentWaypoints: WaypointInfo[], currentRoute: FullRouteResult | null) => {
     const source = mapInstance.getSource('waypoints') as maplibregl.GeoJSONSource | undefined;
     if (!source) return;
+
+    // Build a set of waypoint node IDs that had a failed incoming or outgoing leg
+    const failedNodeIds = new Set<string>();
+    if (currentRoute) {
+      currentRoute.legs.forEach((leg) => {
+        if (!leg.success) {
+          failedNodeIds.add(leg.fromNodeId);
+          failedNodeIds.add(leg.toNodeId);
+        }
+      });
+    }
 
     currentWaypoints.forEach((wp) => {
       let label = '';
@@ -134,6 +196,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
       let label = '';
       let color = '#2563eb';
       let iconKey = '';
+      let isFailedEndpoint = false;
 
       if (wp.type === 'start') {
         label = 'S';
@@ -145,8 +208,21 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         iconKey = 'icon-dest';
       } else {
         label = `${wp.index ?? '•'}`;
-        color = '#2563eb';
-        iconKey = `icon-stop-${label}`;
+        // Check if this stop was on a failed leg
+        if (currentRoute && wp.nodeId && failedNodeIds.has(wp.nodeId)) {
+          isFailedEndpoint = true;
+          color = '#f97316'; // Orange for failed stop
+          iconKey = `icon-stop-failed-${label}`;
+          if (!mapInstance.hasImage(iconKey)) {
+            const imgData = createMarkerImageData(label, color);
+            if (imgData) {
+              mapInstance.addImage(iconKey, imgData, { pixelRatio: 2 });
+            }
+          }
+        } else {
+          color = '#2563eb';
+          iconKey = `icon-stop-${label}`;
+        }
       }
 
       return {
@@ -158,9 +234,11 @@ export const MapComponent: React.FC<MapComponentProps> = ({
           label,
           color,
           iconKey,
+          isFailedEndpoint,
         },
         geometry: {
           type: 'Point' as const,
+          // Coordinates: [lon, lat] — correct GeoJSON order
           coordinates: [wp.lon, wp.lat],
         },
       };
@@ -172,40 +250,83 @@ export const MapComponent: React.FC<MapComponentProps> = ({
     });
   };
 
-  // Synchronize GeoJSON source for calculated route line and fit camera bounds
-  const syncRoutePathSource = (mapInstance: maplibregl.Map, currentRoute: FullRouteResult | null) => {
-    const source = mapInstance.getSource('route-path') as maplibregl.GeoJSONSource | undefined;
-    if (!source) return;
+  /**
+   * Synchronize GeoJSON sources for calculated route legs.
+   *
+   * Successful legs go into 'route-path' (blue line).
+   * Failed legs have no road path rendered (no coordinates to draw).
+   * Camera is fit to include ALL waypoint markers even when legs fail.
+   */
+  const syncRoutePathSource = (
+    mapInstance: maplibregl.Map,
+    currentRoute: FullRouteResult | null,
+    currentWaypoints: WaypointInfo[]
+  ) => {
+    const routeSource = mapInstance.getSource('route-path') as maplibregl.GeoJSONSource | undefined;
+    if (!routeSource) return;
 
-    if (!currentRoute || !currentRoute.fullCoordinates || currentRoute.fullCoordinates.length < 2) {
-      source.setData({ type: 'FeatureCollection', features: [] });
+    if (!currentRoute) {
+      routeSource.setData({ type: 'FeatureCollection', features: [] });
       return;
     }
 
-    source.setData({
-      type: 'FeatureCollection',
-      features: [
-        {
-          type: 'Feature' as const,
-          properties: {},
-          geometry: {
-            type: 'LineString' as const,
-            coordinates: currentRoute.fullCoordinates,
-          },
+    // Build one LineString feature per SUCCESSFUL leg using legCoordinates
+    // (which include the access connectors to the exact waypoint positions).
+    // Do NOT merge failed legs in — that would visually connect disconnected segments.
+    const successfulLegFeatures = currentRoute.legs
+      .filter((leg) => leg.success && leg.legCoordinates && leg.legCoordinates.length >= 2)
+      .map((leg) => ({
+        type: 'Feature' as const,
+        properties: {
+          legIndex: leg.legIndex,
+          fromName: leg.fromName,
+          toName: leg.toName,
+          distanceMeters: leg.distanceMeters,
+          durationSeconds: leg.durationSeconds,
         },
-      ],
+        geometry: {
+          type: 'LineString' as const,
+          coordinates: leg.legCoordinates,
+        },
+      }));
+
+    routeSource.setData({
+      type: 'FeatureCollection',
+      features: successfulLegFeatures,
     });
 
-    // Auto-fit bounds with padding so the full calculated path is brought cleanly into view
+    // --- Fit map bounds to encompass ALL waypoints + successful route coordinates ---
+    // We always include waypoint positions so that failed-leg markers stay in view.
     try {
-      const coords = currentRoute.fullCoordinates;
-      if (coords.length >= 2) {
-        const bounds = new maplibregl.LngLatBounds(coords[0], coords[0]);
-        coords.forEach((pt) => bounds.extend(pt));
-        mapInstance.fitBounds(bounds, { padding: 80, maxZoom: 15, duration: 600 });
+      const allPoints: [number, number][] = [];
+
+      // Include ALL waypoints (markers must stay visible regardless of leg success)
+      for (const wp of currentWaypoints) {
+        allPoints.push([wp.lon, wp.lat]);
+      }
+
+      // Include successful leg coordinates
+      for (const leg of currentRoute.legs) {
+        if (leg.success && leg.legCoordinates) {
+          for (const coord of leg.legCoordinates) {
+            allPoints.push(coord);
+          }
+        }
+      }
+
+      if (allPoints.length >= 1) {
+        const bounds = new maplibregl.LngLatBounds(allPoints[0], allPoints[0]);
+        allPoints.forEach((pt) => bounds.extend(pt));
+
+        const hasRoute = successfulLegFeatures.length > 0;
+        mapInstance.fitBounds(bounds, {
+          padding: 80,
+          maxZoom: hasRoute ? 15 : 13,
+          duration: 600,
+        });
       }
     } catch (e) {
-      console.warn('Could not fit bounds for route:', e);
+      console.warn('[MapComponent] Could not fit bounds for route:', e);
     }
   };
 
@@ -290,13 +411,13 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         },
       });
 
-      // Add source for calculated route
+      // Add source for calculated route — supports multiple LineString features (one per leg)
       map.addSource('route-path', {
         type: 'geojson',
         data: { type: 'FeatureCollection', features: [] },
       });
 
-      // Route Casing (Dark contrast outline)
+      // Route Casing (Dark contrast outline) — applied to all legs
       map.addLayer({
         id: 'route-path-casing',
         type: 'line',
@@ -419,6 +540,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         const type = props.type;
         const name = props.name || 'Waypoint';
         const label = props.label || '';
+        const isFailedEndpoint = props.isFailedEndpoint;
 
         let badgeColor = '#2563eb';
         let badgeTitle = `Delivery Stop #${label}`;
@@ -428,6 +550,9 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         } else if (type === 'destination') {
           badgeColor = '#dc2626';
           badgeTitle = 'Final Destination';
+        } else if (isFailedEndpoint) {
+          badgeColor = '#ea580c';
+          badgeTitle = `Delivery Stop #${label} ⚠ Failed Leg`;
         }
 
         popup
@@ -436,6 +561,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
             <div style="font-family: sans-serif; padding: 3px 6px; font-size: 11px;">
               <div style="font-weight: 700; color: ${badgeColor};">${badgeTitle}</div>
               <div style="color: #334155; margin-top: 2px; font-weight: 500;">${name}</div>
+              ${isFailedEndpoint ? '<div style="color: #ea580c; margin-top: 2px; font-size: 10px;">⚠ Route could not reach this waypoint</div>' : ''}
             </div>
           `)
           .addTo(map);
@@ -451,8 +577,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
       });
 
       // Synchronize waypoints and route path immediately if already present
-      syncWaypointsSource(map, waypointsRef.current);
-      syncRoutePathSource(map, routeResultRef.current);
+      syncWaypointsSource(map, waypointsRef.current, routeResultRef.current);
+      syncRoutePathSource(map, routeResultRef.current, waypointsRef.current);
 
       // Single Unified Click Handler: reads latest mode from ref
       map.on('click', (e) => {
@@ -476,7 +602,6 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         }
 
         // In 'start', 'stop', or 'destination' mode:
-        // Always place/set the waypoint at clicked position (snapped to nearest road node)
         onMapClickRef.current(e.lngLat.lat, e.lngLat.lng, mode);
       });
 
@@ -561,20 +686,43 @@ export const MapComponent: React.FC<MapComponentProps> = ({
     });
   }, [graphData]);
 
-  // Update Waypoint WebGL Layer
+  // Update Waypoint WebGL Layer — re-sync whenever waypoints or routeResult changes
+  // so that failed-endpoint markers get their warning color applied.
   useEffect(() => {
     waypointsRef.current = waypoints;
     const map = mapRef.current;
     if (!map) return;
-    syncWaypointsSource(map, waypoints);
-  }, [waypoints]);
+    syncWaypointsSource(map, waypoints, routeResultRef.current);
+  }, [waypoints, routeResult]);
 
-  // Update Calculated Route Path
+  // Update Calculated Route Path — render per-leg lines and fit bounds
   useEffect(() => {
     routeResultRef.current = routeResult;
     const map = mapRef.current;
     if (!map) return;
-    syncRoutePathSource(map, routeResult);
+
+    // Log route result summary for development debugging
+    if (routeResult) {
+      const successLegs = routeResult.legs.filter((l) => l.success).length;
+      const totalLegs = routeResult.legs.length;
+      console.debug(
+        `[MapComponent] Rendering route: ${successLegs}/${totalLegs} legs succeeded. ` +
+        `Algorithm: ${routeResult.algorithm}, Metric: ${routeResult.metric}`
+      );
+      if (routeResult.legSummary) {
+        routeResult.legSummary.forEach((s) => {
+          if (!s.success) {
+            console.warn(
+              `[MapComponent] Failed leg ${s.legIndex}: "${s.fromName}" → "${s.toName}" — ${s.failureReason}`
+            );
+          }
+        });
+      }
+    }
+
+    syncRoutePathSource(map, routeResult, waypointsRef.current);
+    // Also re-sync waypoint colors (failed legs affect marker color)
+    syncWaypointsSource(map, waypointsRef.current, routeResult);
   }, [routeResult]);
 
   // Update Search Node Visualization Trace
@@ -600,6 +748,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
       },
       geometry: {
         type: 'Point' as const,
+        // step.lon, step.lat are in the correct [lon, lat] GeoJSON order
         coordinates: [step.lon, step.lat],
       },
     }));

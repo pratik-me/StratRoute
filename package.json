@@ -15,6 +15,13 @@
     "turbo": "^2.4.4",
     "typescript": "^5.7.3"
   },
-  "packageManager": "pnpm@10.5.2"
+  "packageManager": "pnpm@10.5.2",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild",
+      "@img/sharp-win32-x64"
+    ]
+  }
 }
 

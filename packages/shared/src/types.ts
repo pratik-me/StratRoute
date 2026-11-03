@@ -72,15 +72,34 @@ export interface RouteLeg {
   toNodeId: string;
   fromName: string;
   toName: string;
+  /** true iff the pathfinding algorithm successfully reached toNodeId */
+  success: boolean;
+  /** Human-readable failure reason when success is false */
+  failureReason?: string;
   distanceMeters: number;
   durationSeconds: number;
   cost: number;
+  /**
+   * Road-network coordinates for this leg only (no access connectors).
+   * Empty array when success is false.
+   */
   pathCoordinates: [number, number][];
+  /**
+   * Full rendering coordinates for this leg including access connectors:
+   *   [fromWaypoint] → snapped-start → road path → snapped-end → [toWaypoint]
+   * Use these for map display. Empty array when success is false.
+   */
+  legCoordinates: [number, number][];
   pathNodeIds: string[];
   pathEdgeIds: string[];
   nodesExplored: number;
   executionTimeMs: number;
   searchResult: SearchResult;
+  /** Snapping info for debugging / validation */
+  snapInfo?: {
+    fromSnapDistanceMeters: number;
+    toSnapDistanceMeters: number;
+  };
 }
 
 export interface WaypointInfo {
@@ -105,7 +124,16 @@ export interface FullRouteResult {
   totalExecutionTimeMs: number;
   orderedWaypoints: WaypointInfo[];
   legs: RouteLeg[];
+  /** Coordinates of all successful legs combined for map rendering. */
   fullCoordinates: [number, number][];
+  /** Summary of per-leg success/failure for frontend validation. */
+  legSummary: {
+    legIndex: number;
+    success: boolean;
+    failureReason?: string;
+    fromName: string;
+    toName: string;
+  }[];
 }
 
 export interface AlgorithmComparisonEntry {
@@ -152,6 +180,10 @@ export interface DeliveryOrderResponse {
   iterations: number;
   improved: boolean;
   orderedStops: DeliveryWaypointInput[];
+  /** true when all pairs were reachable via road network */
+  allPairsReachable: boolean;
+  /** List of unreachable pairs (nodeId pairs), if any */
+  unreachablePairs?: { from: string; to: string }[];
 }
 
 export interface TrafficUpdateItem {
@@ -166,4 +198,3 @@ export interface TrafficScenario {
   edges: TrafficUpdateItem[];
   createdAt: string;
 }
-
