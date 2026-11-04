@@ -581,7 +581,9 @@ export const RoutePanel: React.FC<RoutePanelProps> = ({
                     : 'bg-red-100 text-red-800'
                 }`}
               >
-                {routeResult.success ? 'Path Found' : 'Search Stuck / Failed'}
+                {routeResult.success
+                  ? `All ${routeResult.legs.length} Leg${routeResult.legs.length !== 1 ? 's' : ''} OK`
+                  : `${routeResult.legs.filter((l) => !l.searchResult.routeFound).length}/${routeResult.legs.length} Failed`}
               </span>
             </div>
 
@@ -589,9 +591,31 @@ export const RoutePanel: React.FC<RoutePanelProps> = ({
               <div className="bg-red-50 border border-red-200 text-red-800 p-2 rounded-lg text-[11px] flex items-start space-x-1.5">
                 <AlertCircle className="w-4 h-4 shrink-0 text-red-600 mt-0.5" />
                 <div>
-                  <strong className="block">Algorithm Stopped:</strong>
-                  Hill Climbing terminated at local minimum. No unvisited neighbor has lower heuristic cost.
+                  <strong className="block">Algorithm Stopped / Stuck:</strong>
+                  {routeResult.algorithm === 'hillclimbing'
+                    ? 'Hill Climbing terminated at local minimum — no unvisited neighbor improves heuristic.'
+                    : 'One or more legs could not be completed (destination unreachable or blocked).'}
                 </div>
+              </div>
+            )}
+
+            {routeResult.legSummary && routeResult.legSummary.some((l) => !l.success) && (
+              <div className="space-y-1">
+                <span className="text-[10px] font-semibold text-orange-700 uppercase tracking-wide">Failed Legs:</span>
+                {routeResult.legSummary
+                  .filter((l) => !l.success)
+                  .map((l) => (
+                    <div
+                      key={l.legIndex}
+                      className="bg-orange-50 border border-orange-200 text-orange-800 p-1.5 rounded text-[10px] flex items-start space-x-1"
+                    >
+                      <AlertCircle className="w-3 h-3 shrink-0 mt-0.5 text-orange-600" />
+                      <span>
+                        <strong>Leg {l.legIndex + 1}:</strong> {l.fromName} → {l.toName}
+                        {l.failureReason && <span className="block text-orange-600">{l.failureReason}</span>}
+                      </span>
+                    </div>
+                  ))}
               </div>
             )}
 
@@ -622,10 +646,32 @@ export const RoutePanel: React.FC<RoutePanelProps> = ({
                 </span>
               </div>
             </div>
+
+            {routeResult.legs.length > 1 && (
+              <div className="space-y-1 border-t border-slate-100 pt-2">
+                <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wide">Leg Breakdown:</span>
+                {routeResult.legs.map((leg) => (
+                  <div
+                    key={leg.legIndex}
+                    className={`flex items-center justify-between p-1.5 rounded text-[10px] ${
+                      leg.searchResult.routeFound
+                        ? 'bg-emerald-50 border border-emerald-100'
+                        : 'bg-red-50 border border-red-200'
+                    }`}
+                  >
+                    <span className={`font-medium truncate max-w-[160px] ${leg.searchResult.routeFound ? 'text-emerald-800' : 'text-red-700'}`}>
+                      {leg.legIndex + 1}. {leg.fromName} → {leg.toName}
+                    </span>
+                    <span className={`font-bold shrink-0 ml-1 ${leg.searchResult.routeFound ? 'text-emerald-700' : 'text-red-600'}`}>
+                      {leg.searchResult.routeFound ? `${(leg.distanceMeters / 1000).toFixed(1)}km` : '✗'}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         )}
       </div>
     </div>
   );
 };
-

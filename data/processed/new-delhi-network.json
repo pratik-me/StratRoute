@@ -2,8 +2,8 @@
   "metadata": {
     "name": "Delhi Drivable Road Network (NCT of Delhi)",
     "city": "Delhi, India",
-    "nodeCount": 136,
-    "edgeCount": 378,
+    "nodeCount": 137,
+    "edgeCount": 392,
     "bbox": [
       76.985,
       28.498,
@@ -298,6 +298,12 @@
       "lat": 28.6095,
       "lon": 77.241,
       "name": "Mathura Road - Purana Qila"
+    },
+    {
+      "id": "sbm_oberoi",
+      "lat": 28.6025,
+      "lon": 77.234,
+      "name": "Subramaniam Bharti Marg - Oberoi Junction"
     },
     {
       "id": "khan_market_hub",
@@ -839,18 +845,38 @@
       "id": "edge_1_cp_inner_rad1_cp_inner_rad2",
       "source": "cp_inner_rad1",
       "target": "cp_inner_rad2",
-      "distance": 150.1,
+      "distance": 118.5,
       "roadType": "secondary",
       "roadName": "Inner Circle",
       "speedLimit": 30,
       "geometry": [
         [
           77.2197,
-          28.6338
+          28.63415
         ],
         [
-          77.2212,
-          28.6335
+          77.219902,
+          28.634138
+        ],
+        [
+          77.220101,
+          28.634104
+        ],
+        [
+          77.220293,
+          28.634047
+        ],
+        [
+          77.220475,
+          28.633969
+        ],
+        [
+          77.220644,
+          28.633871
+        ],
+        [
+          77.220796,
+          28.633755
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -860,18 +886,38 @@
       "id": "edge_2_cp_inner_rad2_cp_inner_rad3",
       "source": "cp_inner_rad2",
       "target": "cp_inner_rad3",
-      "distance": 145.7,
+      "distance": 118.0,
       "roadType": "secondary",
       "roadName": "Inner Circle",
       "speedLimit": 30,
       "geometry": [
         [
-          77.2212,
-          28.6335
+          77.220796,
+          28.633755
         ],
         [
-          77.2218,
-          28.6323
+          77.22093,
+          28.633622
+        ],
+        [
+          77.221042,
+          28.633475
+        ],
+        [
+          77.221132,
+          28.633317
+        ],
+        [
+          77.221197,
+          28.633149
+        ],
+        [
+          77.221237,
+          28.632976
+        ],
+        [
+          77.22125,
+          28.6328
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -881,18 +927,38 @@
       "id": "edge_3_cp_inner_rad3_cp_inner_rad4",
       "source": "cp_inner_rad3",
       "target": "cp_inner_rad4",
-      "distance": 156.5,
+      "distance": 118.0,
       "roadType": "secondary",
       "roadName": "Inner Circle",
       "speedLimit": 30,
       "geometry": [
         [
-          77.2218,
-          28.6323
+          77.22125,
+          28.6328
         ],
         [
-          77.2208,
-          28.6312
+          77.221237,
+          28.632624
+        ],
+        [
+          77.221197,
+          28.632451
+        ],
+        [
+          77.221132,
+          28.632283
+        ],
+        [
+          77.221042,
+          28.632125
+        ],
+        [
+          77.22093,
+          28.631978
+        ],
+        [
+          77.220796,
+          28.631845
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -902,18 +968,38 @@
       "id": "edge_4_cp_inner_rad4_cp_inner_rad5",
       "source": "cp_inner_rad4",
       "target": "cp_inner_rad5",
-      "distance": 157.7,
+      "distance": 118.5,
       "roadType": "secondary",
       "roadName": "Inner Circle",
       "speedLimit": 30,
       "geometry": [
         [
-          77.2208,
-          28.6312
+          77.220796,
+          28.631845
         ],
         [
-          77.2192,
-          28.631
+          77.220644,
+          28.631729
+        ],
+        [
+          77.220475,
+          28.631631
+        ],
+        [
+          77.220293,
+          28.631553
+        ],
+        [
+          77.220101,
+          28.631496
+        ],
+        [
+          77.219902,
+          28.631462
+        ],
+        [
+          77.2197,
+          28.63145
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -923,18 +1009,38 @@
       "id": "edge_5_cp_inner_rad5_cp_inner_rad6",
       "source": "cp_inner_rad5",
       "target": "cp_inner_rad6",
-      "distance": 163.0,
+      "distance": 118.5,
       "roadType": "secondary",
       "roadName": "Inner Circle",
       "speedLimit": 30,
       "geometry": [
         [
-          77.2192,
-          28.631
+          77.2197,
+          28.63145
         ],
         [
-          77.2178,
-          28.6318
+          77.219498,
+          28.631462
+        ],
+        [
+          77.219299,
+          28.631496
+        ],
+        [
+          77.219107,
+          28.631553
+        ],
+        [
+          77.218925,
+          28.631631
+        ],
+        [
+          77.218756,
+          28.631729
+        ],
+        [
+          77.218604,
+          28.631845
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -944,18 +1050,38 @@
       "id": "edge_6_cp_inner_rad6_cp_inner_rad7",
       "source": "cp_inner_rad6",
       "target": "cp_inner_rad7",
-      "distance": 134.9,
+      "distance": 118.0,
       "roadType": "secondary",
       "roadName": "Inner Circle",
       "speedLimit": 30,
       "geometry": [
         [
-          77.2178,
-          28.6318
+          77.218604,
+          28.631845
         ],
         [
-          77.2176,
-          28.633
+          77.21847,
+          28.631978
+        ],
+        [
+          77.218358,
+          28.632125
+        ],
+        [
+          77.218268,
+          28.632283
+        ],
+        [
+          77.218203,
+          28.632451
+        ],
+        [
+          77.218163,
+          28.632624
+        ],
+        [
+          77.21815,
+          28.6328
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -965,18 +1091,38 @@
       "id": "edge_7_cp_inner_rad7_cp_inner_rad8",
       "source": "cp_inner_rad7",
       "target": "cp_inner_rad8",
-      "distance": 150.6,
+      "distance": 118.0,
       "roadType": "secondary",
       "roadName": "Inner Circle",
       "speedLimit": 30,
       "geometry": [
         [
-          77.2176,
-          28.633
+          77.21815,
+          28.6328
         ],
         [
-          77.2185,
-          28.6341
+          77.218163,
+          28.632976
+        ],
+        [
+          77.218203,
+          28.633149
+        ],
+        [
+          77.218268,
+          28.633317
+        ],
+        [
+          77.218358,
+          28.633475
+        ],
+        [
+          77.21847,
+          28.633622
+        ],
+        [
+          77.218604,
+          28.633755
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -986,18 +1132,38 @@
       "id": "edge_8_cp_inner_rad8_cp_inner_rad1",
       "source": "cp_inner_rad8",
       "target": "cp_inner_rad1",
-      "distance": 121.8,
+      "distance": 118.5,
       "roadType": "secondary",
       "roadName": "Inner Circle",
       "speedLimit": 30,
       "geometry": [
         [
-          77.2185,
-          28.6341
+          77.218604,
+          28.633755
+        ],
+        [
+          77.218756,
+          28.633871
+        ],
+        [
+          77.218925,
+          28.633969
+        ],
+        [
+          77.219107,
+          28.634047
+        ],
+        [
+          77.219299,
+          28.634104
+        ],
+        [
+          77.219498,
+          28.634138
         ],
         [
           77.2197,
-          28.6338
+          28.63415
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1007,18 +1173,38 @@
       "id": "edge_9_cp_outer_rad1_cp_outer_rad8",
       "source": "cp_outer_rad1",
       "target": "cp_outer_rad8",
-      "distance": 265.6,
+      "distance": 275.7,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
           77.2197,
-          28.6358
+          28.63595
         ],
         [
-          77.217,
-          28.6355
+          77.21923,
+          28.635923
+        ],
+        [
+          77.218768,
+          28.635843
+        ],
+        [
+          77.218322,
+          28.63571
+        ],
+        [
+          77.2179,
+          28.635528
+        ],
+        [
+          77.217508,
+          28.635299
+        ],
+        [
+          77.217154,
+          28.635027
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1028,18 +1214,38 @@
       "id": "edge_10_cp_outer_rad8_cp_outer_rad1",
       "source": "cp_outer_rad8",
       "target": "cp_outer_rad1",
-      "distance": 265.6,
+      "distance": 275.7,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.217,
-          28.6355
+          77.217154,
+          28.635027
+        ],
+        [
+          77.217508,
+          28.635299
+        ],
+        [
+          77.2179,
+          28.635528
+        ],
+        [
+          77.218322,
+          28.63571
+        ],
+        [
+          77.218768,
+          28.635843
+        ],
+        [
+          77.21923,
+          28.635923
         ],
         [
           77.2197,
-          28.6358
+          28.63595
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1049,17 +1255,37 @@
       "id": "edge_11_cp_outer_rad8_cp_outer_rad7",
       "source": "cp_outer_rad8",
       "target": "cp_outer_rad7",
-      "distance": 347.8,
+      "distance": 275.0,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.217,
-          28.6355
+          77.217154,
+          28.635027
         ],
         [
-          77.2152,
+          77.216844,
+          28.634718
+        ],
+        [
+          77.216582,
+          28.634375
+        ],
+        [
+          77.216374,
+          28.634005
+        ],
+        [
+          77.216223,
+          28.633615
+        ],
+        [
+          77.216131,
+          28.633211
+        ],
+        [
+          77.2161,
           28.6328
         ]
       ],
@@ -1070,18 +1296,38 @@
       "id": "edge_12_cp_outer_rad7_cp_outer_rad8",
       "source": "cp_outer_rad7",
       "target": "cp_outer_rad8",
-      "distance": 347.8,
+      "distance": 275.0,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2152,
+          77.2161,
           28.6328
         ],
         [
-          77.217,
-          28.6355
+          77.216131,
+          28.633211
+        ],
+        [
+          77.216223,
+          28.633615
+        ],
+        [
+          77.216374,
+          28.634005
+        ],
+        [
+          77.216582,
+          28.634375
+        ],
+        [
+          77.216844,
+          28.634718
+        ],
+        [
+          77.217154,
+          28.635027
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1091,18 +1337,38 @@
       "id": "edge_13_cp_outer_rad7_cp_outer_rad6",
       "source": "cp_outer_rad7",
       "target": "cp_outer_rad6",
-      "distance": 267.4,
+      "distance": 275.0,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2152,
+          77.2161,
           28.6328
         ],
         [
-          77.216,
-          28.6305
+          77.216131,
+          28.632389
+        ],
+        [
+          77.216223,
+          28.631985
+        ],
+        [
+          77.216374,
+          28.631595
+        ],
+        [
+          77.216582,
+          28.631225
+        ],
+        [
+          77.216844,
+          28.630882
+        ],
+        [
+          77.217154,
+          28.630573
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1112,17 +1378,37 @@
       "id": "edge_14_cp_outer_rad6_cp_outer_rad7",
       "source": "cp_outer_rad6",
       "target": "cp_outer_rad7",
-      "distance": 267.4,
+      "distance": 275.0,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.216,
-          28.6305
+          77.217154,
+          28.630573
         ],
         [
-          77.2152,
+          77.216844,
+          28.630882
+        ],
+        [
+          77.216582,
+          28.631225
+        ],
+        [
+          77.216374,
+          28.631595
+        ],
+        [
+          77.216223,
+          28.631985
+        ],
+        [
+          77.216131,
+          28.632389
+        ],
+        [
+          77.2161,
           28.6328
         ]
       ],
@@ -1133,18 +1419,38 @@
       "id": "edge_15_cp_outer_rad6_cp_outer_rad5",
       "source": "cp_outer_rad6",
       "target": "cp_outer_rad5",
-      "distance": 354.1,
+      "distance": 275.7,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.216,
-          28.6305
+          77.217154,
+          28.630573
         ],
         [
-          77.2192,
-          28.629
+          77.217508,
+          28.630301
+        ],
+        [
+          77.2179,
+          28.630072
+        ],
+        [
+          77.218322,
+          28.62989
+        ],
+        [
+          77.218768,
+          28.629757
+        ],
+        [
+          77.21923,
+          28.629677
+        ],
+        [
+          77.2197,
+          28.62965
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1154,18 +1460,38 @@
       "id": "edge_16_cp_outer_rad5_cp_outer_rad6",
       "source": "cp_outer_rad5",
       "target": "cp_outer_rad6",
-      "distance": 354.1,
+      "distance": 275.7,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2192,
-          28.629
+          77.2197,
+          28.62965
         ],
         [
-          77.216,
-          28.6305
+          77.21923,
+          28.629677
+        ],
+        [
+          77.218768,
+          28.629757
+        ],
+        [
+          77.218322,
+          28.62989
+        ],
+        [
+          77.2179,
+          28.630072
+        ],
+        [
+          77.217508,
+          28.630301
+        ],
+        [
+          77.217154,
+          28.630573
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1175,18 +1501,38 @@
       "id": "edge_17_cp_outer_rad5_cp_outer_rad4",
       "source": "cp_outer_rad5",
       "target": "cp_outer_rad4",
-      "distance": 298.0,
+      "distance": 275.7,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2192,
-          28.629
+          77.2197,
+          28.62965
         ],
         [
-          77.2222,
-          28.6295
+          77.22017,
+          28.629677
+        ],
+        [
+          77.220632,
+          28.629757
+        ],
+        [
+          77.221078,
+          28.62989
+        ],
+        [
+          77.2215,
+          28.630072
+        ],
+        [
+          77.221892,
+          28.630301
+        ],
+        [
+          77.222246,
+          28.630573
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1196,18 +1542,38 @@
       "id": "edge_18_cp_outer_rad4_cp_outer_rad5",
       "source": "cp_outer_rad4",
       "target": "cp_outer_rad5",
-      "distance": 298.0,
+      "distance": 275.7,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2222,
-          28.6295
+          77.222246,
+          28.630573
         ],
         [
-          77.2192,
-          28.629
+          77.221892,
+          28.630301
+        ],
+        [
+          77.2215,
+          28.630072
+        ],
+        [
+          77.221078,
+          28.62989
+        ],
+        [
+          77.220632,
+          28.629757
+        ],
+        [
+          77.22017,
+          28.629677
+        ],
+        [
+          77.2197,
+          28.62965
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1217,18 +1583,38 @@
       "id": "edge_19_cp_outer_rad4_cp_outer_rad3",
       "source": "cp_outer_rad4",
       "target": "cp_outer_rad3",
-      "distance": 374.9,
+      "distance": 275.0,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2222,
-          28.6295
+          77.222246,
+          28.630573
         ],
         [
-          77.2245,
-          28.6322
+          77.222556,
+          28.630882
+        ],
+        [
+          77.222818,
+          28.631225
+        ],
+        [
+          77.223026,
+          28.631595
+        ],
+        [
+          77.223177,
+          28.631985
+        ],
+        [
+          77.223269,
+          28.632389
+        ],
+        [
+          77.2233,
+          28.6328
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1238,18 +1624,38 @@
       "id": "edge_20_cp_outer_rad3_cp_outer_rad4",
       "source": "cp_outer_rad3",
       "target": "cp_outer_rad4",
-      "distance": 374.9,
+      "distance": 275.0,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2245,
-          28.6322
+          77.2233,
+          28.6328
         ],
         [
-          77.2222,
-          28.6295
+          77.223269,
+          28.632389
+        ],
+        [
+          77.223177,
+          28.631985
+        ],
+        [
+          77.223026,
+          28.631595
+        ],
+        [
+          77.222818,
+          28.631225
+        ],
+        [
+          77.222556,
+          28.630882
+        ],
+        [
+          77.222246,
+          28.630573
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1259,18 +1665,38 @@
       "id": "edge_21_cp_outer_rad3_cp_outer_rad2",
       "source": "cp_outer_rad3",
       "target": "cp_outer_rad2",
-      "distance": 336.2,
+      "distance": 275.0,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2245,
-          28.6322
+          77.2233,
+          28.6328
         ],
         [
-          77.2232,
-          28.635
+          77.223269,
+          28.633211
+        ],
+        [
+          77.223177,
+          28.633615
+        ],
+        [
+          77.223026,
+          28.634005
+        ],
+        [
+          77.222818,
+          28.634375
+        ],
+        [
+          77.222556,
+          28.634718
+        ],
+        [
+          77.222246,
+          28.635027
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1280,18 +1706,38 @@
       "id": "edge_22_cp_outer_rad2_cp_outer_rad3",
       "source": "cp_outer_rad2",
       "target": "cp_outer_rad3",
-      "distance": 336.2,
+      "distance": 275.0,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2232,
-          28.635
+          77.222246,
+          28.635027
         ],
         [
-          77.2245,
-          28.6322
+          77.222556,
+          28.634718
+        ],
+        [
+          77.222818,
+          28.634375
+        ],
+        [
+          77.223026,
+          28.634005
+        ],
+        [
+          77.223177,
+          28.633615
+        ],
+        [
+          77.223269,
+          28.633211
+        ],
+        [
+          77.2233,
+          28.6328
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1301,18 +1747,38 @@
       "id": "edge_23_cp_outer_rad2_cp_outer_rad1",
       "source": "cp_outer_rad2",
       "target": "cp_outer_rad1",
-      "distance": 353.0,
+      "distance": 275.7,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
-          77.2232,
-          28.635
+          77.222246,
+          28.635027
+        ],
+        [
+          77.221892,
+          28.635299
+        ],
+        [
+          77.2215,
+          28.635528
+        ],
+        [
+          77.221078,
+          28.63571
+        ],
+        [
+          77.220632,
+          28.635843
+        ],
+        [
+          77.22017,
+          28.635923
         ],
         [
           77.2197,
-          28.6358
+          28.63595
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1322,18 +1788,38 @@
       "id": "edge_24_cp_outer_rad1_cp_outer_rad2",
       "source": "cp_outer_rad1",
       "target": "cp_outer_rad2",
-      "distance": 353.0,
+      "distance": 275.7,
       "roadType": "primary",
       "roadName": "Connaught Circus",
       "speedLimit": 40,
       "geometry": [
         [
           77.2197,
-          28.6358
+          28.63595
         ],
         [
-          77.2232,
-          28.635
+          77.22017,
+          28.635923
+        ],
+        [
+          77.220632,
+          28.635843
+        ],
+        [
+          77.221078,
+          28.63571
+        ],
+        [
+          77.2215,
+          28.635528
+        ],
+        [
+          77.221892,
+          28.635299
+        ],
+        [
+          77.222246,
+          28.635027
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -1847,7 +2333,7 @@
       "id": "edge_49_cp_outer_rad1_ndls_paharganj",
       "source": "cp_outer_rad1",
       "target": "ndls_paharganj",
-      "distance": 838.7,
+      "distance": 839.8,
       "roadType": "primary",
       "roadName": "Chelmsford Road",
       "speedLimit": 40,
@@ -1855,6 +2341,18 @@
         [
           77.2197,
           28.6358
+        ],
+        [
+          77.2191,
+          28.6375
+        ],
+        [
+          77.2181,
+          28.6395
+        ],
+        [
+          77.2172,
+          28.6412
         ],
         [
           77.2165,
@@ -1868,7 +2366,7 @@
       "id": "edge_50_ndls_paharganj_cp_outer_rad1",
       "source": "ndls_paharganj",
       "target": "cp_outer_rad1",
-      "distance": 838.7,
+      "distance": 839.8,
       "roadType": "primary",
       "roadName": "Chelmsford Road",
       "speedLimit": 40,
@@ -1876,6 +2374,18 @@
         [
           77.2165,
           28.6428
+        ],
+        [
+          77.2172,
+          28.6412
+        ],
+        [
+          77.2181,
+          28.6395
+        ],
+        [
+          77.2191,
+          28.6375
         ],
         [
           77.2197,
@@ -1928,101 +2438,33 @@
       "isBlocked": false
     },
     {
-      "id": "edge_53_minto_bridge_bhavbhuti_marg",
-      "source": "minto_bridge",
-      "target": "bhavbhuti_marg",
-      "distance": 313.2,
-      "roadType": "secondary",
-      "roadName": "Bhavbhuti Marg",
-      "speedLimit": 30,
-      "geometry": [
-        [
-          77.225,
-          28.6375
-        ],
-        [
-          77.222,
-          28.6385
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_54_bhavbhuti_marg_minto_bridge",
-      "source": "bhavbhuti_marg",
-      "target": "minto_bridge",
-      "distance": 313.2,
-      "roadType": "secondary",
-      "roadName": "Bhavbhuti Marg",
-      "speedLimit": 30,
-      "geometry": [
-        [
-          77.222,
-          28.6385
-        ],
-        [
-          77.225,
-          28.6375
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_55_bhavbhuti_marg_ndls_ajmeri_gate",
-      "source": "bhavbhuti_marg",
-      "target": "ndls_ajmeri_gate",
-      "distance": 337.1,
-      "roadType": "secondary",
-      "roadName": "Station Road",
-      "speedLimit": 30,
-      "geometry": [
-        [
-          77.222,
-          28.6385
-        ],
-        [
-          77.2225,
-          28.6415
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_56_ndls_ajmeri_gate_bhavbhuti_marg",
-      "source": "ndls_ajmeri_gate",
-      "target": "bhavbhuti_marg",
-      "distance": 337.1,
-      "roadType": "secondary",
-      "roadName": "Station Road",
-      "speedLimit": 30,
-      "geometry": [
-        [
-          77.2225,
-          28.6415
-        ],
-        [
-          77.222,
-          28.6385
-        ]
-      ],
-      "trafficMultiplier": 1.0,
-      "isBlocked": false
-    },
-    {
-      "id": "edge_57_ndls_paharganj_ndls_ajmeri_gate",
+      "id": "edge_53_ndls_paharganj_ndls_ajmeri_gate",
       "source": "ndls_paharganj",
       "target": "ndls_ajmeri_gate",
-      "distance": 603.1,
-      "roadType": "residential",
-      "roadName": "Station Footover Underpass",
-      "speedLimit": 20,
+      "distance": 1046.1,
+      "roadType": "primary",
+      "roadName": "New Delhi Railway Flyover",
+      "speedLimit": 40,
       "geometry": [
         [
           77.2165,
           28.6428
+        ],
+        [
+          77.2168,
+          28.6446
+        ],
+        [
+          77.2185,
+          28.6456
+        ],
+        [
+          77.2208,
+          28.6446
+        ],
+        [
+          77.2222,
+          28.643
         ],
         [
           77.2225,
@@ -2033,17 +2475,33 @@
       "isBlocked": false
     },
     {
-      "id": "edge_58_ndls_ajmeri_gate_ndls_paharganj",
+      "id": "edge_54_ndls_ajmeri_gate_ndls_paharganj",
       "source": "ndls_ajmeri_gate",
       "target": "ndls_paharganj",
-      "distance": 603.1,
-      "roadType": "residential",
-      "roadName": "Station Footover Underpass",
-      "speedLimit": 20,
+      "distance": 1046.1,
+      "roadType": "primary",
+      "roadName": "New Delhi Railway Flyover",
+      "speedLimit": 40,
       "geometry": [
         [
           77.2225,
           28.6415
+        ],
+        [
+          77.2222,
+          28.643
+        ],
+        [
+          77.2208,
+          28.6446
+        ],
+        [
+          77.2185,
+          28.6456
+        ],
+        [
+          77.2168,
+          28.6446
         ],
         [
           77.2165,
@@ -2054,7 +2512,73 @@
       "isBlocked": false
     },
     {
-      "id": "edge_59_minto_bridge_ddu_marg",
+      "id": "edge_55_ndls_ajmeri_gate_minto_bridge",
+      "source": "ndls_ajmeri_gate",
+      "target": "minto_bridge",
+      "distance": 618.4,
+      "roadType": "secondary",
+      "roadName": "Bhavbhuti Marg",
+      "speedLimit": 35,
+      "geometry": [
+        [
+          77.2225,
+          28.6415
+        ],
+        [
+          77.222,
+          28.6398
+        ],
+        [
+          77.2225,
+          28.6385
+        ],
+        [
+          77.2238,
+          28.6378
+        ],
+        [
+          77.225,
+          28.6375
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_56_minto_bridge_ndls_ajmeri_gate",
+      "source": "minto_bridge",
+      "target": "ndls_ajmeri_gate",
+      "distance": 618.4,
+      "roadType": "secondary",
+      "roadName": "Bhavbhuti Marg",
+      "speedLimit": 35,
+      "geometry": [
+        [
+          77.225,
+          28.6375
+        ],
+        [
+          77.2238,
+          28.6378
+        ],
+        [
+          77.2225,
+          28.6385
+        ],
+        [
+          77.222,
+          28.6398
+        ],
+        [
+          77.2225,
+          28.6415
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_57_minto_bridge_ddu_marg",
       "source": "minto_bridge",
       "target": "ddu_marg",
       "distance": 477.4,
@@ -2075,7 +2599,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_60_ddu_marg_minto_bridge",
+      "id": "edge_58_ddu_marg_minto_bridge",
       "source": "ddu_marg",
       "target": "minto_bridge",
       "distance": 477.4,
@@ -2096,7 +2620,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_61_ddu_marg_ito_chowk",
+      "id": "edge_59_ddu_marg_ito_chowk",
       "source": "ddu_marg",
       "target": "ito_chowk",
       "distance": 1390.5,
@@ -2117,7 +2641,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_62_ito_chowk_ddu_marg",
+      "id": "edge_60_ito_chowk_ddu_marg",
       "source": "ito_chowk",
       "target": "ddu_marg",
       "distance": 1390.5,
@@ -2138,10 +2662,10 @@
       "isBlocked": false
     },
     {
-      "id": "edge_63_cp_outer_rad3_barakhamba_mid",
+      "id": "edge_61_cp_outer_rad3_barakhamba_mid",
       "source": "cp_outer_rad3",
       "target": "barakhamba_mid",
-      "distance": 534.7,
+      "distance": 534.9,
       "roadType": "primary",
       "roadName": "Barakhamba Road",
       "speedLimit": 50,
@@ -2149,6 +2673,10 @@
         [
           77.2245,
           28.6322
+        ],
+        [
+          77.2262,
+          28.6305
         ],
         [
           77.228,
@@ -2159,10 +2687,10 @@
       "isBlocked": false
     },
     {
-      "id": "edge_64_barakhamba_mid_cp_outer_rad3",
+      "id": "edge_62_barakhamba_mid_cp_outer_rad3",
       "source": "barakhamba_mid",
       "target": "cp_outer_rad3",
-      "distance": 534.7,
+      "distance": 534.9,
       "roadType": "primary",
       "roadName": "Barakhamba Road",
       "speedLimit": 50,
@@ -2170,6 +2698,10 @@
         [
           77.228,
           28.6285
+        ],
+        [
+          77.2262,
+          28.6305
         ],
         [
           77.2245,
@@ -2180,7 +2712,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_65_barakhamba_mid_barakhamba_tolstoy",
+      "id": "edge_63_barakhamba_mid_barakhamba_tolstoy",
       "source": "barakhamba_mid",
       "target": "barakhamba_tolstoy",
       "distance": 294.6,
@@ -2201,7 +2733,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_66_barakhamba_tolstoy_barakhamba_mid",
+      "id": "edge_64_barakhamba_tolstoy_barakhamba_mid",
       "source": "barakhamba_tolstoy",
       "target": "barakhamba_mid",
       "distance": 294.6,
@@ -2222,17 +2754,25 @@
       "isBlocked": false
     },
     {
-      "id": "edge_67_barakhamba_tolstoy_mandi_house_circle",
+      "id": "edge_65_barakhamba_tolstoy_mandi_house_circle",
       "source": "barakhamba_tolstoy",
       "target": "mandi_house_circle",
-      "distance": 685.5,
+      "distance": 677.7,
       "roadType": "primary",
       "roadName": "Barakhamba Road",
       "speedLimit": 50,
       "geometry": [
         [
-          77.227,
-          28.626
+          77.228,
+          28.6285
+        ],
+        [
+          77.23,
+          28.6272
+        ],
+        [
+          77.232,
+          28.6262
         ],
         [
           77.234,
@@ -2243,10 +2783,10 @@
       "isBlocked": false
     },
     {
-      "id": "edge_68_mandi_house_circle_barakhamba_tolstoy",
+      "id": "edge_66_mandi_house_circle_barakhamba_tolstoy",
       "source": "mandi_house_circle",
       "target": "barakhamba_tolstoy",
-      "distance": 685.5,
+      "distance": 677.7,
       "roadType": "primary",
       "roadName": "Barakhamba Road",
       "speedLimit": 50,
@@ -2256,18 +2796,26 @@
           28.6255
         ],
         [
-          77.227,
-          28.626
+          77.232,
+          28.6262
+        ],
+        [
+          77.23,
+          28.6272
+        ],
+        [
+          77.228,
+          28.6285
         ]
       ],
       "trafficMultiplier": 1.0,
       "isBlocked": false
     },
     {
-      "id": "edge_69_mandi_house_circle_sikandra_rd",
+      "id": "edge_67_mandi_house_circle_sikandra_rd",
       "source": "mandi_house_circle",
       "target": "sikandra_rd",
-      "distance": 380.2,
+      "distance": 389.0,
       "roadType": "primary",
       "roadName": "Sikandra Road",
       "speedLimit": 50,
@@ -2275,6 +2823,14 @@
         [
           77.234,
           28.6255
+        ],
+        [
+          77.2355,
+          28.6252
+        ],
+        [
+          77.2368,
+          28.6246
         ],
         [
           77.2375,
@@ -2285,10 +2841,10 @@
       "isBlocked": false
     },
     {
-      "id": "edge_70_sikandra_rd_mandi_house_circle",
+      "id": "edge_68_sikandra_rd_mandi_house_circle",
       "source": "sikandra_rd",
       "target": "mandi_house_circle",
-      "distance": 380.2,
+      "distance": 389.0,
       "roadType": "primary",
       "roadName": "Sikandra Road",
       "speedLimit": 50,
@@ -2296,6 +2852,14 @@
         [
           77.2375,
           28.624
+        ],
+        [
+          77.2368,
+          28.6246
+        ],
+        [
+          77.2355,
+          28.6252
         ],
         [
           77.234,
@@ -2306,17 +2870,29 @@
       "isBlocked": false
     },
     {
-      "id": "edge_71_sikandra_rd_pragati_maidan_gate",
+      "id": "edge_69_sikandra_rd_pragati_maidan_gate",
       "source": "sikandra_rd",
       "target": "pragati_maidan_gate",
-      "distance": 716.2,
-      "roadType": "trunk",
-      "roadName": "Mathura Road Link",
-      "speedLimit": 60,
+      "distance": 757.2,
+      "roadType": "primary",
+      "roadName": "Tilak Marg - Supreme Court",
+      "speedLimit": 50,
       "geometry": [
         [
           77.2375,
           28.624
+        ],
+        [
+          77.2382,
+          28.6225
+        ],
+        [
+          77.2388,
+          28.6205
+        ],
+        [
+          77.24,
+          28.6192
         ],
         [
           77.2415,
@@ -2327,17 +2903,29 @@
       "isBlocked": false
     },
     {
-      "id": "edge_72_pragati_maidan_gate_sikandra_rd",
+      "id": "edge_70_pragati_maidan_gate_sikandra_rd",
       "source": "pragati_maidan_gate",
       "target": "sikandra_rd",
-      "distance": 716.2,
-      "roadType": "trunk",
-      "roadName": "Mathura Road Link",
-      "speedLimit": 60,
+      "distance": 757.2,
+      "roadType": "primary",
+      "roadName": "Tilak Marg - Supreme Court",
+      "speedLimit": 50,
       "geometry": [
         [
           77.2415,
           28.6186
+        ],
+        [
+          77.24,
+          28.6192
+        ],
+        [
+          77.2388,
+          28.6205
+        ],
+        [
+          77.2382,
+          28.6225
         ],
         [
           77.2375,
@@ -2348,7 +2936,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_73_mandi_house_circle_tilak_marg_mandi",
+      "id": "edge_71_mandi_house_circle_tilak_marg_mandi",
       "source": "mandi_house_circle",
       "target": "tilak_marg_mandi",
       "distance": 364.3,
@@ -2369,7 +2957,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_74_tilak_marg_mandi_mandi_house_circle",
+      "id": "edge_72_tilak_marg_mandi_mandi_house_circle",
       "source": "tilak_marg_mandi",
       "target": "mandi_house_circle",
       "distance": 364.3,
@@ -2390,7 +2978,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_75_tilak_marg_mandi_india_gate_north",
+      "id": "edge_73_tilak_marg_mandi_india_gate_north",
       "source": "tilak_marg_mandi",
       "target": "india_gate_north",
       "distance": 974.1,
@@ -2411,7 +2999,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_76_india_gate_north_tilak_marg_mandi",
+      "id": "edge_74_india_gate_north_tilak_marg_mandi",
       "source": "india_gate_north",
       "target": "tilak_marg_mandi",
       "distance": 974.1,
@@ -2432,7 +3020,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_77_mandi_house_circle_ito_chowk",
+      "id": "edge_75_mandi_house_circle_ito_chowk",
       "source": "mandi_house_circle",
       "target": "ito_chowk",
       "distance": 760.3,
@@ -2453,7 +3041,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_78_ito_chowk_mandi_house_circle",
+      "id": "edge_76_ito_chowk_mandi_house_circle",
       "source": "ito_chowk",
       "target": "mandi_house_circle",
       "distance": 760.3,
@@ -2474,7 +3062,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_79_cp_outer_rad5_janpath_tolstoy",
+      "id": "edge_77_cp_outer_rad5_janpath_tolstoy",
       "source": "cp_outer_rad5",
       "target": "janpath_tolstoy",
       "distance": 444.8,
@@ -2495,7 +3083,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_80_janpath_tolstoy_cp_outer_rad5",
+      "id": "edge_78_janpath_tolstoy_cp_outer_rad5",
       "source": "janpath_tolstoy",
       "target": "cp_outer_rad5",
       "distance": 444.8,
@@ -2516,7 +3104,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_81_janpath_tolstoy_kg_tolstoy",
+      "id": "edge_79_janpath_tolstoy_kg_tolstoy",
       "source": "janpath_tolstoy",
       "target": "kg_tolstoy",
       "distance": 371.6,
@@ -2537,7 +3125,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_82_kg_tolstoy_janpath_tolstoy",
+      "id": "edge_80_kg_tolstoy_janpath_tolstoy",
       "source": "kg_tolstoy",
       "target": "janpath_tolstoy",
       "distance": 371.6,
@@ -2558,7 +3146,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_83_kg_tolstoy_barakhamba_tolstoy",
+      "id": "edge_81_kg_tolstoy_barakhamba_tolstoy",
       "source": "kg_tolstoy",
       "target": "barakhamba_tolstoy",
       "distance": 400.4,
@@ -2579,7 +3167,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_84_barakhamba_tolstoy_kg_tolstoy",
+      "id": "edge_82_barakhamba_tolstoy_kg_tolstoy",
       "source": "barakhamba_tolstoy",
       "target": "kg_tolstoy",
       "distance": 400.4,
@@ -2600,7 +3188,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_85_cp_outer_rad4_kg_tolstoy",
+      "id": "edge_83_cp_outer_rad4_kg_tolstoy",
       "source": "cp_outer_rad4",
       "target": "kg_tolstoy",
       "distance": 484.5,
@@ -2621,7 +3209,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_86_kg_tolstoy_cp_outer_rad4",
+      "id": "edge_84_kg_tolstoy_cp_outer_rad4",
       "source": "kg_tolstoy",
       "target": "cp_outer_rad4",
       "distance": 484.5,
@@ -2642,7 +3230,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_87_kg_tolstoy_india_gate_north",
+      "id": "edge_85_kg_tolstoy_india_gate_north",
       "source": "kg_tolstoy",
       "target": "india_gate_north",
       "distance": 1251.4,
@@ -2663,7 +3251,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_88_india_gate_north_kg_tolstoy",
+      "id": "edge_86_india_gate_north_kg_tolstoy",
       "source": "india_gate_north",
       "target": "kg_tolstoy",
       "distance": 1251.4,
@@ -2684,7 +3272,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_89_janpath_tolstoy_windsor_place",
+      "id": "edge_87_janpath_tolstoy_windsor_place",
       "source": "janpath_tolstoy",
       "target": "windsor_place",
       "distance": 596.0,
@@ -2705,7 +3293,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_90_windsor_place_janpath_tolstoy",
+      "id": "edge_88_windsor_place_janpath_tolstoy",
       "source": "windsor_place",
       "target": "janpath_tolstoy",
       "distance": 596.0,
@@ -2726,7 +3314,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_91_windsor_place_ashoka_rd_windsor",
+      "id": "edge_89_windsor_place_ashoka_rd_windsor",
       "source": "windsor_place",
       "target": "ashoka_rd_windsor",
       "distance": 346.1,
@@ -2747,7 +3335,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_92_ashoka_rd_windsor_windsor_place",
+      "id": "edge_90_ashoka_rd_windsor_windsor_place",
       "source": "ashoka_rd_windsor",
       "target": "windsor_place",
       "distance": 346.1,
@@ -2768,7 +3356,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_93_ashoka_rd_windsor_patel_chowk",
+      "id": "edge_91_ashoka_rd_windsor_patel_chowk",
       "source": "ashoka_rd_windsor",
       "target": "patel_chowk",
       "distance": 294.7,
@@ -2789,7 +3377,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_94_patel_chowk_ashoka_rd_windsor",
+      "id": "edge_92_patel_chowk_ashoka_rd_windsor",
       "source": "patel_chowk",
       "target": "ashoka_rd_windsor",
       "distance": 294.7,
@@ -2810,7 +3398,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_95_patel_chowk_cp_outer_rad6",
+      "id": "edge_93_patel_chowk_cp_outer_rad6",
       "source": "patel_chowk",
       "target": "cp_outer_rad6",
       "distance": 941.0,
@@ -2831,7 +3419,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_96_cp_outer_rad6_patel_chowk",
+      "id": "edge_94_cp_outer_rad6_patel_chowk",
       "source": "cp_outer_rad6",
       "target": "patel_chowk",
       "distance": 941.0,
@@ -2852,7 +3440,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_97_windsor_place_kartavya_janpath",
+      "id": "edge_95_windsor_place_kartavya_janpath",
       "source": "windsor_place",
       "target": "kartavya_janpath",
       "distance": 716.5,
@@ -2873,7 +3461,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_98_kartavya_janpath_windsor_place",
+      "id": "edge_96_kartavya_janpath_windsor_place",
       "source": "kartavya_janpath",
       "target": "windsor_place",
       "distance": 716.5,
@@ -2894,7 +3482,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_99_cp_outer_rad6_sansad_bhavan",
+      "id": "edge_97_cp_outer_rad6_sansad_bhavan",
       "source": "cp_outer_rad6",
       "target": "sansad_bhavan",
       "distance": 1663.3,
@@ -2915,7 +3503,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_100_sansad_bhavan_cp_outer_rad6",
+      "id": "edge_98_sansad_bhavan_cp_outer_rad6",
       "source": "sansad_bhavan",
       "target": "cp_outer_rad6",
       "distance": 1663.3,
@@ -2936,7 +3524,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_101_sansad_bhavan_vijay_chowk",
+      "id": "edge_99_sansad_bhavan_vijay_chowk",
       "source": "sansad_bhavan",
       "target": "vijay_chowk",
       "distance": 369.1,
@@ -2957,7 +3545,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_102_vijay_chowk_sansad_bhavan",
+      "id": "edge_100_vijay_chowk_sansad_bhavan",
       "source": "vijay_chowk",
       "target": "sansad_bhavan",
       "distance": 369.1,
@@ -2978,7 +3566,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_103_vijay_chowk_kartavya_rafi",
+      "id": "edge_101_vijay_chowk_kartavya_rafi",
       "source": "vijay_chowk",
       "target": "kartavya_rafi",
       "distance": 635.4,
@@ -2999,7 +3587,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_104_kartavya_rafi_vijay_chowk",
+      "id": "edge_102_kartavya_rafi_vijay_chowk",
       "source": "kartavya_rafi",
       "target": "vijay_chowk",
       "distance": 635.4,
@@ -3020,7 +3608,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_105_kartavya_rafi_kartavya_janpath",
+      "id": "edge_103_kartavya_rafi_kartavya_janpath",
       "source": "kartavya_rafi",
       "target": "kartavya_janpath",
       "distance": 636.0,
@@ -3041,7 +3629,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_106_kartavya_janpath_kartavya_rafi",
+      "id": "edge_104_kartavya_janpath_kartavya_rafi",
       "source": "kartavya_janpath",
       "target": "kartavya_rafi",
       "distance": 636.0,
@@ -3062,7 +3650,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_107_kartavya_janpath_kartavya_mansingh",
+      "id": "edge_105_kartavya_janpath_kartavya_mansingh",
       "source": "kartavya_janpath",
       "target": "kartavya_mansingh",
       "distance": 538.7,
@@ -3083,7 +3671,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_108_kartavya_mansingh_kartavya_janpath",
+      "id": "edge_106_kartavya_mansingh_kartavya_janpath",
       "source": "kartavya_mansingh",
       "target": "kartavya_janpath",
       "distance": 538.7,
@@ -3104,7 +3692,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_109_kartavya_mansingh_india_gate_west",
+      "id": "edge_107_kartavya_mansingh_india_gate_west",
       "source": "kartavya_mansingh",
       "target": "india_gate_west",
       "distance": 206.3,
@@ -3125,7 +3713,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_110_india_gate_west_kartavya_mansingh",
+      "id": "edge_108_india_gate_west_kartavya_mansingh",
       "source": "india_gate_west",
       "target": "kartavya_mansingh",
       "distance": 206.3,
@@ -3146,7 +3734,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_111_india_gate_north_india_gate_east",
+      "id": "edge_109_india_gate_north_india_gate_east",
       "source": "india_gate_north",
       "target": "india_gate_east",
       "distance": 403.8,
@@ -3167,7 +3755,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_112_india_gate_east_india_gate_south",
+      "id": "edge_110_india_gate_east_india_gate_south",
       "source": "india_gate_east",
       "target": "india_gate_south",
       "distance": 487.1,
@@ -3188,7 +3776,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_113_india_gate_south_india_gate_west",
+      "id": "edge_111_india_gate_south_india_gate_west",
       "source": "india_gate_south",
       "target": "india_gate_west",
       "distance": 469.5,
@@ -3209,7 +3797,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_114_india_gate_west_india_gate_north",
+      "id": "edge_112_india_gate_west_india_gate_north",
       "source": "india_gate_west",
       "target": "india_gate_north",
       "distance": 419.4,
@@ -3230,7 +3818,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_115_india_gate_west_india_gate_center",
+      "id": "edge_113_india_gate_west_india_gate_center",
       "source": "india_gate_west",
       "target": "india_gate_center",
       "distance": 293.1,
@@ -3251,7 +3839,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_116_india_gate_center_india_gate_west",
+      "id": "edge_114_india_gate_center_india_gate_west",
       "source": "india_gate_center",
       "target": "india_gate_west",
       "distance": 293.1,
@@ -3272,7 +3860,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_117_india_gate_east_india_gate_center",
+      "id": "edge_115_india_gate_east_india_gate_center",
       "source": "india_gate_east",
       "target": "india_gate_center",
       "distance": 293.1,
@@ -3293,7 +3881,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_118_india_gate_center_india_gate_east",
+      "id": "edge_116_india_gate_center_india_gate_east",
       "source": "india_gate_center",
       "target": "india_gate_east",
       "distance": 293.1,
@@ -3314,7 +3902,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_119_india_gate_east_purana_qila",
+      "id": "edge_117_india_gate_east_purana_qila",
       "source": "india_gate_east",
       "target": "purana_qila",
       "distance": 916.5,
@@ -3335,7 +3923,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_120_purana_qila_india_gate_east",
+      "id": "edge_118_purana_qila_india_gate_east",
       "source": "purana_qila",
       "target": "india_gate_east",
       "distance": 916.5,
@@ -3356,7 +3944,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_121_pragati_maidan_gate_bhairon_marg",
+      "id": "edge_119_pragati_maidan_gate_bhairon_marg",
       "source": "pragati_maidan_gate",
       "target": "bhairon_marg",
       "distance": 963.3,
@@ -3377,7 +3965,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_122_bhairon_marg_pragati_maidan_gate",
+      "id": "edge_120_bhairon_marg_pragati_maidan_gate",
       "source": "bhairon_marg",
       "target": "pragati_maidan_gate",
       "distance": 963.3,
@@ -3398,7 +3986,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_123_bhairon_marg_purana_qila",
+      "id": "edge_121_bhairon_marg_purana_qila",
       "source": "bhairon_marg",
       "target": "purana_qila",
       "distance": 406.0,
@@ -3419,7 +4007,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_124_purana_qila_bhairon_marg",
+      "id": "edge_122_purana_qila_bhairon_marg",
       "source": "purana_qila",
       "target": "bhairon_marg",
       "distance": 406.0,
@@ -3434,6 +4022,72 @@
         [
           77.245,
           28.6105
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_123_pragati_maidan_gate_purana_qila",
+      "source": "pragati_maidan_gate",
+      "target": "purana_qila",
+      "distance": 1079.9,
+      "roadType": "trunk",
+      "roadName": "Mathura Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.2415,
+          28.6186
+        ],
+        [
+          77.2425,
+          28.616
+        ],
+        [
+          77.243,
+          28.6135
+        ],
+        [
+          77.2422,
+          28.611
+        ],
+        [
+          77.241,
+          28.6095
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_124_purana_qila_pragati_maidan_gate",
+      "source": "purana_qila",
+      "target": "pragati_maidan_gate",
+      "distance": 1079.9,
+      "roadType": "trunk",
+      "roadName": "Mathura Road",
+      "speedLimit": 60,
+      "geometry": [
+        [
+          77.241,
+          28.6095
+        ],
+        [
+          77.2422,
+          28.611
+        ],
+        [
+          77.243,
+          28.6135
+        ],
+        [
+          77.2425,
+          28.616
+        ],
+        [
+          77.2415,
+          28.6186
         ]
       ],
       "trafficMultiplier": 1.0,
@@ -3608,38 +4262,62 @@
       "isBlocked": false
     },
     {
-      "id": "edge_133_purana_qila_khan_market_hub",
+      "id": "edge_133_purana_qila_sbm_oberoi",
       "source": "purana_qila",
-      "target": "khan_market_hub",
-      "distance": 1707.2,
+      "target": "sbm_oberoi",
+      "distance": 1124.1,
       "roadType": "primary",
-      "roadName": "Subramaniam Bharti Marg",
-      "speedLimit": 40,
+      "roadName": "Mathura Road South",
+      "speedLimit": 50,
       "geometry": [
         [
           77.241,
           28.6095
         ],
         [
-          77.227,
-          28.6003
+          77.2402,
+          28.607
+        ],
+        [
+          77.2388,
+          28.6045
+        ],
+        [
+          77.2362,
+          28.603
+        ],
+        [
+          77.234,
+          28.6025
         ]
       ],
       "trafficMultiplier": 1.0,
       "isBlocked": false
     },
     {
-      "id": "edge_134_khan_market_hub_purana_qila",
-      "source": "khan_market_hub",
+      "id": "edge_134_sbm_oberoi_purana_qila",
+      "source": "sbm_oberoi",
       "target": "purana_qila",
-      "distance": 1707.2,
+      "distance": 1124.1,
       "roadType": "primary",
-      "roadName": "Subramaniam Bharti Marg",
-      "speedLimit": 40,
+      "roadName": "Mathura Road South",
+      "speedLimit": 50,
       "geometry": [
         [
-          77.227,
-          28.6003
+          77.234,
+          28.6025
+        ],
+        [
+          77.2362,
+          28.603
+        ],
+        [
+          77.2388,
+          28.6045
+        ],
+        [
+          77.2402,
+          28.607
         ],
         [
           77.241,
@@ -3650,7 +4328,65 @@
       "isBlocked": false
     },
     {
-      "id": "edge_135_shahjahan_crossing_prithviraj_circle",
+      "id": "edge_135_sbm_oberoi_khan_market_hub",
+      "source": "sbm_oberoi",
+      "target": "khan_market_hub",
+      "distance": 729.5,
+      "roadType": "primary",
+      "roadName": "Subramaniam Bharti Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.234,
+          28.6025
+        ],
+        [
+          77.2315,
+          28.602
+        ],
+        [
+          77.229,
+          28.6012
+        ],
+        [
+          77.227,
+          28.6003
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_136_khan_market_hub_sbm_oberoi",
+      "source": "khan_market_hub",
+      "target": "sbm_oberoi",
+      "distance": 729.5,
+      "roadType": "primary",
+      "roadName": "Subramaniam Bharti Marg",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.227,
+          28.6003
+        ],
+        [
+          77.229,
+          28.6012
+        ],
+        [
+          77.2315,
+          28.602
+        ],
+        [
+          77.234,
+          28.6025
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_137_shahjahan_crossing_prithviraj_circle",
       "source": "shahjahan_crossing",
       "target": "prithviraj_circle",
       "distance": 786.4,
@@ -3671,7 +4407,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_136_prithviraj_circle_shahjahan_crossing",
+      "id": "edge_138_prithviraj_circle_shahjahan_crossing",
       "source": "prithviraj_circle",
       "target": "shahjahan_crossing",
       "distance": 786.4,
@@ -3692,7 +4428,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_137_prithviraj_circle_lodhi_garden",
+      "id": "edge_139_prithviraj_circle_lodhi_garden",
       "source": "prithviraj_circle",
       "target": "lodhi_garden",
       "distance": 792.0,
@@ -3713,7 +4449,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_138_lodhi_garden_prithviraj_circle",
+      "id": "edge_140_lodhi_garden_prithviraj_circle",
       "source": "lodhi_garden",
       "target": "prithviraj_circle",
       "distance": 792.0,
@@ -3734,7 +4470,299 @@
       "isBlocked": false
     },
     {
-      "id": "edge_139_khan_market_hub_lodhi_colony_hub",
+      "id": "edge_141_khan_market_hub_lodhi_colony_hub",
+      "source": "khan_market_hub",
+      "target": "lodhi_colony_hub",
+      "distance": 1450.6,
+      "roadType": "primary",
+      "roadName": "Rajesh Pilot Marg - Lodhi Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.227,
+          28.6003
+        ],
+        [
+          77.2262,
+          28.5975
+        ],
+        [
+          77.2255,
+          28.595
+        ],
+        [
+          77.225,
+          28.593
+        ],
+        [
+          77.2235,
+          28.5925
+        ],
+        [
+          77.2222,
+          28.591
+        ],
+        [
+          77.2217,
+          28.5888
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_142_lodhi_colony_hub_khan_market_hub",
+      "source": "lodhi_colony_hub",
+      "target": "khan_market_hub",
+      "distance": 1450.6,
+      "roadType": "primary",
+      "roadName": "Rajesh Pilot Marg - Lodhi Road",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.2217,
+          28.5888
+        ],
+        [
+          77.2222,
+          28.591
+        ],
+        [
+          77.2235,
+          28.5925
+        ],
+        [
+          77.225,
+          28.593
+        ],
+        [
+          77.2255,
+          28.595
+        ],
+        [
+          77.2262,
+          28.5975
+        ],
+        [
+          77.227,
+          28.6003
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_143_lodhi_garden_lodhi_colony_hub",
+      "source": "lodhi_garden",
+      "target": "lodhi_colony_hub",
+      "distance": 514.0,
+      "roadType": "primary",
+      "roadName": "Lodhi Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.2195,
+          28.593
+        ],
+        [
+          77.2217,
+          28.5888
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_144_lodhi_colony_hub_lodhi_garden",
+      "source": "lodhi_colony_hub",
+      "target": "lodhi_garden",
+      "distance": 514.0,
+      "roadType": "primary",
+      "roadName": "Lodhi Road",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.2217,
+          28.5888
+        ],
+        [
+          77.2195,
+          28.593
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_145_lodhi_colony_hub_jor_bagh",
+      "source": "lodhi_colony_hub",
+      "target": "jor_bagh",
+      "distance": 757.1,
+      "roadType": "secondary",
+      "roadName": "Jor Bagh Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2217,
+          28.5888
+        ],
+        [
+          77.214,
+          28.588
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_146_jor_bagh_lodhi_colony_hub",
+      "source": "jor_bagh",
+      "target": "lodhi_colony_hub",
+      "distance": 757.1,
+      "roadType": "secondary",
+      "roadName": "Jor Bagh Road",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.214,
+          28.588
+        ],
+        [
+          77.2217,
+          28.5888
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_147_jor_bagh_prithviraj_circle",
+      "source": "jor_bagh",
+      "target": "prithviraj_circle",
+      "distance": 1390.3,
+      "roadType": "primary",
+      "roadName": "Safdarjung Road Link",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.214,
+          28.588
+        ],
+        [
+          77.218,
+          28.6
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_148_prithviraj_circle_jor_bagh",
+      "source": "prithviraj_circle",
+      "target": "jor_bagh",
+      "distance": 1390.3,
+      "roadType": "primary",
+      "roadName": "Safdarjung Road Link",
+      "speedLimit": 40,
+      "geometry": [
+        [
+          77.218,
+          28.6
+        ],
+        [
+          77.214,
+          28.588
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_149_lodhi_colony_hub_ina_market",
+      "source": "lodhi_colony_hub",
+      "target": "ina_market",
+      "distance": 1677.3,
+      "roadType": "primary",
+      "roadName": "Aurobindo Marg Link",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.2217,
+          28.5888
+        ],
+        [
+          77.211,
+          28.577
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_150_ina_market_lodhi_colony_hub",
+      "source": "ina_market",
+      "target": "lodhi_colony_hub",
+      "distance": 1677.3,
+      "roadType": "primary",
+      "roadName": "Aurobindo Marg Link",
+      "speedLimit": 45,
+      "geometry": [
+        [
+          77.211,
+          28.577
+        ],
+        [
+          77.2217,
+          28.5888
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_151_prithviraj_circle_lodhi_garden",
+      "source": "prithviraj_circle",
+      "target": "lodhi_garden",
+      "distance": 792.0,
+      "roadType": "secondary",
+      "roadName": "Amrita Shergill Marg",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.218,
+          28.6
+        ],
+        [
+          77.2195,
+          28.593
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_152_lodhi_garden_prithviraj_circle",
+      "source": "lodhi_garden",
+      "target": "prithviraj_circle",
+      "distance": 792.0,
+      "roadType": "secondary",
+      "roadName": "Amrita Shergill Marg",
+      "speedLimit": 30,
+      "geometry": [
+        [
+          77.2195,
+          28.593
+        ],
+        [
+          77.218,
+          28.6
+        ]
+      ],
+      "trafficMultiplier": 1.0,
+      "isBlocked": false
+    },
+    {
+      "id": "edge_153_khan_market_hub_lodhi_colony_hub",
       "source": "khan_market_hub",
       "target": "lodhi_colony_hub",
       "distance": 1379.5,
@@ -3755,7 +4783,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_140_lodhi_colony_hub_khan_market_hub",
+      "id": "edge_154_lodhi_colony_hub_khan_market_hub",
       "source": "lodhi_colony_hub",
       "target": "khan_market_hub",
       "distance": 1379.5,
@@ -3776,7 +4804,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_141_lodhi_garden_lodhi_colony_hub",
+      "id": "edge_155_lodhi_garden_lodhi_colony_hub",
       "source": "lodhi_garden",
       "target": "lodhi_colony_hub",
       "distance": 514.0,
@@ -3797,7 +4825,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_142_lodhi_colony_hub_lodhi_garden",
+      "id": "edge_156_lodhi_colony_hub_lodhi_garden",
       "source": "lodhi_colony_hub",
       "target": "lodhi_garden",
       "distance": 514.0,
@@ -3818,7 +4846,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_143_lodhi_colony_hub_jor_bagh",
+      "id": "edge_157_lodhi_colony_hub_jor_bagh",
       "source": "lodhi_colony_hub",
       "target": "jor_bagh",
       "distance": 757.1,
@@ -3839,7 +4867,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_144_jor_bagh_lodhi_colony_hub",
+      "id": "edge_158_jor_bagh_lodhi_colony_hub",
       "source": "jor_bagh",
       "target": "lodhi_colony_hub",
       "distance": 757.1,
@@ -3860,7 +4888,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_145_jor_bagh_prithviraj_circle",
+      "id": "edge_159_jor_bagh_prithviraj_circle",
       "source": "jor_bagh",
       "target": "prithviraj_circle",
       "distance": 1390.3,
@@ -3881,7 +4909,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_146_prithviraj_circle_jor_bagh",
+      "id": "edge_160_prithviraj_circle_jor_bagh",
       "source": "prithviraj_circle",
       "target": "jor_bagh",
       "distance": 1390.3,
@@ -3902,7 +4930,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_147_lodhi_colony_hub_ina_market",
+      "id": "edge_161_lodhi_colony_hub_ina_market",
       "source": "lodhi_colony_hub",
       "target": "ina_market",
       "distance": 1677.3,
@@ -3923,7 +4951,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_148_ina_market_lodhi_colony_hub",
+      "id": "edge_162_ina_market_lodhi_colony_hub",
       "source": "ina_market",
       "target": "lodhi_colony_hub",
       "distance": 1677.3,
@@ -3944,7 +4972,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_149_vijay_chowk_teen_murti",
+      "id": "edge_163_vijay_chowk_teen_murti",
       "source": "vijay_chowk",
       "target": "teen_murti",
       "distance": 1368.7,
@@ -3965,7 +4993,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_150_teen_murti_vijay_chowk",
+      "id": "edge_164_teen_murti_vijay_chowk",
       "source": "teen_murti",
       "target": "vijay_chowk",
       "distance": 1368.7,
@@ -3986,7 +5014,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_151_teen_murti_prithviraj_circle",
+      "id": "edge_165_teen_murti_prithviraj_circle",
       "source": "teen_murti",
       "target": "prithviraj_circle",
       "distance": 1692.8,
@@ -4007,7 +5035,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_152_prithviraj_circle_teen_murti",
+      "id": "edge_166_prithviraj_circle_teen_murti",
       "source": "prithviraj_circle",
       "target": "teen_murti",
       "distance": 1692.8,
@@ -4028,7 +5056,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_153_teen_murti_chanakyapuri_hub",
+      "id": "edge_167_teen_murti_chanakyapuri_hub",
       "source": "teen_murti",
       "target": "chanakyapuri_hub",
       "distance": 1265.0,
@@ -4049,7 +5077,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_154_chanakyapuri_hub_teen_murti",
+      "id": "edge_168_chanakyapuri_hub_teen_murti",
       "source": "chanakyapuri_hub",
       "target": "teen_murti",
       "distance": 1265.0,
@@ -4070,7 +5098,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_155_chanakyapuri_hub_shanti_path",
+      "id": "edge_169_chanakyapuri_hub_shanti_path",
       "source": "chanakyapuri_hub",
       "target": "shanti_path",
       "distance": 792.7,
@@ -4091,7 +5119,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_156_shanti_path_chanakyapuri_hub",
+      "id": "edge_170_shanti_path_chanakyapuri_hub",
       "source": "shanti_path",
       "target": "chanakyapuri_hub",
       "distance": 792.7,
@@ -4112,7 +5140,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_157_shanti_path_jor_bagh",
+      "id": "edge_171_shanti_path_jor_bagh",
       "source": "shanti_path",
       "target": "jor_bagh",
       "distance": 2098.1,
@@ -4133,7 +5161,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_158_jor_bagh_shanti_path",
+      "id": "edge_172_jor_bagh_shanti_path",
       "source": "jor_bagh",
       "target": "shanti_path",
       "distance": 2098.1,
@@ -4154,7 +5182,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_159_shanti_path_moti_bagh",
+      "id": "edge_173_shanti_path_moti_bagh",
       "source": "shanti_path",
       "target": "moti_bagh",
       "distance": 2730.3,
@@ -4175,7 +5203,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_160_moti_bagh_shanti_path",
+      "id": "edge_174_moti_bagh_shanti_path",
       "source": "moti_bagh",
       "target": "shanti_path",
       "distance": 2730.3,
@@ -4196,7 +5224,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_161_chanakyapuri_hub_dhaula_kuan_interchange",
+      "id": "edge_175_chanakyapuri_hub_dhaula_kuan_interchange",
       "source": "chanakyapuri_hub",
       "target": "dhaula_kuan_interchange",
       "distance": 2732.8,
@@ -4217,7 +5245,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_162_dhaula_kuan_interchange_chanakyapuri_hub",
+      "id": "edge_176_dhaula_kuan_interchange_chanakyapuri_hub",
       "source": "dhaula_kuan_interchange",
       "target": "chanakyapuri_hub",
       "distance": 2732.8,
@@ -4238,7 +5266,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_163_cp_outer_rad8_panchkuian_mid",
+      "id": "edge_177_cp_outer_rad8_panchkuian_mid",
       "source": "cp_outer_rad8",
       "target": "panchkuian_mid",
       "distance": 898.5,
@@ -4259,7 +5287,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_164_panchkuian_mid_cp_outer_rad8",
+      "id": "edge_178_panchkuian_mid_cp_outer_rad8",
       "source": "panchkuian_mid",
       "target": "cp_outer_rad8",
       "distance": 898.5,
@@ -4280,7 +5308,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_165_panchkuian_mid_jhandewalan",
+      "id": "edge_179_panchkuian_mid_jhandewalan",
       "source": "panchkuian_mid",
       "target": "jhandewalan",
       "distance": 807.9,
@@ -4301,7 +5329,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_166_jhandewalan_panchkuian_mid",
+      "id": "edge_180_jhandewalan_panchkuian_mid",
       "source": "jhandewalan",
       "target": "panchkuian_mid",
       "distance": 807.9,
@@ -4322,7 +5350,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_167_jhandewalan_db_gupta_rd",
+      "id": "edge_181_jhandewalan_db_gupta_rd",
       "source": "jhandewalan",
       "target": "db_gupta_rd",
       "distance": 551.5,
@@ -4343,7 +5371,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_168_db_gupta_rd_jhandewalan",
+      "id": "edge_182_db_gupta_rd_jhandewalan",
       "source": "db_gupta_rd",
       "target": "jhandewalan",
       "distance": 551.5,
@@ -4364,7 +5392,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_169_db_gupta_rd_karol_bagh_hub",
+      "id": "edge_183_db_gupta_rd_karol_bagh_hub",
       "source": "db_gupta_rd",
       "target": "karol_bagh_hub",
       "distance": 891.4,
@@ -4385,7 +5413,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_170_karol_bagh_hub_db_gupta_rd",
+      "id": "edge_184_karol_bagh_hub_db_gupta_rd",
       "source": "karol_bagh_hub",
       "target": "db_gupta_rd",
       "distance": 891.4,
@@ -4406,7 +5434,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_171_ndls_paharganj_panchkuian_mid",
+      "id": "edge_185_ndls_paharganj_panchkuian_mid",
       "source": "ndls_paharganj",
       "target": "panchkuian_mid",
       "distance": 818.7,
@@ -4427,7 +5455,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_172_panchkuian_mid_ndls_paharganj",
+      "id": "edge_186_panchkuian_mid_ndls_paharganj",
       "source": "panchkuian_mid",
       "target": "ndls_paharganj",
       "distance": 818.7,
@@ -4448,7 +5476,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_173_karol_bagh_hub_patel_nagar",
+      "id": "edge_187_karol_bagh_hub_patel_nagar",
       "source": "karol_bagh_hub",
       "target": "patel_nagar",
       "distance": 1874.1,
@@ -4469,7 +5497,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_174_patel_nagar_karol_bagh_hub",
+      "id": "edge_188_patel_nagar_karol_bagh_hub",
       "source": "patel_nagar",
       "target": "karol_bagh_hub",
       "distance": 1874.1,
@@ -4490,7 +5518,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_175_patel_nagar_shadipur_metro",
+      "id": "edge_189_patel_nagar_shadipur_metro",
       "source": "patel_nagar",
       "target": "shadipur_metro",
       "distance": 1420.5,
@@ -4511,7 +5539,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_176_shadipur_metro_patel_nagar",
+      "id": "edge_190_shadipur_metro_patel_nagar",
       "source": "shadipur_metro",
       "target": "patel_nagar",
       "distance": 1420.5,
@@ -4532,7 +5560,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_177_shadipur_metro_raja_garden_flyover",
+      "id": "edge_191_shadipur_metro_raja_garden_flyover",
       "source": "shadipur_metro",
       "target": "raja_garden_flyover",
       "distance": 3027.0,
@@ -4553,7 +5581,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_178_raja_garden_flyover_shadipur_metro",
+      "id": "edge_192_raja_garden_flyover_shadipur_metro",
       "source": "raja_garden_flyover",
       "target": "shadipur_metro",
       "distance": 3027.0,
@@ -4574,7 +5602,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_179_isbt_kashmere_gate_rajghat_chowk",
+      "id": "edge_193_isbt_kashmere_gate_rajghat_chowk",
       "source": "isbt_kashmere_gate",
       "target": "rajghat_chowk",
       "distance": 3507.6,
@@ -4595,7 +5623,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_180_rajghat_chowk_isbt_kashmere_gate",
+      "id": "edge_194_rajghat_chowk_isbt_kashmere_gate",
       "source": "rajghat_chowk",
       "target": "isbt_kashmere_gate",
       "distance": 3507.6,
@@ -4616,7 +5644,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_181_rajghat_chowk_ito_chowk",
+      "id": "edge_195_rajghat_chowk_ito_chowk",
       "source": "rajghat_chowk",
       "target": "ito_chowk",
       "distance": 1548.8,
@@ -4637,7 +5665,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_182_ito_chowk_rajghat_chowk",
+      "id": "edge_196_ito_chowk_rajghat_chowk",
       "source": "ito_chowk",
       "target": "rajghat_chowk",
       "distance": 1548.8,
@@ -4658,7 +5686,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_183_ito_chowk_pragati_maidan_gate",
+      "id": "edge_197_ito_chowk_pragati_maidan_gate",
       "source": "ito_chowk",
       "target": "pragati_maidan_gate",
       "distance": 1101.9,
@@ -4679,7 +5707,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_184_pragati_maidan_gate_ito_chowk",
+      "id": "edge_198_pragati_maidan_gate_ito_chowk",
       "source": "pragati_maidan_gate",
       "target": "ito_chowk",
       "distance": 1101.9,
@@ -4700,7 +5728,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_185_pragati_maidan_gate_sarai_kale_khan_isbt",
+      "id": "edge_199_pragati_maidan_gate_sarai_kale_khan_isbt",
       "source": "pragati_maidan_gate",
       "target": "sarai_kale_khan_isbt",
       "distance": 3531.9,
@@ -4721,7 +5749,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_186_sarai_kale_khan_isbt_pragati_maidan_gate",
+      "id": "edge_200_sarai_kale_khan_isbt_pragati_maidan_gate",
       "source": "sarai_kale_khan_isbt",
       "target": "pragati_maidan_gate",
       "distance": 3531.9,
@@ -4742,7 +5770,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_187_sarai_kale_khan_isbt_ashram_chowk",
+      "id": "edge_201_sarai_kale_khan_isbt_ashram_chowk",
       "source": "sarai_kale_khan_isbt",
       "target": "ashram_chowk",
       "distance": 2093.9,
@@ -4763,7 +5791,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_188_ashram_chowk_sarai_kale_khan_isbt",
+      "id": "edge_202_ashram_chowk_sarai_kale_khan_isbt",
       "source": "ashram_chowk",
       "target": "sarai_kale_khan_isbt",
       "distance": 2093.9,
@@ -4784,7 +5812,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_189_ashram_chowk_lajpat_nagar_central",
+      "id": "edge_203_ashram_chowk_lajpat_nagar_central",
       "source": "ashram_chowk",
       "target": "lajpat_nagar_central",
       "distance": 1663.8,
@@ -4805,7 +5833,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_190_lajpat_nagar_central_ashram_chowk",
+      "id": "edge_204_lajpat_nagar_central_ashram_chowk",
       "source": "lajpat_nagar_central",
       "target": "ashram_chowk",
       "distance": 1663.8,
@@ -4826,7 +5854,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_191_lajpat_nagar_central_moolchand_flyover",
+      "id": "edge_205_lajpat_nagar_central_moolchand_flyover",
       "source": "lajpat_nagar_central",
       "target": "moolchand_flyover",
       "distance": 859.4,
@@ -4847,7 +5875,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_192_moolchand_flyover_lajpat_nagar_central",
+      "id": "edge_206_moolchand_flyover_lajpat_nagar_central",
       "source": "moolchand_flyover",
       "target": "lajpat_nagar_central",
       "distance": 859.4,
@@ -4868,7 +5896,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_193_moolchand_flyover_aiims_safdarjung",
+      "id": "edge_207_moolchand_flyover_aiims_safdarjung",
       "source": "moolchand_flyover",
       "target": "aiims_safdarjung",
       "distance": 2544.5,
@@ -4889,7 +5917,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_194_aiims_safdarjung_moolchand_flyover",
+      "id": "edge_208_aiims_safdarjung_moolchand_flyover",
       "source": "aiims_safdarjung",
       "target": "moolchand_flyover",
       "distance": 2544.5,
@@ -4910,7 +5938,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_195_aiims_safdarjung_ina_market",
+      "id": "edge_209_aiims_safdarjung_ina_market",
       "source": "aiims_safdarjung",
       "target": "ina_market",
       "distance": 869.0,
@@ -4931,7 +5959,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_196_ina_market_aiims_safdarjung",
+      "id": "edge_210_ina_market_aiims_safdarjung",
       "source": "ina_market",
       "target": "aiims_safdarjung",
       "distance": 869.0,
@@ -4952,7 +5980,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_197_aiims_safdarjung_bhikaji_cama_place",
+      "id": "edge_211_aiims_safdarjung_bhikaji_cama_place",
       "source": "aiims_safdarjung",
       "target": "bhikaji_cama_place",
       "distance": 2203.6,
@@ -4973,7 +6001,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_198_bhikaji_cama_place_aiims_safdarjung",
+      "id": "edge_212_bhikaji_cama_place_aiims_safdarjung",
       "source": "bhikaji_cama_place",
       "target": "aiims_safdarjung",
       "distance": 2203.6,
@@ -4994,7 +6022,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_199_bhikaji_cama_place_moti_bagh",
+      "id": "edge_213_bhikaji_cama_place_moti_bagh",
       "source": "bhikaji_cama_place",
       "target": "moti_bagh",
       "distance": 2275.8,
@@ -5015,7 +6043,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_200_moti_bagh_bhikaji_cama_place",
+      "id": "edge_214_moti_bagh_bhikaji_cama_place",
       "source": "moti_bagh",
       "target": "bhikaji_cama_place",
       "distance": 2275.8,
@@ -5036,7 +6064,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_201_moti_bagh_dhaula_kuan_interchange",
+      "id": "edge_215_moti_bagh_dhaula_kuan_interchange",
       "source": "moti_bagh",
       "target": "dhaula_kuan_interchange",
       "distance": 1406.6,
@@ -5057,7 +6085,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_202_dhaula_kuan_interchange_moti_bagh",
+      "id": "edge_216_dhaula_kuan_interchange_moti_bagh",
       "source": "dhaula_kuan_interchange",
       "target": "moti_bagh",
       "distance": 1406.6,
@@ -5078,7 +6106,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_203_dhaula_kuan_interchange_delhi_cantt_station",
+      "id": "edge_217_dhaula_kuan_interchange_delhi_cantt_station",
       "source": "dhaula_kuan_interchange",
       "target": "delhi_cantt_station",
       "distance": 3451.4,
@@ -5099,7 +6127,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_204_delhi_cantt_station_dhaula_kuan_interchange",
+      "id": "edge_218_delhi_cantt_station_dhaula_kuan_interchange",
       "source": "delhi_cantt_station",
       "target": "dhaula_kuan_interchange",
       "distance": 3451.4,
@@ -5120,7 +6148,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_205_dhaula_kuan_interchange_naraina_industrial_area",
+      "id": "edge_219_dhaula_kuan_interchange_naraina_industrial_area",
       "source": "dhaula_kuan_interchange",
       "target": "naraina_industrial_area",
       "distance": 4254.5,
@@ -5141,7 +6169,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_206_naraina_industrial_area_dhaula_kuan_interchange",
+      "id": "edge_220_naraina_industrial_area_dhaula_kuan_interchange",
       "source": "naraina_industrial_area",
       "target": "dhaula_kuan_interchange",
       "distance": 4254.5,
@@ -5162,7 +6190,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_207_naraina_industrial_area_mayapuri_chowk",
+      "id": "edge_221_naraina_industrial_area_mayapuri_chowk",
       "source": "naraina_industrial_area",
       "target": "mayapuri_chowk",
       "distance": 1627.5,
@@ -5183,7 +6211,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_208_mayapuri_chowk_naraina_industrial_area",
+      "id": "edge_222_mayapuri_chowk_naraina_industrial_area",
       "source": "mayapuri_chowk",
       "target": "naraina_industrial_area",
       "distance": 1627.5,
@@ -5204,7 +6232,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_209_mayapuri_chowk_raja_garden_flyover",
+      "id": "edge_223_mayapuri_chowk_raja_garden_flyover",
       "source": "mayapuri_chowk",
       "target": "raja_garden_flyover",
       "distance": 1781.8,
@@ -5225,7 +6253,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_210_raja_garden_flyover_mayapuri_chowk",
+      "id": "edge_224_raja_garden_flyover_mayapuri_chowk",
       "source": "raja_garden_flyover",
       "target": "mayapuri_chowk",
       "distance": 1781.8,
@@ -5246,7 +6274,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_211_raja_garden_flyover_punjabi_bagh_roundabout",
+      "id": "edge_225_raja_garden_flyover_punjabi_bagh_roundabout",
       "source": "raja_garden_flyover",
       "target": "punjabi_bagh_roundabout",
       "distance": 2356.9,
@@ -5267,7 +6295,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_212_punjabi_bagh_roundabout_raja_garden_flyover",
+      "id": "edge_226_punjabi_bagh_roundabout_raja_garden_flyover",
       "source": "punjabi_bagh_roundabout",
       "target": "raja_garden_flyover",
       "distance": 2356.9,
@@ -5288,7 +6316,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_213_punjabi_bagh_roundabout_shakurpur_chowk",
+      "id": "edge_227_punjabi_bagh_roundabout_shakurpur_chowk",
       "source": "punjabi_bagh_roundabout",
       "target": "shakurpur_chowk",
       "distance": 2184.8,
@@ -5309,7 +6337,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_214_shakurpur_chowk_punjabi_bagh_roundabout",
+      "id": "edge_228_shakurpur_chowk_punjabi_bagh_roundabout",
       "source": "shakurpur_chowk",
       "target": "punjabi_bagh_roundabout",
       "distance": 2184.8,
@@ -5330,7 +6358,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_215_shakurpur_chowk_pitampura_tv_tower",
+      "id": "edge_229_shakurpur_chowk_pitampura_tv_tower",
       "source": "shakurpur_chowk",
       "target": "pitampura_tv_tower",
       "distance": 695.1,
@@ -5351,7 +6379,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_216_pitampura_tv_tower_shakurpur_chowk",
+      "id": "edge_230_pitampura_tv_tower_shakurpur_chowk",
       "source": "pitampura_tv_tower",
       "target": "shakurpur_chowk",
       "distance": 695.1,
@@ -5372,7 +6400,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_217_shakurpur_chowk_shalimar_bagh",
+      "id": "edge_231_shakurpur_chowk_shalimar_bagh",
       "source": "shakurpur_chowk",
       "target": "shalimar_bagh",
       "distance": 2513.1,
@@ -5393,7 +6421,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_218_shalimar_bagh_shakurpur_chowk",
+      "id": "edge_232_shalimar_bagh_shakurpur_chowk",
       "source": "shalimar_bagh",
       "target": "shakurpur_chowk",
       "distance": 2513.1,
@@ -5414,7 +6442,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_219_shalimar_bagh_azadpur_mandi",
+      "id": "edge_233_shalimar_bagh_azadpur_mandi",
       "source": "shalimar_bagh",
       "target": "azadpur_mandi",
       "distance": 1656.5,
@@ -5435,7 +6463,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_220_azadpur_mandi_shalimar_bagh",
+      "id": "edge_234_azadpur_mandi_shalimar_bagh",
       "source": "azadpur_mandi",
       "target": "shalimar_bagh",
       "distance": 1656.5,
@@ -5456,7 +6484,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_221_azadpur_mandi_model_town",
+      "id": "edge_235_azadpur_mandi_model_town",
       "source": "azadpur_mandi",
       "target": "model_town",
       "distance": 2027.8,
@@ -5477,7 +6505,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_222_model_town_azadpur_mandi",
+      "id": "edge_236_model_town_azadpur_mandi",
       "source": "model_town",
       "target": "azadpur_mandi",
       "distance": 2027.8,
@@ -5498,7 +6526,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_223_model_town_timarpur_chowk",
+      "id": "edge_237_model_town_timarpur_chowk",
       "source": "model_town",
       "target": "timarpur_chowk",
       "distance": 2753.4,
@@ -5519,7 +6547,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_224_timarpur_chowk_model_town",
+      "id": "edge_238_timarpur_chowk_model_town",
       "source": "timarpur_chowk",
       "target": "model_town",
       "distance": 2753.4,
@@ -5540,7 +6568,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_225_timarpur_chowk_civil_lines",
+      "id": "edge_239_timarpur_chowk_civil_lines",
       "source": "timarpur_chowk",
       "target": "civil_lines",
       "distance": 1256.6,
@@ -5561,7 +6589,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_226_civil_lines_timarpur_chowk",
+      "id": "edge_240_civil_lines_timarpur_chowk",
       "source": "civil_lines",
       "target": "timarpur_chowk",
       "distance": 1256.6,
@@ -5582,7 +6610,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_227_civil_lines_isbt_kashmere_gate",
+      "id": "edge_241_civil_lines_isbt_kashmere_gate",
       "source": "civil_lines",
       "target": "isbt_kashmere_gate",
       "distance": 1564.0,
@@ -5603,7 +6631,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_228_isbt_kashmere_gate_civil_lines",
+      "id": "edge_242_isbt_kashmere_gate_civil_lines",
       "source": "isbt_kashmere_gate",
       "target": "civil_lines",
       "distance": 1564.0,
@@ -5624,7 +6652,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_229_ina_market_sarai_kale_khan_isbt",
+      "id": "edge_243_ina_market_sarai_kale_khan_isbt",
       "source": "ina_market",
       "target": "sarai_kale_khan_isbt",
       "distance": 4608.5,
@@ -5645,7 +6673,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_230_sarai_kale_khan_isbt_ina_market",
+      "id": "edge_244_sarai_kale_khan_isbt_ina_market",
       "source": "sarai_kale_khan_isbt",
       "target": "ina_market",
       "distance": 4608.5,
@@ -5666,7 +6694,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_231_ina_market_ashram_chowk",
+      "id": "edge_245_ina_market_ashram_chowk",
       "source": "ina_market",
       "target": "ashram_chowk",
       "distance": 4831.2,
@@ -5687,7 +6715,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_232_ashram_chowk_ina_market",
+      "id": "edge_246_ashram_chowk_ina_market",
       "source": "ashram_chowk",
       "target": "ina_market",
       "distance": 4831.2,
@@ -5708,7 +6736,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_233_isbt_kashmere_gate_civil_lines",
+      "id": "edge_247_isbt_kashmere_gate_civil_lines",
       "source": "isbt_kashmere_gate",
       "target": "civil_lines",
       "distance": 1564.0,
@@ -5729,7 +6757,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_234_civil_lines_isbt_kashmere_gate",
+      "id": "edge_248_civil_lines_isbt_kashmere_gate",
       "source": "civil_lines",
       "target": "isbt_kashmere_gate",
       "distance": 1564.0,
@@ -5750,7 +6778,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_235_azadpur_mandi_mukarba_chowk",
+      "id": "edge_249_azadpur_mandi_mukarba_chowk",
       "source": "azadpur_mandi",
       "target": "mukarba_chowk",
       "distance": 3190.2,
@@ -5771,7 +6799,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_236_mukarba_chowk_azadpur_mandi",
+      "id": "edge_250_mukarba_chowk_azadpur_mandi",
       "source": "mukarba_chowk",
       "target": "azadpur_mandi",
       "distance": 3190.2,
@@ -5792,7 +6820,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_237_mukarba_chowk_alipur_gt_karnal",
+      "id": "edge_251_mukarba_chowk_alipur_gt_karnal",
       "source": "mukarba_chowk",
       "target": "alipur_gt_karnal",
       "distance": 6950.7,
@@ -5813,7 +6841,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_238_alipur_gt_karnal_mukarba_chowk",
+      "id": "edge_252_alipur_gt_karnal_mukarba_chowk",
       "source": "alipur_gt_karnal",
       "target": "mukarba_chowk",
       "distance": 6950.7,
@@ -5834,7 +6862,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_239_alipur_gt_karnal_narela_industrial_hub",
+      "id": "edge_253_alipur_gt_karnal_narela_industrial_hub",
       "source": "alipur_gt_karnal",
       "target": "narela_industrial_hub",
       "distance": 7291.4,
@@ -5855,7 +6883,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_240_narela_industrial_hub_alipur_gt_karnal",
+      "id": "edge_254_narela_industrial_hub_alipur_gt_karnal",
       "source": "narela_industrial_hub",
       "target": "alipur_gt_karnal",
       "distance": 7291.4,
@@ -5876,7 +6904,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_241_mukarba_chowk_burari_chowk",
+      "id": "edge_255_mukarba_chowk_burari_chowk",
       "source": "mukarba_chowk",
       "target": "burari_chowk",
       "distance": 4552.0,
@@ -5897,7 +6925,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_242_burari_chowk_mukarba_chowk",
+      "id": "edge_256_burari_chowk_mukarba_chowk",
       "source": "burari_chowk",
       "target": "mukarba_chowk",
       "distance": 4552.0,
@@ -5918,7 +6946,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_243_burari_chowk_wazirabad_signature_bridge",
+      "id": "edge_257_burari_chowk_wazirabad_signature_bridge",
       "source": "burari_chowk",
       "target": "wazirabad_signature_bridge",
       "distance": 4032.2,
@@ -5939,7 +6967,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_244_wazirabad_signature_bridge_burari_chowk",
+      "id": "edge_258_wazirabad_signature_bridge_burari_chowk",
       "source": "wazirabad_signature_bridge",
       "target": "burari_chowk",
       "distance": 4032.2,
@@ -5960,7 +6988,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_245_timarpur_chowk_wazirabad_signature_bridge",
+      "id": "edge_259_timarpur_chowk_wazirabad_signature_bridge",
       "source": "timarpur_chowk",
       "target": "wazirabad_signature_bridge",
       "distance": 3298.2,
@@ -5981,7 +7009,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_246_wazirabad_signature_bridge_timarpur_chowk",
+      "id": "edge_260_wazirabad_signature_bridge_timarpur_chowk",
       "source": "wazirabad_signature_bridge",
       "target": "timarpur_chowk",
       "distance": 3298.2,
@@ -6002,7 +7030,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_247_mukarba_chowk_rohini_sec3",
+      "id": "edge_261_mukarba_chowk_rohini_sec3",
       "source": "mukarba_chowk",
       "target": "rohini_sec3",
       "distance": 4617.1,
@@ -6023,7 +7051,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_248_rohini_sec3_mukarba_chowk",
+      "id": "edge_262_rohini_sec3_mukarba_chowk",
       "source": "rohini_sec3",
       "target": "mukarba_chowk",
       "distance": 4617.1,
@@ -6044,7 +7072,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_249_shalimar_bagh_pitampura_tv_tower",
+      "id": "edge_263_shalimar_bagh_pitampura_tv_tower",
       "source": "shalimar_bagh",
       "target": "pitampura_tv_tower",
       "distance": 1837.0,
@@ -6065,7 +7093,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_250_pitampura_tv_tower_shalimar_bagh",
+      "id": "edge_264_pitampura_tv_tower_shalimar_bagh",
       "source": "pitampura_tv_tower",
       "target": "shalimar_bagh",
       "distance": 1837.0,
@@ -6086,7 +7114,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_251_pitampura_tv_tower_rohini_sec3",
+      "id": "edge_265_pitampura_tv_tower_rohini_sec3",
       "source": "pitampura_tv_tower",
       "target": "rohini_sec3",
       "distance": 2813.7,
@@ -6107,7 +7135,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_252_rohini_sec3_pitampura_tv_tower",
+      "id": "edge_266_rohini_sec3_pitampura_tv_tower",
       "source": "rohini_sec3",
       "target": "pitampura_tv_tower",
       "distance": 2813.7,
@@ -6128,7 +7156,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_253_rohini_sec3_rohini_sec14",
+      "id": "edge_267_rohini_sec3_rohini_sec14",
       "source": "rohini_sec3",
       "target": "rohini_sec14",
       "distance": 1918.7,
@@ -6149,7 +7177,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_254_rohini_sec14_rohini_sec3",
+      "id": "edge_268_rohini_sec14_rohini_sec3",
       "source": "rohini_sec14",
       "target": "rohini_sec3",
       "distance": 1918.7,
@@ -6170,7 +7198,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_255_rohini_sec14_rohini_sec22",
+      "id": "edge_269_rohini_sec14_rohini_sec22",
       "source": "rohini_sec14",
       "target": "rohini_sec22",
       "distance": 2903.1,
@@ -6191,7 +7219,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_256_rohini_sec22_rohini_sec14",
+      "id": "edge_270_rohini_sec22_rohini_sec14",
       "source": "rohini_sec22",
       "target": "rohini_sec14",
       "distance": 2903.1,
@@ -6212,7 +7240,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_257_rohini_sec3_peera_garhi_chowk",
+      "id": "edge_271_rohini_sec3_peera_garhi_chowk",
       "source": "rohini_sec3",
       "target": "peera_garhi_chowk",
       "distance": 4187.3,
@@ -6233,7 +7261,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_258_peera_garhi_chowk_rohini_sec3",
+      "id": "edge_272_peera_garhi_chowk_rohini_sec3",
       "source": "peera_garhi_chowk",
       "target": "rohini_sec3",
       "distance": 4187.3,
@@ -6254,7 +7282,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_259_punjabi_bagh_roundabout_peera_garhi_chowk",
+      "id": "edge_273_punjabi_bagh_roundabout_peera_garhi_chowk",
       "source": "punjabi_bagh_roundabout",
       "target": "peera_garhi_chowk",
       "distance": 4142.8,
@@ -6275,7 +7303,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_260_peera_garhi_chowk_punjabi_bagh_roundabout",
+      "id": "edge_274_peera_garhi_chowk_punjabi_bagh_roundabout",
       "source": "peera_garhi_chowk",
       "target": "punjabi_bagh_roundabout",
       "distance": 4142.8,
@@ -6296,7 +7324,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_261_peera_garhi_chowk_nangloi_chowk",
+      "id": "edge_275_peera_garhi_chowk_nangloi_chowk",
       "source": "peera_garhi_chowk",
       "target": "nangloi_chowk",
       "distance": 3257.9,
@@ -6317,7 +7345,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_262_nangloi_chowk_peera_garhi_chowk",
+      "id": "edge_276_nangloi_chowk_peera_garhi_chowk",
       "source": "nangloi_chowk",
       "target": "peera_garhi_chowk",
       "distance": 3257.9,
@@ -6338,7 +7366,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_263_nangloi_chowk_mundka_industrial_area",
+      "id": "edge_277_nangloi_chowk_mundka_industrial_area",
       "source": "nangloi_chowk",
       "target": "mundka_industrial_area",
       "distance": 3421.5,
@@ -6359,7 +7387,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_264_mundka_industrial_area_nangloi_chowk",
+      "id": "edge_278_mundka_industrial_area_nangloi_chowk",
       "source": "mundka_industrial_area",
       "target": "nangloi_chowk",
       "distance": 3421.5,
@@ -6380,7 +7408,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_265_peera_garhi_chowk_paschim_vihar_hub",
+      "id": "edge_279_peera_garhi_chowk_paschim_vihar_hub",
       "source": "peera_garhi_chowk",
       "target": "paschim_vihar_hub",
       "distance": 1817.3,
@@ -6401,7 +7429,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_266_paschim_vihar_hub_peera_garhi_chowk",
+      "id": "edge_280_paschim_vihar_hub_peera_garhi_chowk",
       "source": "paschim_vihar_hub",
       "target": "peera_garhi_chowk",
       "distance": 1817.3,
@@ -6422,7 +7450,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_267_paschim_vihar_hub_keshopur_chowk",
+      "id": "edge_281_paschim_vihar_hub_keshopur_chowk",
       "source": "paschim_vihar_hub",
       "target": "keshopur_chowk",
       "distance": 2451.7,
@@ -6443,7 +7471,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_268_keshopur_chowk_paschim_vihar_hub",
+      "id": "edge_282_keshopur_chowk_paschim_vihar_hub",
       "source": "keshopur_chowk",
       "target": "paschim_vihar_hub",
       "distance": 2451.7,
@@ -6464,7 +7492,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_269_keshopur_chowk_janakpuri_district_centre",
+      "id": "edge_283_keshopur_chowk_janakpuri_district_centre",
       "source": "keshopur_chowk",
       "target": "janakpuri_district_centre",
       "distance": 2369.8,
@@ -6485,7 +7513,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_270_janakpuri_district_centre_keshopur_chowk",
+      "id": "edge_284_janakpuri_district_centre_keshopur_chowk",
       "source": "janakpuri_district_centre",
       "target": "keshopur_chowk",
       "distance": 2369.8,
@@ -6506,7 +7534,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_271_raja_garden_flyover_rajouri_garden_hub",
+      "id": "edge_285_raja_garden_flyover_rajouri_garden_hub",
       "source": "raja_garden_flyover",
       "target": "rajouri_garden_hub",
       "distance": 735.3,
@@ -6527,7 +7555,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_272_rajouri_garden_hub_raja_garden_flyover",
+      "id": "edge_286_rajouri_garden_hub_raja_garden_flyover",
       "source": "rajouri_garden_hub",
       "target": "raja_garden_flyover",
       "distance": 735.3,
@@ -6548,7 +7576,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_273_rajouri_garden_hub_tilak_nagar_chowk",
+      "id": "edge_287_rajouri_garden_hub_tilak_nagar_chowk",
       "source": "rajouri_garden_hub",
       "target": "tilak_nagar_chowk",
       "distance": 2780.8,
@@ -6569,7 +7597,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_274_tilak_nagar_chowk_rajouri_garden_hub",
+      "id": "edge_288_tilak_nagar_chowk_rajouri_garden_hub",
       "source": "tilak_nagar_chowk",
       "target": "rajouri_garden_hub",
       "distance": 2780.8,
@@ -6590,7 +7618,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_275_tilak_nagar_chowk_janakpuri_district_centre",
+      "id": "edge_289_tilak_nagar_chowk_janakpuri_district_centre",
       "source": "tilak_nagar_chowk",
       "target": "janakpuri_district_centre",
       "distance": 1921.5,
@@ -6611,7 +7639,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_276_janakpuri_district_centre_tilak_nagar_chowk",
+      "id": "edge_290_janakpuri_district_centre_tilak_nagar_chowk",
       "source": "janakpuri_district_centre",
       "target": "tilak_nagar_chowk",
       "distance": 1921.5,
@@ -6632,7 +7660,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_277_tilak_nagar_chowk_uttam_nagar_terminal",
+      "id": "edge_291_tilak_nagar_chowk_uttam_nagar_terminal",
       "source": "tilak_nagar_chowk",
       "target": "uttam_nagar_terminal",
       "distance": 4384.9,
@@ -6653,7 +7681,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_278_uttam_nagar_terminal_tilak_nagar_chowk",
+      "id": "edge_292_uttam_nagar_terminal_tilak_nagar_chowk",
       "source": "uttam_nagar_terminal",
       "target": "tilak_nagar_chowk",
       "distance": 4384.9,
@@ -6674,7 +7702,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_279_uttam_nagar_terminal_dwarka_mor",
+      "id": "edge_293_uttam_nagar_terminal_dwarka_mor",
       "source": "uttam_nagar_terminal",
       "target": "dwarka_mor",
       "distance": 2193.0,
@@ -6695,7 +7723,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_280_dwarka_mor_uttam_nagar_terminal",
+      "id": "edge_294_dwarka_mor_uttam_nagar_terminal",
       "source": "dwarka_mor",
       "target": "uttam_nagar_terminal",
       "distance": 2193.0,
@@ -6716,7 +7744,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_281_dwarka_mor_najafgarh_terminal",
+      "id": "edge_295_dwarka_mor_najafgarh_terminal",
       "source": "dwarka_mor",
       "target": "najafgarh_terminal",
       "distance": 4636.1,
@@ -6737,7 +7765,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_282_najafgarh_terminal_dwarka_mor",
+      "id": "edge_296_najafgarh_terminal_dwarka_mor",
       "source": "najafgarh_terminal",
       "target": "dwarka_mor",
       "distance": 4636.1,
@@ -6758,7 +7786,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_283_dwarka_mor_dwarka_sec6",
+      "id": "edge_297_dwarka_mor_dwarka_sec6",
       "source": "dwarka_mor",
       "target": "dwarka_sec6",
       "distance": 4194.1,
@@ -6779,7 +7807,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_284_dwarka_sec6_dwarka_mor",
+      "id": "edge_298_dwarka_sec6_dwarka_mor",
       "source": "dwarka_sec6",
       "target": "dwarka_mor",
       "distance": 4194.1,
@@ -6800,7 +7828,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_285_dwarka_sec6_dwarka_sec10",
+      "id": "edge_299_dwarka_sec6_dwarka_sec10",
       "source": "dwarka_sec6",
       "target": "dwarka_sec10",
       "distance": 1256.8,
@@ -6821,7 +7849,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_286_dwarka_sec10_dwarka_sec6",
+      "id": "edge_300_dwarka_sec10_dwarka_sec6",
       "source": "dwarka_sec10",
       "target": "dwarka_sec6",
       "distance": 1256.8,
@@ -6842,7 +7870,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_287_dwarka_sec10_dwarka_sec21_isbt",
+      "id": "edge_301_dwarka_sec10_dwarka_sec21_isbt",
       "source": "dwarka_sec10",
       "target": "dwarka_sec21_isbt",
       "distance": 3175.1,
@@ -6863,7 +7891,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_288_dwarka_sec21_isbt_dwarka_sec10",
+      "id": "edge_302_dwarka_sec21_isbt_dwarka_sec10",
       "source": "dwarka_sec21_isbt",
       "target": "dwarka_sec10",
       "distance": 3175.1,
@@ -6884,7 +7912,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_289_dwarka_sec21_isbt_igi_airport_t3",
+      "id": "edge_303_dwarka_sec21_isbt_igi_airport_t3",
       "source": "dwarka_sec21_isbt",
       "target": "igi_airport_t3",
       "distance": 4023.3,
@@ -6905,7 +7933,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_290_igi_airport_t3_dwarka_sec21_isbt",
+      "id": "edge_304_igi_airport_t3_dwarka_sec21_isbt",
       "source": "igi_airport_t3",
       "target": "dwarka_sec21_isbt",
       "distance": 4023.3,
@@ -6926,7 +7954,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_291_dwarka_sec21_isbt_najafgarh_terminal",
+      "id": "edge_305_dwarka_sec21_isbt_najafgarh_terminal",
       "source": "dwarka_sec21_isbt",
       "target": "najafgarh_terminal",
       "distance": 9725.3,
@@ -6947,7 +7975,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_292_najafgarh_terminal_dwarka_sec21_isbt",
+      "id": "edge_306_najafgarh_terminal_dwarka_sec21_isbt",
       "source": "najafgarh_terminal",
       "target": "dwarka_sec21_isbt",
       "distance": 9725.3,
@@ -6968,7 +7996,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_293_delhi_cantt_station_janakpuri_district_centre",
+      "id": "edge_307_delhi_cantt_station_janakpuri_district_centre",
       "source": "delhi_cantt_station",
       "target": "janakpuri_district_centre",
       "distance": 5789.2,
@@ -6989,7 +8017,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_294_janakpuri_district_centre_delhi_cantt_station",
+      "id": "edge_308_janakpuri_district_centre_delhi_cantt_station",
       "source": "janakpuri_district_centre",
       "target": "delhi_cantt_station",
       "distance": 5789.2,
@@ -7010,7 +8038,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_295_dhaula_kuan_interchange_igi_airport_t1",
+      "id": "edge_309_dhaula_kuan_interchange_igi_airport_t1",
       "source": "dhaula_kuan_interchange",
       "target": "igi_airport_t1",
       "distance": 4842.5,
@@ -7031,7 +8059,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_296_igi_airport_t1_dhaula_kuan_interchange",
+      "id": "edge_310_igi_airport_t1_dhaula_kuan_interchange",
       "source": "igi_airport_t1",
       "target": "dhaula_kuan_interchange",
       "distance": 4842.5,
@@ -7052,7 +8080,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_297_igi_airport_t1_igi_airport_t3",
+      "id": "edge_311_igi_airport_t1_igi_airport_t3",
       "source": "igi_airport_t1",
       "target": "igi_airport_t3",
       "distance": 2529.2,
@@ -7073,7 +8101,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_298_igi_airport_t3_igi_airport_t1",
+      "id": "edge_312_igi_airport_t3_igi_airport_t1",
       "source": "igi_airport_t3",
       "target": "igi_airport_t1",
       "distance": 2529.2,
@@ -7094,7 +8122,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_299_dhaula_kuan_interchange_mahipalpur_chowk",
+      "id": "edge_313_dhaula_kuan_interchange_mahipalpur_chowk",
       "source": "dhaula_kuan_interchange",
       "target": "mahipalpur_chowk",
       "distance": 5998.5,
@@ -7115,7 +8143,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_300_mahipalpur_chowk_dhaula_kuan_interchange",
+      "id": "edge_314_mahipalpur_chowk_dhaula_kuan_interchange",
       "source": "mahipalpur_chowk",
       "target": "dhaula_kuan_interchange",
       "distance": 5998.5,
@@ -7136,7 +8164,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_301_mahipalpur_chowk_igi_airport_t3",
+      "id": "edge_315_mahipalpur_chowk_igi_airport_t3",
       "source": "mahipalpur_chowk",
       "target": "igi_airport_t3",
       "distance": 3096.4,
@@ -7157,7 +8185,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_302_igi_airport_t3_mahipalpur_chowk",
+      "id": "edge_316_igi_airport_t3_mahipalpur_chowk",
       "source": "igi_airport_t3",
       "target": "mahipalpur_chowk",
       "distance": 3096.4,
@@ -7178,7 +8206,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_303_mahipalpur_chowk_vasant_kunj_promenade",
+      "id": "edge_317_mahipalpur_chowk_vasant_kunj_promenade",
       "source": "mahipalpur_chowk",
       "target": "vasant_kunj_promenade",
       "distance": 2625.8,
@@ -7199,7 +8227,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_304_vasant_kunj_promenade_mahipalpur_chowk",
+      "id": "edge_318_vasant_kunj_promenade_mahipalpur_chowk",
       "source": "vasant_kunj_promenade",
       "target": "mahipalpur_chowk",
       "distance": 2625.8,
@@ -7220,7 +8248,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_305_dhaula_kuan_interchange_munirka_chowk",
+      "id": "edge_319_dhaula_kuan_interchange_munirka_chowk",
       "source": "dhaula_kuan_interchange",
       "target": "munirka_chowk",
       "distance": 4438.5,
@@ -7241,7 +8269,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_306_munirka_chowk_dhaula_kuan_interchange",
+      "id": "edge_320_munirka_chowk_dhaula_kuan_interchange",
       "source": "munirka_chowk",
       "target": "dhaula_kuan_interchange",
       "distance": 4438.5,
@@ -7262,7 +8290,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_307_munirka_chowk_vasant_kunj_promenade",
+      "id": "edge_321_munirka_chowk_vasant_kunj_promenade",
       "source": "munirka_chowk",
       "target": "vasant_kunj_promenade",
       "distance": 2352.4,
@@ -7283,7 +8311,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_308_vasant_kunj_promenade_munirka_chowk",
+      "id": "edge_322_vasant_kunj_promenade_munirka_chowk",
       "source": "vasant_kunj_promenade",
       "target": "munirka_chowk",
       "distance": 2352.4,
@@ -7304,7 +8332,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_309_munirka_chowk_hauz_khas_iit",
+      "id": "edge_323_munirka_chowk_hauz_khas_iit",
       "source": "munirka_chowk",
       "target": "hauz_khas_iit",
       "distance": 2235.7,
@@ -7325,7 +8353,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_310_hauz_khas_iit_munirka_chowk",
+      "id": "edge_324_hauz_khas_iit_munirka_chowk",
       "source": "hauz_khas_iit",
       "target": "munirka_chowk",
       "distance": 2235.7,
@@ -7346,7 +8374,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_311_hauz_khas_iit_panchsheel_enclave",
+      "id": "edge_325_hauz_khas_iit_panchsheel_enclave",
       "source": "hauz_khas_iit",
       "target": "panchsheel_enclave",
       "distance": 1966.2,
@@ -7367,7 +8395,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_312_panchsheel_enclave_hauz_khas_iit",
+      "id": "edge_326_panchsheel_enclave_hauz_khas_iit",
       "source": "panchsheel_enclave",
       "target": "hauz_khas_iit",
       "distance": 1966.2,
@@ -7388,7 +8416,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_313_panchsheel_enclave_chirag_delhi_flyover",
+      "id": "edge_327_panchsheel_enclave_chirag_delhi_flyover",
       "source": "panchsheel_enclave",
       "target": "chirag_delhi_flyover",
       "distance": 1274.7,
@@ -7409,7 +8437,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_314_chirag_delhi_flyover_panchsheel_enclave",
+      "id": "edge_328_chirag_delhi_flyover_panchsheel_enclave",
       "source": "chirag_delhi_flyover",
       "target": "panchsheel_enclave",
       "distance": 1274.7,
@@ -7430,7 +8458,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_315_chirag_delhi_flyover_greater_kailash_m_block",
+      "id": "edge_329_chirag_delhi_flyover_greater_kailash_m_block",
       "source": "chirag_delhi_flyover",
       "target": "greater_kailash_m_block",
       "distance": 1182.9,
@@ -7451,7 +8479,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_316_greater_kailash_m_block_chirag_delhi_flyover",
+      "id": "edge_330_greater_kailash_m_block_chirag_delhi_flyover",
       "source": "greater_kailash_m_block",
       "target": "chirag_delhi_flyover",
       "distance": 1182.9,
@@ -7472,7 +8500,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_317_greater_kailash_m_block_nehru_place_it_hub",
+      "id": "edge_331_greater_kailash_m_block_nehru_place_it_hub",
       "source": "greater_kailash_m_block",
       "target": "nehru_place_it_hub",
       "distance": 1319.8,
@@ -7493,7 +8521,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_318_nehru_place_it_hub_greater_kailash_m_block",
+      "id": "edge_332_nehru_place_it_hub_greater_kailash_m_block",
       "source": "nehru_place_it_hub",
       "target": "greater_kailash_m_block",
       "distance": 1319.8,
@@ -7514,7 +8542,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_319_nehru_place_it_hub_kalkaji_mandir_chowk",
+      "id": "edge_333_nehru_place_it_hub_kalkaji_mandir_chowk",
       "source": "nehru_place_it_hub",
       "target": "kalkaji_mandir_chowk",
       "distance": 942.8,
@@ -7535,7 +8563,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_320_kalkaji_mandir_chowk_nehru_place_it_hub",
+      "id": "edge_334_kalkaji_mandir_chowk_nehru_place_it_hub",
       "source": "kalkaji_mandir_chowk",
       "target": "nehru_place_it_hub",
       "distance": 942.8,
@@ -7556,7 +8584,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_321_kalkaji_mandir_chowk_modi_mill_flyover",
+      "id": "edge_335_kalkaji_mandir_chowk_modi_mill_flyover",
       "source": "kalkaji_mandir_chowk",
       "target": "modi_mill_flyover",
       "distance": 1401.3,
@@ -7577,7 +8605,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_322_modi_mill_flyover_kalkaji_mandir_chowk",
+      "id": "edge_336_modi_mill_flyover_kalkaji_mandir_chowk",
       "source": "modi_mill_flyover",
       "target": "kalkaji_mandir_chowk",
       "distance": 1401.3,
@@ -7598,7 +8626,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_323_modi_mill_flyover_ashram_chowk",
+      "id": "edge_337_modi_mill_flyover_ashram_chowk",
       "source": "modi_mill_flyover",
       "target": "ashram_chowk",
       "distance": 1643.2,
@@ -7619,7 +8647,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_324_ashram_chowk_modi_mill_flyover",
+      "id": "edge_338_ashram_chowk_modi_mill_flyover",
       "source": "ashram_chowk",
       "target": "modi_mill_flyover",
       "distance": 1643.2,
@@ -7640,7 +8668,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_325_aiims_safdarjung_hauz_khas_iit",
+      "id": "edge_339_aiims_safdarjung_hauz_khas_iit",
       "source": "aiims_safdarjung",
       "target": "hauz_khas_iit",
       "distance": 2926.9,
@@ -7661,7 +8689,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_326_hauz_khas_iit_aiims_safdarjung",
+      "id": "edge_340_hauz_khas_iit_aiims_safdarjung",
       "source": "hauz_khas_iit",
       "target": "aiims_safdarjung",
       "distance": 2926.9,
@@ -7682,7 +8710,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_327_hauz_khas_iit_saket_district_centre",
+      "id": "edge_341_hauz_khas_iit_saket_district_centre",
       "source": "hauz_khas_iit",
       "target": "saket_district_centre",
       "distance": 3045.6,
@@ -7703,7 +8731,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_328_saket_district_centre_hauz_khas_iit",
+      "id": "edge_342_saket_district_centre_hauz_khas_iit",
       "source": "saket_district_centre",
       "target": "hauz_khas_iit",
       "distance": 3045.6,
@@ -7724,7 +8752,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_329_saket_district_centre_qutub_minar_mehrauli",
+      "id": "edge_343_saket_district_centre_qutub_minar_mehrauli",
       "source": "saket_district_centre",
       "target": "qutub_minar_mehrauli",
       "distance": 3302.9,
@@ -7745,7 +8773,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_330_qutub_minar_mehrauli_saket_district_centre",
+      "id": "edge_344_qutub_minar_mehrauli_saket_district_centre",
       "source": "qutub_minar_mehrauli",
       "target": "saket_district_centre",
       "distance": 3302.9,
@@ -7766,7 +8794,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_331_vasant_kunj_promenade_qutub_minar_mehrauli",
+      "id": "edge_345_vasant_kunj_promenade_qutub_minar_mehrauli",
       "source": "vasant_kunj_promenade",
       "target": "qutub_minar_mehrauli",
       "distance": 3487.4,
@@ -7787,7 +8815,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_332_qutub_minar_mehrauli_vasant_kunj_promenade",
+      "id": "edge_346_qutub_minar_mehrauli_vasant_kunj_promenade",
       "source": "qutub_minar_mehrauli",
       "target": "vasant_kunj_promenade",
       "distance": 3487.4,
@@ -7808,7 +8836,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_333_ashram_chowk_sarita_vihar_underpass",
+      "id": "edge_347_ashram_chowk_sarita_vihar_underpass",
       "source": "ashram_chowk",
       "target": "sarita_vihar_underpass",
       "distance": 5550.8,
@@ -7829,7 +8857,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_334_sarita_vihar_underpass_ashram_chowk",
+      "id": "edge_348_sarita_vihar_underpass_ashram_chowk",
       "source": "sarita_vihar_underpass",
       "target": "ashram_chowk",
       "distance": 5550.8,
@@ -7850,7 +8878,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_335_kalkaji_mandir_chowk_okhla_industrial_area_ph3",
+      "id": "edge_349_kalkaji_mandir_chowk_okhla_industrial_area_ph3",
       "source": "kalkaji_mandir_chowk",
       "target": "okhla_industrial_area_ph3",
       "distance": 1628.1,
@@ -7871,7 +8899,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_336_okhla_industrial_area_ph3_kalkaji_mandir_chowk",
+      "id": "edge_350_okhla_industrial_area_ph3_kalkaji_mandir_chowk",
       "source": "okhla_industrial_area_ph3",
       "target": "kalkaji_mandir_chowk",
       "distance": 1628.1,
@@ -7892,7 +8920,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_337_okhla_industrial_area_ph3_sarita_vihar_underpass",
+      "id": "edge_351_okhla_industrial_area_ph3_sarita_vihar_underpass",
       "source": "okhla_industrial_area_ph3",
       "target": "sarita_vihar_underpass",
       "distance": 2219.9,
@@ -7913,7 +8941,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_338_sarita_vihar_underpass_okhla_industrial_area_ph3",
+      "id": "edge_352_sarita_vihar_underpass_okhla_industrial_area_ph3",
       "source": "sarita_vihar_underpass",
       "target": "okhla_industrial_area_ph3",
       "distance": 2219.9,
@@ -7934,7 +8962,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_339_sarita_vihar_underpass_badarpur_border_terminal",
+      "id": "edge_353_sarita_vihar_underpass_badarpur_border_terminal",
       "source": "sarita_vihar_underpass",
       "target": "badarpur_border_terminal",
       "distance": 3797.3,
@@ -7955,7 +8983,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_340_badarpur_border_terminal_sarita_vihar_underpass",
+      "id": "edge_354_badarpur_border_terminal_sarita_vihar_underpass",
       "source": "badarpur_border_terminal",
       "target": "sarita_vihar_underpass",
       "distance": 3797.3,
@@ -7976,7 +9004,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_341_saket_district_centre_badarpur_border_terminal",
+      "id": "edge_355_saket_district_centre_badarpur_border_terminal",
       "source": "saket_district_centre",
       "target": "badarpur_border_terminal",
       "distance": 8995.4,
@@ -7997,7 +9025,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_342_badarpur_border_terminal_saket_district_centre",
+      "id": "edge_356_badarpur_border_terminal_saket_district_centre",
       "source": "badarpur_border_terminal",
       "target": "saket_district_centre",
       "distance": 8995.4,
@@ -8018,7 +9046,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_343_ito_chowk_ito_yamuna_bridge",
+      "id": "edge_357_ito_chowk_ito_yamuna_bridge",
       "source": "ito_chowk",
       "target": "ito_yamuna_bridge",
       "distance": 1172.5,
@@ -8039,7 +9067,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_344_ito_yamuna_bridge_ito_chowk",
+      "id": "edge_358_ito_yamuna_bridge_ito_chowk",
       "source": "ito_yamuna_bridge",
       "target": "ito_chowk",
       "distance": 1172.5,
@@ -8060,7 +9088,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_345_ito_yamuna_bridge_laxmi_nagar_metro",
+      "id": "edge_359_ito_yamuna_bridge_laxmi_nagar_metro",
       "source": "ito_yamuna_bridge",
       "target": "laxmi_nagar_metro",
       "distance": 2352.9,
@@ -8081,7 +9109,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_346_laxmi_nagar_metro_ito_yamuna_bridge",
+      "id": "edge_360_laxmi_nagar_metro_ito_yamuna_bridge",
       "source": "laxmi_nagar_metro",
       "target": "ito_yamuna_bridge",
       "distance": 2352.9,
@@ -8102,7 +9130,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_347_laxmi_nagar_metro_preet_vihar_hub",
+      "id": "edge_361_laxmi_nagar_metro_preet_vihar_hub",
       "source": "laxmi_nagar_metro",
       "target": "preet_vihar_hub",
       "distance": 1921.4,
@@ -8123,7 +9151,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_348_preet_vihar_hub_laxmi_nagar_metro",
+      "id": "edge_362_preet_vihar_hub_laxmi_nagar_metro",
       "source": "preet_vihar_hub",
       "target": "laxmi_nagar_metro",
       "distance": 1921.4,
@@ -8144,7 +9172,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_349_preet_vihar_hub_anand_vihar_isbt",
+      "id": "edge_363_preet_vihar_hub_anand_vihar_isbt",
       "source": "preet_vihar_hub",
       "target": "anand_vihar_isbt",
       "distance": 2305.6,
@@ -8165,7 +9193,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_350_anand_vihar_isbt_preet_vihar_hub",
+      "id": "edge_364_anand_vihar_isbt_preet_vihar_hub",
       "source": "anand_vihar_isbt",
       "target": "preet_vihar_hub",
       "distance": 2305.6,
@@ -8186,7 +9214,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_351_sarai_kale_khan_isbt_akshardham_setu",
+      "id": "edge_365_sarai_kale_khan_isbt_akshardham_setu",
       "source": "sarai_kale_khan_isbt",
       "target": "akshardham_setu",
       "distance": 3883.9,
@@ -8207,7 +9235,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_352_akshardham_setu_sarai_kale_khan_isbt",
+      "id": "edge_366_akshardham_setu_sarai_kale_khan_isbt",
       "source": "akshardham_setu",
       "target": "sarai_kale_khan_isbt",
       "distance": 3883.9,
@@ -8228,7 +9256,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_353_akshardham_setu_laxmi_nagar_metro",
+      "id": "edge_367_akshardham_setu_laxmi_nagar_metro",
       "source": "akshardham_setu",
       "target": "laxmi_nagar_metro",
       "distance": 1458.7,
@@ -8249,7 +9277,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_354_laxmi_nagar_metro_akshardham_setu",
+      "id": "edge_368_laxmi_nagar_metro_akshardham_setu",
       "source": "laxmi_nagar_metro",
       "target": "akshardham_setu",
       "distance": 1458.7,
@@ -8270,7 +9298,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_355_akshardham_setu_mayur_vihar_phase1",
+      "id": "edge_369_akshardham_setu_mayur_vihar_phase1",
       "source": "akshardham_setu",
       "target": "mayur_vihar_phase1",
       "distance": 2332.6,
@@ -8291,7 +9319,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_356_mayur_vihar_phase1_akshardham_setu",
+      "id": "edge_370_mayur_vihar_phase1_akshardham_setu",
       "source": "mayur_vihar_phase1",
       "target": "akshardham_setu",
       "distance": 2332.6,
@@ -8312,7 +9340,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_357_mayur_vihar_phase1_mayur_vihar_phase3",
+      "id": "edge_371_mayur_vihar_phase1_mayur_vihar_phase3",
       "source": "mayur_vihar_phase1",
       "target": "mayur_vihar_phase3",
       "distance": 3886.0,
@@ -8333,7 +9361,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_358_mayur_vihar_phase3_mayur_vihar_phase1",
+      "id": "edge_372_mayur_vihar_phase3_mayur_vihar_phase1",
       "source": "mayur_vihar_phase3",
       "target": "mayur_vihar_phase1",
       "distance": 3886.0,
@@ -8354,7 +9382,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_359_akshardham_setu_anand_vihar_isbt",
+      "id": "edge_373_akshardham_setu_anand_vihar_isbt",
       "source": "akshardham_setu",
       "target": "anand_vihar_isbt",
       "distance": 4878.5,
@@ -8375,7 +9403,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_360_anand_vihar_isbt_akshardham_setu",
+      "id": "edge_374_anand_vihar_isbt_akshardham_setu",
       "source": "anand_vihar_isbt",
       "target": "akshardham_setu",
       "distance": 4878.5,
@@ -8396,7 +9424,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_361_ashram_chowk_dnd_flyway_toll",
+      "id": "edge_375_ashram_chowk_dnd_flyway_toll",
       "source": "ashram_chowk",
       "target": "dnd_flyway_toll",
       "distance": 2842.9,
@@ -8417,7 +9445,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_362_dnd_flyway_toll_ashram_chowk",
+      "id": "edge_376_dnd_flyway_toll_ashram_chowk",
       "source": "dnd_flyway_toll",
       "target": "ashram_chowk",
       "distance": 2842.9,
@@ -8438,7 +9466,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_363_dnd_flyway_toll_mayur_vihar_phase1",
+      "id": "edge_377_dnd_flyway_toll_mayur_vihar_phase1",
       "source": "dnd_flyway_toll",
       "target": "mayur_vihar_phase1",
       "distance": 2603.7,
@@ -8459,7 +9487,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_364_mayur_vihar_phase1_dnd_flyway_toll",
+      "id": "edge_378_mayur_vihar_phase1_dnd_flyway_toll",
       "source": "mayur_vihar_phase1",
       "target": "dnd_flyway_toll",
       "distance": 2603.7,
@@ -8480,7 +9508,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_365_isbt_kashmere_gate_shastri_park_chowk",
+      "id": "edge_379_isbt_kashmere_gate_shastri_park_chowk",
       "source": "isbt_kashmere_gate",
       "target": "shastri_park_chowk",
       "distance": 2309.5,
@@ -8501,7 +9529,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_366_shastri_park_chowk_isbt_kashmere_gate",
+      "id": "edge_380_shastri_park_chowk_isbt_kashmere_gate",
       "source": "shastri_park_chowk",
       "target": "isbt_kashmere_gate",
       "distance": 2309.5,
@@ -8522,7 +9550,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_367_shastri_park_chowk_seelampur_chowk",
+      "id": "edge_381_shastri_park_chowk_seelampur_chowk",
       "source": "shastri_park_chowk",
       "target": "seelampur_chowk",
       "distance": 1370.4,
@@ -8543,7 +9571,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_368_seelampur_chowk_shastri_park_chowk",
+      "id": "edge_382_seelampur_chowk_shastri_park_chowk",
       "source": "seelampur_chowk",
       "target": "shastri_park_chowk",
       "distance": 1370.4,
@@ -8564,7 +9592,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_369_seelampur_chowk_shahdara_junction",
+      "id": "edge_383_seelampur_chowk_shahdara_junction",
       "source": "seelampur_chowk",
       "target": "shahdara_junction",
       "distance": 2287.6,
@@ -8585,7 +9613,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_370_shahdara_junction_seelampur_chowk",
+      "id": "edge_384_shahdara_junction_seelampur_chowk",
       "source": "shahdara_junction",
       "target": "seelampur_chowk",
       "distance": 2287.6,
@@ -8606,7 +9634,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_371_shahdara_junction_dilshad_garden_hub",
+      "id": "edge_385_shahdara_junction_dilshad_garden_hub",
       "source": "shahdara_junction",
       "target": "dilshad_garden_hub",
       "distance": 2979.1,
@@ -8627,7 +9655,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_372_dilshad_garden_hub_shahdara_junction",
+      "id": "edge_386_dilshad_garden_hub_shahdara_junction",
       "source": "dilshad_garden_hub",
       "target": "shahdara_junction",
       "distance": 2979.1,
@@ -8648,7 +9676,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_373_shahdara_junction_anand_vihar_isbt",
+      "id": "edge_387_shahdara_junction_anand_vihar_isbt",
       "source": "shahdara_junction",
       "target": "anand_vihar_isbt",
       "distance": 3870.4,
@@ -8669,7 +9697,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_374_anand_vihar_isbt_shahdara_junction",
+      "id": "edge_388_anand_vihar_isbt_shahdara_junction",
       "source": "anand_vihar_isbt",
       "target": "shahdara_junction",
       "distance": 3870.4,
@@ -8690,7 +9718,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_375_wazirabad_signature_bridge_khajuri_khas_chowk",
+      "id": "edge_389_wazirabad_signature_bridge_khajuri_khas_chowk",
       "source": "wazirabad_signature_bridge",
       "target": "khajuri_khas_chowk",
       "distance": 3235.4,
@@ -8711,7 +9739,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_376_khajuri_khas_chowk_wazirabad_signature_bridge",
+      "id": "edge_390_khajuri_khas_chowk_wazirabad_signature_bridge",
       "source": "khajuri_khas_chowk",
       "target": "wazirabad_signature_bridge",
       "distance": 3235.4,
@@ -8732,7 +9760,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_377_khajuri_khas_chowk_seelampur_chowk",
+      "id": "edge_391_khajuri_khas_chowk_seelampur_chowk",
       "source": "khajuri_khas_chowk",
       "target": "seelampur_chowk",
       "distance": 5115.9,
@@ -8753,7 +9781,7 @@
       "isBlocked": false
     },
     {
-      "id": "edge_378_seelampur_chowk_khajuri_khas_chowk",
+      "id": "edge_392_seelampur_chowk_khajuri_khas_chowk",
       "source": "seelampur_chowk",
       "target": "khajuri_khas_chowk",
       "distance": 5115.9,

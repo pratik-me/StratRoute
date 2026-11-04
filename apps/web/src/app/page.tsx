@@ -62,10 +62,28 @@ export default function HomePage() {
   });
 
   // Algorithm & Search state
-  const [algorithm, setAlgorithm] = useState<AlgorithmType>('astar');
-  const [metric, setMetric] = useState<OptimizationMetric>('distance');
+  const [algorithm, setAlgorithmRaw] = useState<AlgorithmType>('astar');
+  const [metric, setMetricRaw] = useState<OptimizationMetric>('distance');
   const [clickMode, setClickMode] = useState<'start' | 'stop' | 'destination' | 'inspect'>('inspect');
   const [selectedEdge, setSelectedEdge] = useState<GraphEdge | null>(null);
+
+  /**
+   * Changing the algorithm or metric makes any existing route result stale —
+   * it was computed under different settings. Clear it immediately so the map
+   * shows a clean state rather than orange markers / old route lines that no
+   * longer correspond to the current selection.
+   */
+  const setAlgorithm = (alg: AlgorithmType) => {
+    setAlgorithmRaw(alg);
+    setRouteResult(null);
+    setStepTrace(null);
+  };
+
+  const setMetric = (m: OptimizationMetric) => {
+    setMetricRaw(m);
+    setRouteResult(null);
+    setStepTrace(null);
+  };
 
   // Result state
   const [routeResult, setRouteResult] = useState<FullRouteResult | null>(null);
@@ -112,8 +130,10 @@ export default function HomePage() {
     if (mode === 'inspect') return;
 
     try {
-      // Find nearest road node for graph routing while preserving exact clicked point
+      // Snap clicked coordinates to nearest road node (just like BBBike)
       let snappedNodeId: string | undefined = undefined;
+      let finalLat = lat;
+      let finalLon = lon;
       let name = `Location (${lat.toFixed(4)}, ${lon.toFixed(4)})`;
 
       try {
@@ -126,10 +146,10 @@ export default function HomePage() {
         if (snapRes.ok) {
           const snapData = await snapRes.json();
           snappedNodeId = snapData.snappedNode.id;
+          finalLat = snapData.snappedNode.lat;
+          finalLon = snapData.snappedNode.lon;
           const nodeName = snapData.snappedNode.name;
-          name = nodeName
-            ? `${nodeName} (${lat.toFixed(3)}, ${lon.toFixed(3)})`
-            : `Location (${lat.toFixed(3)}, ${lon.toFixed(3)})`;
+          name = nodeName || `Location (${finalLat.toFixed(3)}, ${finalLon.toFixed(3)})`;
         }
       } catch (e) {
         console.warn('Nearest node lookup failed:', e);
@@ -138,8 +158,8 @@ export default function HomePage() {
       const newPoint: DeliveryWaypointInput = {
         id: `map_pt_${Date.now()}`,
         name,
-        lat, // EXACT clicked coordinate: marker stays precisely where user clicked
-        lon, // EXACT clicked coordinate: marker stays precisely where user clicked
+        lat: finalLat, // Placed strictly on the nearest road (like BBBike)
+        lon: finalLon, // Placed strictly on the nearest road (like BBBike)
         nodeId: snappedNodeId,
       };
 
