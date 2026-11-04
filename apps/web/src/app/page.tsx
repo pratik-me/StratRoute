@@ -62,10 +62,28 @@ export default function HomePage() {
   });
 
   // Algorithm & Search state
-  const [algorithm, setAlgorithm] = useState<AlgorithmType>('astar');
-  const [metric, setMetric] = useState<OptimizationMetric>('distance');
+  const [algorithm, setAlgorithmRaw] = useState<AlgorithmType>('astar');
+  const [metric, setMetricRaw] = useState<OptimizationMetric>('distance');
   const [clickMode, setClickMode] = useState<'start' | 'stop' | 'destination' | 'inspect'>('inspect');
   const [selectedEdge, setSelectedEdge] = useState<GraphEdge | null>(null);
+
+  /**
+   * Changing the algorithm or metric makes any existing route result stale —
+   * it was computed under different settings. Clear it immediately so the map
+   * shows a clean state rather than orange markers / old route lines that no
+   * longer correspond to the current selection.
+   */
+  const setAlgorithm = (alg: AlgorithmType) => {
+    setAlgorithmRaw(alg);
+    setRouteResult(null);
+    setStepTrace(null);
+  };
+
+  const setMetric = (m: OptimizationMetric) => {
+    setMetricRaw(m);
+    setRouteResult(null);
+    setStepTrace(null);
+  };
 
   // Result state
   const [routeResult, setRouteResult] = useState<FullRouteResult | null>(null);
