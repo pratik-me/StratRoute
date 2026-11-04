@@ -372,7 +372,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         data: { type: 'FeatureCollection', features: [] },
       });
 
-      // Layer: Background road lines (casing)
+      // Layer: Background road lines (casing for congested/blocked roads)
       map.addLayer({
         id: 'road-casing',
         type: 'line',
@@ -381,11 +381,18 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         paint: {
           'line-color': '#ffffff',
           'line-width': 7,
-          'line-opacity': 0.85,
+          'line-opacity': [
+            'case',
+            ['get', 'isBlocked'],
+            0.85,
+            ['<', ['get', 'trafficMultiplier'], 1.0],
+            0.85,
+            0.0, // Normal roads: no casing
+          ],
         },
       });
 
-      // Layer: Traffic-colored roads
+      // Layer: Traffic-colored roads (highlights congested and blocked segments)
       map.addLayer({
         id: 'road-lines',
         type: 'line',
@@ -400,13 +407,15 @@ export const MapComponent: React.FC<MapComponentProps> = ({
             '#f97316', // Orange for heavy traffic
             ['==', ['get', 'trafficMultiplier'], 0.75],
             '#eab308', // Yellow for moderate traffic
-            '#10b981', // Green for normal traffic
+            'rgba(0, 0, 0, 0.01)', // Normal traffic: looks like normal road (clean map)
           ],
           'line-width': [
             'case',
             ['get', 'isBlocked'],
-            4.5,
-            3.5,
+            5.0,
+            ['<', ['get', 'trafficMultiplier'], 1.0],
+            4.0,
+            6.0, // Generous clickable target for normal roads in inspect mode
           ],
         },
       });
