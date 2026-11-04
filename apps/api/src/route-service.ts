@@ -112,26 +112,8 @@ export class RouteService {
         overallStuck = true;
       }
 
-      // Assemble leg coordinates connecting exact waypoint positions to the road network
-      const legCoords: [number, number][] = [...legResult.pathCoordinates];
-
-      // If first leg and start waypoint differs from first road path point, prepend start waypoint
-      if (i === 0 && legCoords.length > 0) {
-        if (fromWp.lon !== legCoords[0][0] || fromWp.lat !== legCoords[0][1]) {
-          legCoords.unshift([fromWp.lon, fromWp.lat]);
-        }
-      }
-
-      // If last leg and destination waypoint differs from last road path point, append destination waypoint
-      if (i === orderedWaypoints.length - 2 && legCoords.length > 0) {
-        const lastIdx = legCoords.length - 1;
-        if (toWp.lon !== legCoords[lastIdx][0] || toWp.lat !== legCoords[lastIdx][1]) {
-          legCoords.push([toWp.lon, toWp.lat]);
-        }
-      }
-
-      // Append leg coordinates to full route
-      for (const pt of legCoords) {
+      // Append leg coordinates strictly along the road network geometry
+      for (const pt of legResult.pathCoordinates) {
         if (
           fullCoordinates.length === 0 ||
           fullCoordinates[fullCoordinates.length - 1][0] !== pt[0] ||
