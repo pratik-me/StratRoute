@@ -24,6 +24,22 @@ def haversine_distance(lat1, lon1, lat2, lon2):
          math.cos(phi1) * math.cos(phi2) * math.sin(dlambda / 2) ** 2)
     return 2 * EARTH_RADIUS * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
+def polyline_distance(coords):
+    return round(sum(haversine_distance(coords[i][1], coords[i][0], coords[i+1][1], coords[i+1][0]) for i in range(len(coords) - 1)), 1)
+
+def make_arc(center_lat, center_lon, r_lat, r_lon, start_deg, end_deg, steps=6):
+    pts = []
+    diff = (end_deg - start_deg) % 360
+    if diff > 180:
+        diff -= 360
+    for i in range(steps + 1):
+        frac = i / float(steps)
+        angle = math.radians(start_deg + diff * frac)
+        lat = round(center_lat + r_lat * math.sin(angle), 6)
+        lon = round(center_lon + r_lon * math.cos(angle), 6)
+        pts.append([lon, lat])
+    return pts
+
 def export_network_to_json(nodes, edges, metadata, output_path):
     data = {
         "metadata": metadata,
@@ -99,6 +115,7 @@ def generate_delhi_road_network(output_path):
         {"id": "rajghat_chowk", "lat": 28.6410, "lon": 77.2480, "name": "Rajghat Memorial - Ring Road Junction"},
         {"id": "bhairon_marg", "lat": 28.6105, "lon": 77.2450, "name": "Bhairon Marg - Ring Road Connection"},
         {"id": "purana_qila", "lat": 28.6095, "lon": 77.2410, "name": "Mathura Road - Purana Qila"},
+        {"id": "sbm_oberoi", "lat": 28.6025, "lon": 77.2340, "name": "Subramaniam Bharti Marg - Oberoi Junction"},
 
         {"id": "khan_market_hub", "lat": 28.6003, "lon": 77.2270, "name": "Khan Market Commercial Hub"},
         {"id": "shahjahan_crossing", "lat": 28.6035, "lon": 77.2250, "name": "Shahjahan Road - Humayun Rd"},
@@ -205,26 +222,152 @@ def generate_delhi_road_network(output_path):
 
     nodes_map = {n["id"]: n for n in nodes_def}
 
-    edges_spec = [
-        # --- CP Inner Circle (One-Way Clockwise) ---
-        ("cp_inner_rad1", "cp_inner_rad2", "Inner Circle", "secondary", 30, True),
-        ("cp_inner_rad2", "cp_inner_rad3", "Inner Circle", "secondary", 30, True),
-        ("cp_inner_rad3", "cp_inner_rad4", "Inner Circle", "secondary", 30, True),
-        ("cp_inner_rad4", "cp_inner_rad5", "Inner Circle", "secondary", 30, True),
-        ("cp_inner_rad5", "cp_inner_rad6", "Inner Circle", "secondary", 30, True),
-        ("cp_inner_rad6", "cp_inner_rad7", "Inner Circle", "secondary", 30, True),
-        ("cp_inner_rad7", "cp_inner_rad8", "Inner Circle", "secondary", 30, True),
-        ("cp_inner_rad8", "cp_inner_rad1", "Inner Circle", "secondary", 30, True),
+    # CP Circular Geometries
+    cp_lat, cp_lon = 28.6328, 77.2197
+    outer_r_lat, outer_r_lon = 0.00315, 0.00360
+    inner_r_lat, inner_r_lon = 0.00135, 0.00155
 
-        # --- CP Outer Circle (Circulation) ---
-        ("cp_outer_rad1", "cp_outer_rad8", "Connaught Circus", "primary", 40, False),
-        ("cp_outer_rad8", "cp_outer_rad7", "Connaught Circus", "primary", 40, False),
-        ("cp_outer_rad7", "cp_outer_rad6", "Connaught Circus", "primary", 40, False),
-        ("cp_outer_rad6", "cp_outer_rad5", "Connaught Circus", "primary", 40, False),
-        ("cp_outer_rad5", "cp_outer_rad4", "Connaught Circus", "primary", 40, False),
-        ("cp_outer_rad4", "cp_outer_rad3", "Connaught Circus", "primary", 40, False),
-        ("cp_outer_rad3", "cp_outer_rad2", "Connaught Circus", "primary", 40, False),
-        ("cp_outer_rad2", "cp_outer_rad1", "Connaught Circus", "primary", 40, False),
+    arc_out_1_8 = make_arc(cp_lat, cp_lon, outer_r_lat, outer_r_lon, 90, 135)
+    arc_out_8_7 = make_arc(cp_lat, cp_lon, outer_r_lat, outer_r_lon, 135, 180)
+    arc_out_7_6 = make_arc(cp_lat, cp_lon, outer_r_lat, outer_r_lon, 180, 225)
+    arc_out_6_5 = make_arc(cp_lat, cp_lon, outer_r_lat, outer_r_lon, 225, 270)
+    arc_out_5_4 = make_arc(cp_lat, cp_lon, outer_r_lat, outer_r_lon, 270, 315)
+    arc_out_4_3 = make_arc(cp_lat, cp_lon, outer_r_lat, outer_r_lon, 315, 360)
+    arc_out_3_2 = make_arc(cp_lat, cp_lon, outer_r_lat, outer_r_lon, 0, 45)
+    arc_out_2_1 = make_arc(cp_lat, cp_lon, outer_r_lat, outer_r_lon, 45, 90)
+
+    arc_in_1_2 = make_arc(cp_lat, cp_lon, inner_r_lat, inner_r_lon, 90, 45)
+    arc_in_2_3 = make_arc(cp_lat, cp_lon, inner_r_lat, inner_r_lon, 45, 0)
+    arc_in_3_4 = make_arc(cp_lat, cp_lon, inner_r_lat, inner_r_lon, 360, 315)
+    arc_in_4_5 = make_arc(cp_lat, cp_lon, inner_r_lat, inner_r_lon, 315, 270)
+    arc_in_5_6 = make_arc(cp_lat, cp_lon, inner_r_lat, inner_r_lon, 270, 225)
+    arc_in_6_7 = make_arc(cp_lat, cp_lon, inner_r_lat, inner_r_lon, 225, 180)
+    arc_in_7_8 = make_arc(cp_lat, cp_lon, inner_r_lat, inner_r_lon, 180, 135)
+    arc_in_8_1 = make_arc(cp_lat, cp_lon, inner_r_lat, inner_r_lon, 135, 90)
+
+    # Chelmsford Road street curve
+    geom_chelmsford = [
+        [77.2197, 28.6358],
+        [77.2191, 28.6375],
+        [77.2181, 28.6395],
+        [77.2172, 28.6412],
+        [77.2165, 28.6428]
+    ]
+
+    # New Delhi Railway Flyover (across railway tracks)
+    geom_flyover = [
+        [77.2165, 28.6428],
+        [77.2168, 28.6446],
+        [77.2185, 28.6456],
+        [77.2208, 28.6446],
+        [77.2222, 28.6430],
+        [77.2225, 28.6415]
+    ]
+
+    # Bhavbhuti Marg & Minto Bridge Underpass
+    geom_bhavbhuti = [
+        [77.2225, 28.6415],
+        [77.2220, 28.6398],
+        [77.2225, 28.6385],
+        [77.2238, 28.6378],
+        [77.2250, 28.6375]
+    ]
+
+    # Minto Bridge to Barakhamba / Outer Circle
+    geom_minto_bk = [
+        [77.2250, 28.6375],
+        [77.2252, 28.6352],
+        [77.2248, 28.6335],
+        [77.2245, 28.6322]
+    ]
+
+    # Barakhamba Road to Mandi House
+    geom_barakhamba_1 = [
+        [77.2245, 28.6322],
+        [77.2262, 28.6305],
+        [77.2280, 28.6285]
+    ]
+    geom_barakhamba_2 = [
+        [77.2280, 28.6285],
+        [77.2300, 28.6272],
+        [77.2320, 28.6262],
+        [77.2340, 28.6255]
+    ]
+
+    # Mandi House to Sikandra Road
+    geom_sikandra = [
+        [77.2340, 28.6255],
+        [77.2355, 28.6252],
+        [77.2368, 28.6246],
+        [77.2375, 28.6240]
+    ]
+
+    # Sikandra Road / Tilak Marg past Supreme Court to Pragati Maidan
+    geom_tilak_pm = [
+        [77.2375, 28.6240],
+        [77.2382, 28.6225],
+        [77.2388, 28.6205],
+        [77.2400, 28.6192],
+        [77.2415, 28.6186]
+    ]
+
+    # Pragati Maidan past Purana Qila along Mathura Road
+    geom_mathura_pm = [
+        [77.2415, 28.6186],
+        [77.2425, 28.6160],
+        [77.2430, 28.6135],
+        [77.2422, 28.6110],
+        [77.2410, 28.6095]
+    ]
+
+    # Mathura Road south from Purana Qila to SBM Oberoi Junction
+    geom_mathura_sbm = [
+        [77.2410, 28.6095],
+        [77.2402, 28.6070],
+        [77.2388, 28.6045],
+        [77.2362, 28.6030],
+        [77.2340, 28.6025]
+    ]
+
+    # Subramaniam Bharti Marg west to Khan Market
+    geom_sbm_khan = [
+        [77.2340, 28.6025],
+        [77.2315, 28.6020],
+        [77.2290, 28.6012],
+        [77.2270, 28.6003]
+    ]
+
+    # Khan Market south along Rajesh Pilot Marg & Lodhi Road into Lodhi Colony
+    geom_khan_lodhi = [
+        [77.2270, 28.6003],
+        [77.2262, 28.5975],
+        [77.2255, 28.5950],
+        [77.2250, 28.5930],
+        [77.2235, 28.5925],
+        [77.2222, 28.5910],
+        [77.2217, 28.5888]
+    ]
+
+    edges_spec = [
+        # --- CP Inner Circle (One-Way Clockwise - curved circular arcs) ---
+        ("cp_inner_rad1", "cp_inner_rad2", "Inner Circle", "secondary", 30, True, arc_in_1_2),
+        ("cp_inner_rad2", "cp_inner_rad3", "Inner Circle", "secondary", 30, True, arc_in_2_3),
+        ("cp_inner_rad3", "cp_inner_rad4", "Inner Circle", "secondary", 30, True, arc_in_3_4),
+        ("cp_inner_rad4", "cp_inner_rad5", "Inner Circle", "secondary", 30, True, arc_in_4_5),
+        ("cp_inner_rad5", "cp_inner_rad6", "Inner Circle", "secondary", 30, True, arc_in_5_6),
+        ("cp_inner_rad6", "cp_inner_rad7", "Inner Circle", "secondary", 30, True, arc_in_6_7),
+        ("cp_inner_rad7", "cp_inner_rad8", "Inner Circle", "secondary", 30, True, arc_in_7_8),
+        ("cp_inner_rad8", "cp_inner_rad1", "Inner Circle", "secondary", 30, True, arc_in_8_1),
+
+        # --- CP Outer Circle (Circulation - curved circular arcs) ---
+        ("cp_outer_rad1", "cp_outer_rad8", "Connaught Circus", "primary", 40, False, arc_out_1_8),
+        ("cp_outer_rad8", "cp_outer_rad7", "Connaught Circus", "primary", 40, False, arc_out_8_7),
+        ("cp_outer_rad7", "cp_outer_rad6", "Connaught Circus", "primary", 40, False, arc_out_7_6),
+        ("cp_outer_rad6", "cp_outer_rad5", "Connaught Circus", "primary", 40, False, arc_out_6_5),
+        ("cp_outer_rad5", "cp_outer_rad4", "Connaught Circus", "primary", 40, False, arc_out_5_4),
+        ("cp_outer_rad4", "cp_outer_rad3", "Connaught Circus", "primary", 40, False, arc_out_4_3),
+        ("cp_outer_rad3", "cp_outer_rad2", "Connaught Circus", "primary", 40, False, arc_out_3_2),
+        ("cp_outer_rad2", "cp_outer_rad1", "Connaught Circus", "primary", 40, False, arc_out_2_1),
 
         # Radials connecting CP Inner to Outer
         ("cp_inner_rad1", "cp_outer_rad1", "Chelmsford Road Radial", "secondary", 30, False),
@@ -240,21 +383,20 @@ def generate_delhi_road_network(output_path):
         ("cp_inner_rad3", "delhi_cp_center", "Central Park East Walk", "service", 15, False),
         ("cp_inner_rad7", "delhi_cp_center", "Central Park West Walk", "service", 15, False),
 
-        # Station & Northern Links
-        ("cp_outer_rad1", "ndls_paharganj", "Chelmsford Road", "primary", 40, False),
+        # Station & Northern Links (following exact street curvatures & flyover)
+        ("cp_outer_rad1", "ndls_paharganj", "Chelmsford Road", "primary", 40, False, geom_chelmsford),
         ("cp_outer_rad2", "minto_bridge", "Minto Road", "primary", 40, False),
-        ("minto_bridge", "bhavbhuti_marg", "Bhavbhuti Marg", "secondary", 30, False),
-        ("bhavbhuti_marg", "ndls_ajmeri_gate", "Station Road", "secondary", 30, False),
-        ("ndls_paharganj", "ndls_ajmeri_gate", "Station Footover Underpass", "residential", 20, False),
+        ("ndls_paharganj", "ndls_ajmeri_gate", "New Delhi Railway Flyover", "primary", 40, False, geom_flyover),
+        ("ndls_ajmeri_gate", "minto_bridge", "Bhavbhuti Marg", "secondary", 35, False, geom_bhavbhuti),
         ("minto_bridge", "ddu_marg", "Deen Dayal Upadhyaya Marg", "primary", 50, False),
         ("ddu_marg", "ito_chowk", "Deen Dayal Upadhyaya Marg", "primary", 50, False),
 
         # Eastern Radial from CP: Barakhamba -> Mandi House -> Sikandra -> Pragati Maidan / ITO
-        ("cp_outer_rad3", "barakhamba_mid", "Barakhamba Road", "primary", 50, False),
+        ("cp_outer_rad3", "barakhamba_mid", "Barakhamba Road", "primary", 50, False, geom_barakhamba_1),
         ("barakhamba_mid", "barakhamba_tolstoy", "Barakhamba Road", "primary", 50, False),
-        ("barakhamba_tolstoy", "mandi_house_circle", "Barakhamba Road", "primary", 50, False),
-        ("mandi_house_circle", "sikandra_rd", "Sikandra Road", "primary", 50, False),
-        ("sikandra_rd", "pragati_maidan_gate", "Mathura Road Link", "trunk", 60, False),
+        ("barakhamba_tolstoy", "mandi_house_circle", "Barakhamba Road", "primary", 50, False, geom_barakhamba_2),
+        ("mandi_house_circle", "sikandra_rd", "Sikandra Road", "primary", 50, False, geom_sikandra),
+        ("sikandra_rd", "pragati_maidan_gate", "Tilak Marg - Supreme Court", "primary", 50, False, geom_tilak_pm),
         ("mandi_house_circle", "tilak_marg_mandi", "Tilak Marg", "primary", 50, False),
         ("tilak_marg_mandi", "india_gate_north", "Tilak Marg", "primary", 50, False),
         ("mandi_house_circle", "ito_chowk", "Bahadur Shah Zafar Marg Link", "primary", 50, False),
@@ -293,14 +435,22 @@ def generate_delhi_road_network(output_path):
         ("india_gate_east", "purana_qila", "Purana Qila Road", "primary", 50, False),
         ("pragati_maidan_gate", "bhairon_marg", "Bhairon Marg", "trunk", 60, False),
         ("bhairon_marg", "purana_qila", "Mathura Road", "trunk", 60, False),
+        ("pragati_maidan_gate", "purana_qila", "Mathura Road", "trunk", 60, False, geom_mathura_pm),
         ("pragati_maidan_gate", "ito_chowk", "Mathura Road", "trunk", 60, False),
         ("ito_chowk", "rajghat_chowk", "Bahadur Shah Zafar Marg / Ring Rd", "trunk", 60, False),
 
-        # South Delhi / Khan Market & Lodhi District
+        # South Delhi / Khan Market & Lodhi District (Strict street alignments)
         ("india_gate_south", "shahjahan_crossing", "Shahjahan Road", "primary", 50, False),
         ("shahjahan_crossing", "khan_market_hub", "Humayun Road", "secondary", 35, False),
-        ("purana_qila", "khan_market_hub", "Subramaniam Bharti Marg", "primary", 40, False),
+        ("purana_qila", "sbm_oberoi", "Mathura Road South", "primary", 50, False, geom_mathura_sbm),
+        ("sbm_oberoi", "khan_market_hub", "Subramaniam Bharti Marg", "primary", 45, False, geom_sbm_khan),
         ("shahjahan_crossing", "prithviraj_circle", "Prithviraj Road", "primary", 40, False),
+        ("prithviraj_circle", "lodhi_garden", "Amrita Shergill Marg", "secondary", 30, False),
+        ("khan_market_hub", "lodhi_colony_hub", "Rajesh Pilot Marg - Lodhi Road", "primary", 40, False, geom_khan_lodhi),
+        ("lodhi_garden", "lodhi_colony_hub", "Lodhi Road", "primary", 45, False),
+        ("lodhi_colony_hub", "jor_bagh", "Jor Bagh Road", "secondary", 30, False),
+        ("jor_bagh", "prithviraj_circle", "Safdarjung Road Link", "primary", 40, False),
+        ("lodhi_colony_hub", "ina_market", "Aurobindo Marg Link", "primary", 45, False),
         ("prithviraj_circle", "lodhi_garden", "Amrita Shergill Marg", "secondary", 30, False),
         ("khan_market_hub", "lodhi_colony_hub", "Lodhi Road", "primary", 45, False),
         ("lodhi_garden", "lodhi_colony_hub", "Lodhi Road", "primary", 45, False),
@@ -477,10 +627,22 @@ def generate_delhi_road_network(output_path):
     edges_list = []
     edge_counter = 1
 
-    for u_id, v_id, road_name, road_type, speed_limit, one_way in edges_spec:
+    for item in edges_spec:
+        if len(item) == 7:
+            u_id, v_id, road_name, road_type, speed_limit, one_way, custom_geom = item
+        else:
+            u_id, v_id, road_name, road_type, speed_limit, one_way = item
+            custom_geom = None
+
         u_node = nodes_map[u_id]
         v_node = nodes_map[v_id]
-        dist = round(haversine_distance(u_node["lat"], u_node["lon"], v_node["lat"], v_node["lon"]), 1)
+
+        if custom_geom and len(custom_geom) >= 2:
+            geom_fwd = custom_geom
+            dist = polyline_distance(geom_fwd)
+        else:
+            geom_fwd = [[u_node["lon"], u_node["lat"]], [v_node["lon"], v_node["lat"]]]
+            dist = round(haversine_distance(u_node["lat"], u_node["lon"], v_node["lat"], v_node["lon"]), 1)
 
         # Forward edge
         edge_id = f"edge_{edge_counter}_{u_id}_{v_id}"
@@ -493,7 +655,7 @@ def generate_delhi_road_network(output_path):
             "roadType": road_type,
             "roadName": road_name,
             "speedLimit": speed_limit,
-            "geometry": [[u_node["lon"], u_node["lat"]], [v_node["lon"], v_node["lat"]]],
+            "geometry": geom_fwd,
             "trafficMultiplier": 1.0,
             "isBlocked": False
         })
@@ -502,6 +664,7 @@ def generate_delhi_road_network(output_path):
         if not one_way:
             edge_id_rev = f"edge_{edge_counter}_{v_id}_{u_id}"
             edge_counter += 1
+            geom_rev = [p for p in reversed(geom_fwd)]
             edges_list.append({
                 "id": edge_id_rev,
                 "source": v_id,
@@ -510,7 +673,7 @@ def generate_delhi_road_network(output_path):
                 "roadType": road_type,
                 "roadName": road_name,
                 "speedLimit": speed_limit,
-                "geometry": [[v_node["lon"], v_node["lat"]], [u_node["lon"], u_node["lat"]]],
+                "geometry": geom_rev,
                 "trafficMultiplier": 1.0,
                 "isBlocked": False
             })

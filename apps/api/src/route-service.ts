@@ -104,16 +104,6 @@ export class RouteService {
     };
   }
 
-  /**
-   * Calculates a complete multi-leg route across ordered waypoints using the specified algorithm.
-   *
-   * Each leg:
-   *   fromWaypoint.lat/lon → snapped fromWaypoint.nodeId → road path → snapped toWaypoint.nodeId → toWaypoint.lat/lon
-   *
-   * A failed leg is recorded with success=false and an explicit failureReason.
-   * Failed legs are NOT concatenated into fullCoordinates so disconnected segments
-   * are never visually joined.
-   */
   public static calculateRoute(
     graph: RoadGraph,
     orderedWaypoints: WaypointInfo[],
@@ -156,8 +146,6 @@ export class RouteService {
           toNodeId: toWp.nodeId,
           fromName: fromWp.name,
           toName: toWp.name,
-          success: false,
-          failureReason: reason,
           distanceMeters: 0,
           durationSeconds: 0,
           cost: 0,
@@ -278,8 +266,6 @@ export class RouteService {
         toNodeId: toWp.nodeId,
         fromName: fromWp.name,
         toName: toWp.name,
-        success: legResult.routeFound,
-        failureReason: legResult.routeFound ? undefined : legResult.failureReason,
         distanceMeters: legResult.totalDistanceMeters,
         durationSeconds: legResult.totalDurationSeconds,
         cost: legResult.totalCost,
@@ -300,8 +286,8 @@ export class RouteService {
     // Validation: verify all mandatory waypoints were processed
     const totalWaypoints = orderedWaypoints.length;
     const totalLegs = legs.length;
-    const successfulLegs = legs.filter((l) => l.success).length;
-    const failedLegs = legs.filter((l) => !l.success);
+    const successfulLegs = legs.filter((l) => l.searchResult.routeFound).length;
+    const failedLegs = legs.filter((l) => !l.searchResult.routeFound);
 
     console.debug(
       `[RouteService] Route complete: ${totalWaypoints} waypoints, ${totalLegs} legs, ` +
@@ -310,14 +296,14 @@ export class RouteService {
 
     if (failedLegs.length > 0) {
       console.warn('[RouteService] Failed legs:',
-        failedLegs.map((l) => `Leg ${l.legIndex}: "${l.fromName}" → "${l.toName}" — ${l.failureReason}`)
+        failedLegs.map((l) => `Leg ${l.legIndex}: "${l.fromName}" → "${l.toName}" — ${l.searchResult.failureReason}`)
       );
     }
 
     const legSummary = legs.map((l) => ({
       legIndex: l.legIndex,
-      success: l.success,
-      failureReason: l.failureReason,
+      success: l.searchResult.routeFound,
+      failureReason: l.searchResult.failureReason,
       fromName: l.fromName,
       toName: l.toName,
     }));
@@ -437,9 +423,9 @@ export class RouteService {
 
     const optimalCost = astarResult.success && astarResult.totalCost > 0 ? astarResult.totalCost : null;
 
-    const astarSuccessLegs = astarResult.legs.filter((l) => l.success).length;
-    const greedySuccessLegs = greedyResult.legs.filter((l) => l.success).length;
-    const hcSuccessLegs = hillClimbingResult.legs.filter((l) => l.success).length;
+    const astarSuccessLegs = astarResult.legs.filter((l) => l.searchResult.routeFound).length;
+    const greedySuccessLegs = greedyResult.legs.filter((l) => l.searchResult.routeFound).length;
+    const hcSuccessLegs = hillClimbingResult.legs.filter((l) => l.searchResult.routeFound).length;
     const totalLegs = orderedWaypoints.length - 1;
 
     const comparison: AlgorithmComparisonEntry[] = [

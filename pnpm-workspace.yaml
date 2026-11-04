@@ -3,7 +3,7 @@ packages:
   - "packages/*"
 
 allowBuilds:
-  - better-sqlite3
-  - esbuild
-  - "@img/sharp-win32-x64"
+  better-sqlite3: true
+  esbuild: true
+  "@img/sharp-win32-x64": true
 

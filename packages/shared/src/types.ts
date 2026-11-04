@@ -72,10 +72,6 @@ export interface RouteLeg {
   toNodeId: string;
   fromName: string;
   toName: string;
-  /** true iff the pathfinding algorithm successfully reached toNodeId */
-  success: boolean;
-  /** Human-readable failure reason when success is false */
-  failureReason?: string;
   distanceMeters: number;
   durationSeconds: number;
   cost: number;

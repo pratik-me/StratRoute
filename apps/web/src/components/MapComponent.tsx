@@ -144,7 +144,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
   const getLegSuccessMap = (result: FullRouteResult | null): Map<number, boolean> => {
     const map = new Map<number, boolean>();
     if (result) {
-      result.legs.forEach((leg) => map.set(leg.legIndex, leg.success));
+      result.legs.forEach((leg) => map.set(leg.legIndex, leg.searchResult.routeFound));
     }
     return map;
   };
@@ -158,7 +158,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
     const failedNodeIds = new Set<string>();
     if (currentRoute) {
       currentRoute.legs.forEach((leg) => {
-        if (!leg.success) {
+        if (!leg.searchResult.routeFound) {
           failedNodeIds.add(leg.fromNodeId);
           failedNodeIds.add(leg.toNodeId);
         }
@@ -274,7 +274,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
     // (which include the access connectors to the exact waypoint positions).
     // Do NOT merge failed legs in — that would visually connect disconnected segments.
     const successfulLegFeatures = currentRoute.legs
-      .filter((leg) => leg.success && leg.legCoordinates && leg.legCoordinates.length >= 2)
+      .filter((leg) => leg.searchResult.routeFound && leg.legCoordinates && leg.legCoordinates.length >= 2)
       .map((leg) => ({
         type: 'Feature' as const,
         properties: {
@@ -307,7 +307,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
 
       // Include successful leg coordinates
       for (const leg of currentRoute.legs) {
-        if (leg.success && leg.legCoordinates) {
+        if (leg.searchResult.routeFound && leg.legCoordinates) {
           for (const coord of leg.legCoordinates) {
             allPoints.push(coord);
           }
@@ -703,7 +703,7 @@ export const MapComponent: React.FC<MapComponentProps> = ({
 
     // Log route result summary for development debugging
     if (routeResult) {
-      const successLegs = routeResult.legs.filter((l) => l.success).length;
+      const successLegs = routeResult.legs.filter((l) => l.searchResult.routeFound).length;
       const totalLegs = routeResult.legs.length;
       console.debug(
         `[MapComponent] Rendering route: ${successLegs}/${totalLegs} legs succeeded. ` +

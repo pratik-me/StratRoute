@@ -583,7 +583,7 @@ export const RoutePanel: React.FC<RoutePanelProps> = ({
               >
                 {routeResult.success
                   ? `All ${routeResult.legs.length} Leg${routeResult.legs.length !== 1 ? 's' : ''} OK`
-                  : `${routeResult.legs.filter((l) => !l.success).length}/${routeResult.legs.length} Failed`}
+                  : `${routeResult.legs.filter((l) => !l.searchResult.routeFound).length}/${routeResult.legs.length} Failed`}
               </span>
             </div>
 
@@ -654,16 +654,16 @@ export const RoutePanel: React.FC<RoutePanelProps> = ({
                   <div
                     key={leg.legIndex}
                     className={`flex items-center justify-between p-1.5 rounded text-[10px] ${
-                      leg.success
+                      leg.searchResult.routeFound
                         ? 'bg-emerald-50 border border-emerald-100'
                         : 'bg-red-50 border border-red-200'
                     }`}
                   >
-                    <span className={`font-medium truncate max-w-[160px] ${leg.success ? 'text-emerald-800' : 'text-red-700'}`}>
+                    <span className={`font-medium truncate max-w-[160px] ${leg.searchResult.routeFound ? 'text-emerald-800' : 'text-red-700'}`}>
                       {leg.legIndex + 1}. {leg.fromName} → {leg.toName}
                     </span>
-                    <span className={`font-bold shrink-0 ml-1 ${leg.success ? 'text-emerald-700' : 'text-red-600'}`}>
-                      {leg.success ? `${(leg.distanceMeters / 1000).toFixed(1)}km` : '✗'}
+                    <span className={`font-bold shrink-0 ml-1 ${leg.searchResult.routeFound ? 'text-emerald-700' : 'text-red-600'}`}>
+                      {leg.searchResult.routeFound ? `${(leg.distanceMeters / 1000).toFixed(1)}km` : '✗'}
                     </span>
                   </div>
                 ))}
